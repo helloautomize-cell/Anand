@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { ComponentType } from "react";
 import { notFound } from "next/navigation";
 import { pageMeta } from "@/lib/meta";
+import { abs } from "@/lib/site";
 import { JsonLd } from "@/components/json-ld";
 import {
   clinicSchema,
@@ -9,6 +10,7 @@ import {
   websiteSchema,
   breadcrumbSchema,
   faqSchema,
+  pageNode,
   treatmentSchema,
   jsonLd,
 } from "@/lib/schema";
@@ -68,7 +70,7 @@ export function generateMetadata({
   return params.then(({ slug }) => {
     const t = loadTreatments().find((t) => t.slug === slug);
     if (!t) return {};
-    return pageMeta(t.url, contentFileForUrl(t.url));
+    return pageMeta(t.url, contentFileForUrl(t.url), true);
   });
 }
 
@@ -91,6 +93,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
             { name: "Treatments", url: "/treatments/" },
             { name: t.name, url: t.url },
           ]),
+          pageNode({ url: t.url, title: t.name, description: t.description, type: "MedicalWebPage", medical: true, mainEntity: `${abs(t.url)}#procedure` }),
           treatmentSchema(t),
           faqSchema(c.faqs),
         ])}

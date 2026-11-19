@@ -6,7 +6,7 @@ import { MobileMenu } from "@/components/mobile-menu";
 import { UtilBar, Overlays, Footer, MobileBar } from "@/components/chrome";
 import { NavFx } from "@/components/nav-fx";
 import { Consent } from "@/components/consent";
-import { SITE_URL, isIndexable } from "@/lib/site";
+import { SITE_URL, isIndexable, site } from "@/lib/site";
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -34,6 +34,13 @@ export const metadata: Metadata = {
   },
   description:
     "Heart, lung and vascular surgery by Dr. Anand Yadav in Janki Nagar, Bhopal. Book a consultation on WhatsApp.",
+  manifest: "/manifest.json",
+  verification: {
+    ...(site.verification.google ? { google: site.verification.google } : {}),
+    ...(site.verification.bing
+      ? { other: { "msvalidate.01": site.verification.bing } }
+      : {}),
+  },
 };
 
 export const viewport: Viewport = {
@@ -48,7 +55,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
-      lang="en"
+      lang="en-IN"
       className={`${geistSans.variable} ${geistMono.variable} ${instrument.variable}`}
       data-env={isIndexable ? "prod" : "dev"}
     >

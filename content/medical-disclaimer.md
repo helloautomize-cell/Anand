@@ -2,7 +2,7 @@
 title: "Medical disclaimer | Anand Heart Center Bhopal"
 url: /medical-disclaimer/
 template: legal
-description: "This website gives general information and is not medical advice. In an emergency call 108 or 112."
+description: "Medical disclaimer: this website gives general heart health information, not personal medical advice. For emergencies call 108 or 112 immediately."
 faqs: []
 ---
 

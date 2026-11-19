@@ -55,10 +55,7 @@ export type Treatment = z.infer<typeof treatmentSchema>;
 
 export function loadTreatments(): Treatment[] {
   const raw = JSON.parse(
-    fs.readFileSync(
-      path.join(process.cwd(), "data", "treatments.json"),
-      "utf-8"
-    )
+    fs.readFileSync(path.join(process.cwd(), "data", "treatments.json"), "utf-8")
   );
   return z.array(treatmentSchema).parse(raw);
 }

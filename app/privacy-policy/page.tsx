@@ -7,6 +7,7 @@ import {
   websiteSchema,
   breadcrumbSchema,
   faqSchema,
+  pageNode,
   jsonLd,
 } from "@/lib/schema";
 import { loadContent } from "@/lib/content";
@@ -26,6 +27,7 @@ export default function Page() {
           clinicSchema(),
           physicianSchema(),
           websiteSchema(),
+          pageNode({ url: "/privacy-policy/", title: c.title, description: c.description }),
           breadcrumbSchema([
             { name: "Home", url: "/" },
             { name: "Privacy policy", url: "/privacy-policy/" },

@@ -1,10 +1,210 @@
 import Link from "next/link";
 import { waLink } from "@/lib/whatsapp";
-import { TEL_PRIMARY, MAIL_PRIMARY } from "@/lib/site";
+import { phonesDisplay, TEL_PRIMARY, MAIL_PRIMARY } from "@/lib/site";
+import { ReviewedBy } from "@/components/reviewed";
 export function TermsPage() {
   return (
     <>
- <section className="lg-hero" id="lg-hero" data-hdr="l"> <div className="wrap"> <div className="crumb"><Link href="/">Home</Link><i></i><span>Legal</span></div> <h1>Terms of <em>use.</em></h1> <p>The terms that apply when you use this website. Please read them along with our medical disclaimer and privacy policy.</p> <div className="meta"><span>Last updated 19 November 2026</span><span>Anand Heart Center Bhopal</span><span className="chip">Lawyer review pending</span></div> <div className="lg-tabs"><Link href="/privacy-policy/" className="">Privacy policy</Link><Link href="/terms-of-use/" className="on">Terms of use</Link><Link href="/medical-disclaimer/" className="">Medical disclaimer</Link></div> </div> </section> <div className="wrap lg-body"> <nav className="lg-toc" id="lgtoc"><a href="#about-this-website">About this website</a><a href="#not-medical-advice">Not medical advice</a><a href="#appointments">Appointments</a><a href="#emergencies">Emergencies</a><a href="#content-and-trademarks">Content and trademarks</a><a href="#links-to-other-websites">Links to other websites</a><a href="#limitation-of-liability">Limitation of liability</a><a href="#governing-law">Governing law</a><a href="#contact-us">Contact us</a><div className="bar"><i id="lgbar"></i></div></nav> <article className="lg-art" id="lgart"><section id="about-this-website"><h2>About this website</h2><p>This website is provided by Anand Heart Center Bhopal to share general information about Dr. Anand Yadav, the clinic and the treatments offered. By using it you agree to these terms.</p></section><section id="not-medical-advice"><h2>Not medical advice</h2><p>The content on this website is general information. It is not a diagnosis and does not replace a consultation with a doctor who has examined you. Please read our <Link href="/medical-disclaimer/">medical disclaimer</Link>.</p></section><section id="appointments"><h2>Appointments</h2><p>Booking requests made by phone, WhatsApp or through this website are confirmed only when the clinic replies to you. Timings may change at short notice, for example when Dr. Yadav is needed in surgery.</p></section><section id="emergencies"><h2>Emergencies</h2><p>This website, our phone line and WhatsApp are not emergency services. In an emergency call 108 or 112 and go to the nearest emergency department.</p></section><section id="content-and-trademarks"><h2>Content and trademarks</h2><p>The text, illustrations, photographs and logo on this website belong to Anand Heart Center Bhopal or are used with permission. You may share links to our pages, but please do not copy the content for commercial use without written permission.</p></section><section id="links-to-other-websites"><h2>Links to other websites</h2><p>Links to other websites, such as maps or WhatsApp, are provided for convenience. We are not responsible for their content or how they handle your information.</p></section><section id="limitation-of-liability"><h2>Limitation of liability</h2><p>We work to keep this website accurate and up to date, but we cannot promise it is always complete or free of errors. To the extent the law allows, we are not liable for loss arising from reliance on the general information on this website.</p></section><section id="governing-law"><h2>Governing law</h2><p>These terms are governed by the laws of India. Courts in Bhopal, Madhya Pradesh have jurisdiction. <span className="chip">Confirm</span></p></section><section id="contact-us"><h2>Contact us</h2><p>Anand Heart Center Bhopal, 4th Floor, Vindhya Retreat, Plot No. 5, Near Gut Hospital, Janki Nagar, Chuna Bhatti, Bhopal, Madhya Pradesh 462016.<br/>Phone <a href={TEL_PRIMARY}>091119 50821</a> · Email <a href={MAIL_PRIMARY}>info@anandheartcenter.com</a></p></section></article> </div> <section className="wrap" data-hdr="l" id="cta"> <div className="cta" data-rv={true}> <div className="glow"></div> <svg className="e" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0 60h420l14-16 14 16h20l12-50 16 90 12-40h692" fill="none" stroke="#FF9A9B" strokeWidth="2"/></svg> <span className="lab">Questions?</span> <h2>Talk to<br/><em>the clinic.</em></h2> <p>Call or WhatsApp during OPD hours and we will help.</p> <div className="acts"> <a className="btn b-red" data-cur={true} href={waLink("Hello, I would like to book a consultation with Dr. Anand Yadav.")} target="_blank" rel="noopener">Book a consultation<span className="ar"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" strokeWidth="1.6"/></svg><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" strokeWidth="1.6"/></svg></span></a> <a className="btn b-line" href={TEL_PRIMARY}>Call 091119 50821</a> </div> </div> <div className="emc"><svg width="20" height="20" viewBox="0 0 24 24" style={{flex:"none"}}><path d="M12 3l10 18H2z" fill="none" stroke="#D23133" strokeWidth="2"/><path d="M12 10v5M12 17.5v.5" stroke="#D23133" strokeWidth="2" strokeLinecap="round"/></svg><span><b>Medical emergency? Call 108 or 112.</b> Go to the nearest emergency department first.</span></div> </section> 
+      <section className="lg-hero" id="lg-hero" data-hdr="l">
+        {" "}
+        <div className="wrap">
+          {" "}
+          <div className="crumb">
+            <Link href="/">Home</Link>
+            <i></i>
+            <span>Legal</span>
+          </div>{" "}
+          <h1>
+            Terms of <em>use.</em>
+          </h1>{" "}
+          <p>
+            The terms that apply when you use this website. Please read them along with
+            our medical disclaimer and privacy policy.
+          </p>{" "}
+          <div className="meta">
+            <span>Last updated 19 November 2026</span>
+            <span>Anand Heart Center Bhopal</span>
+            <span className="chip">Lawyer review pending</span>
+          </div>{" "}
+          <div className="lg-tabs">
+            <Link href="/privacy-policy/" className="">
+              Privacy policy
+            </Link>
+            <Link href="/terms-of-use/" className="on">
+              Terms of use
+            </Link>
+            <Link href="/medical-disclaimer/" className="">
+              Medical disclaimer
+            </Link>
+          </div>{" "}
+        </div>{" "}
+      </section>{" "}
+      <div className="wrap lg-body">
+        {" "}
+        <nav className="lg-toc" id="lgtoc">
+          <a href="#about-this-website">About this website</a>
+          <a href="#not-medical-advice">Not medical advice</a>
+          <a href="#appointments">Appointments</a>
+          <a href="#emergencies">Emergencies</a>
+          <a href="#content-and-trademarks">Content and trademarks</a>
+          <a href="#links-to-other-websites">Links to other websites</a>
+          <a href="#limitation-of-liability">Limitation of liability</a>
+          <a href="#governing-law">Governing law</a>
+          <a href="#contact-us">Contact us</a>
+          <div className="bar">
+            <i id="lgbar"></i>
+          </div>
+        </nav>{" "}
+        <article className="lg-art" id="lgart">
+          <section id="about-this-website">
+            <h2>About this website</h2>
+            <p>
+              This website is provided by Anand Heart Center Bhopal to share general
+              information about Dr. Anand Yadav, the clinic and the treatments offered. By
+              using it you agree to these terms.
+            </p>
+          </section>
+          <section id="not-medical-advice">
+            <h2>Not medical advice</h2>
+            <p>
+              The content on this website is general information. It is not a diagnosis
+              and does not replace a consultation with a doctor who has examined you.
+              Please read our <Link href="/medical-disclaimer/">medical disclaimer</Link>.
+            </p>
+          </section>
+          <section id="appointments">
+            <h2>Appointments</h2>
+            <p>
+              Booking requests made by phone, WhatsApp or through this website are
+              confirmed only when the clinic replies to you. Timings may change at short
+              notice, for example when Dr. Yadav is needed in surgery.
+            </p>
+          </section>
+          <section id="emergencies">
+            <h2>Emergencies</h2>
+            <p>
+              This website, our phone line and WhatsApp are not emergency services. In an
+              emergency call 108 or 112 and go to the nearest emergency department.
+            </p>
+          </section>
+          <section id="content-and-trademarks">
+            <h2>Content and trademarks</h2>
+            <p>
+              The text, illustrations, photographs and logo on this website belong to
+              Anand Heart Center Bhopal or are used with permission. You may share links
+              to our pages, but please do not copy the content for commercial use without
+              written permission.
+            </p>
+          </section>
+          <section id="links-to-other-websites">
+            <h2>Links to other websites</h2>
+            <p>
+              Links to other websites, such as maps or WhatsApp, are provided for
+              convenience. We are not responsible for their content or how they handle
+              your information.
+            </p>
+          </section>
+          <section id="limitation-of-liability">
+            <h2>Limitation of liability</h2>
+            <p>
+              We work to keep this website accurate and up to date, but we cannot promise
+              it is always complete or free of errors. To the extent the law allows, we
+              are not liable for loss arising from reliance on the general information on
+              this website.
+            </p>
+          </section>
+          <section id="governing-law">
+            <h2>Governing law</h2>
+            <p>
+              These terms are governed by the laws of India. Courts in Bhopal, Madhya
+              Pradesh have jurisdiction. <span className="chip">Confirm</span>
+            </p>
+          </section>
+          <section id="contact-us">
+            <h2>Contact us</h2>
+            <p>
+              Anand Heart Center Bhopal, 4th Floor, Vindhya Retreat, Plot No. 5, Near Gut
+              Hospital, Janki Nagar, Chuna Bhatti, Bhopal, Madhya Pradesh 462016.
+              <br />
+              Phone <a href={TEL_PRIMARY}>{phonesDisplay.primary}</a> · Email{" "}
+              <a href={MAIL_PRIMARY}>info@anandheartcenter.com</a>
+            </p>
+          </section>
+        </article>{" "}
+      </div>{" "}
+      <section className="wrap" data-hdr="l" id="cta">
+        {" "}
+        <div className="cta" data-rv={true}>
+          {" "}
+          <div className="glow"></div>{" "}
+          <svg className="e" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+              d="M0 60h420l14-16 14 16h20l12-50 16 90 12-40h692"
+              fill="none"
+              stroke="#FF9A9B"
+              strokeWidth="2"
+            />
+          </svg>{" "}
+          <span className="lab">Questions?</span>{" "}
+          <h2>
+            Talk to
+            <br />
+            <em>the clinic.</em>
+          </h2>{" "}
+          <p>Call or WhatsApp during OPD hours and we will help.</p>{" "}
+          <div className="acts">
+            {" "}
+            <a
+              className="btn b-red"
+              data-cur={true}
+              href={waLink(
+                "Hello, I would like to book a consultation with Dr. Anand Yadav."
+              )}
+              target="_blank"
+              rel="noopener"
+            >
+              Book a consultation
+              <span className="ar">
+                <svg viewBox="0 0 16 16">
+                  <path
+                    d="M3 8h10M9 4l4 4-4 4"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.6"
+                  />
+                </svg>
+                <svg viewBox="0 0 16 16">
+                  <path
+                    d="M3 8h10M9 4l4 4-4 4"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.6"
+                  />
+                </svg>
+              </span>
+            </a>{" "}
+            <a className="btn b-line" href={TEL_PRIMARY}>
+              Call {phonesDisplay.primary}
+            </a>{" "}
+          </div>{" "}
+        </div>{" "}
+        <div className="emc">
+          <svg width="20" height="20" viewBox="0 0 24 24" style={{ flex: "none" }}>
+            <path d="M12 3l10 18H2z" fill="none" stroke="#D23133" strokeWidth="2" />
+            <path
+              d="M12 10v5M12 17.5v.5"
+              stroke="#D23133"
+              strokeWidth="2"
+              strokeLinecap="round"
+            />
+          </svg>
+          <span>
+            <b>Medical emergency? Call 108 or 112.</b> Go to the nearest emergency
+            department first.
+          </span>
+        </div>{" "}
+      <ReviewedBy url="/terms-of-use/" medical={false} />
+      </section>
     </>
   );
 }

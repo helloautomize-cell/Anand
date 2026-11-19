@@ -1,13 +1,14 @@
 import { abs, seo, site } from "./site";
 import type { Faq, Treatment } from "./content";
+import { lastmod, publishedDate } from "./lastmod";
 
 const CLINIC_ID = `${abs("/")}#clinic`;
-const DOCTOR_ID = `${abs("/about/")}#physician`;
+export const DOCTOR_ID = `${abs("/about/")}#physician`;
 const WEBSITE_ID = `${abs("/")}#website`;
 
 export function clinicSchema() {
   return {
-    "@type": "MedicalClinic",
+    "@type": ["MedicalClinic", "LocalBusiness", "Organization"],
     "@id": CLINIC_ID,
     name: site.brand,
     url: abs("/"),
@@ -26,6 +27,11 @@ export function clinicSchema() {
       postalCode: site.address.postalCode,
       addressCountry: "IN",
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: site.geo.lat,
+      longitude: site.geo.lng,
+    },
     hasMap: site.maps.link,
     openingHoursSpecification: [
       {
@@ -42,7 +48,22 @@ export function clinicSchema() {
       url: `https://wa.me/${site.whatsapp}`,
       availableLanguage: ["en", "hi"],
     },
-    areaServed: seo.areasServed.map((name) => ({ "@type": "Place", name })),
+    areaServed: [
+      {
+        "@type": "City",
+        name: "Bhopal",
+        containedInPlace: {
+          "@type": "State",
+          name: "Madhya Pradesh",
+          containedInPlace: {
+            "@type": "Country",
+            name: "India",
+            identifier: "IN",
+          },
+        },
+      },
+      { "@type": "State", name: "Madhya Pradesh" },
+    ],
     sameAs: seo.sameAs,
     employee: { "@id": DOCTOR_ID },
   };
@@ -60,7 +81,20 @@ export function physicianSchema() {
     medicalSpecialty: seo.medicalSpecialty,
     qualification: site.doctor.qualifications.join(", "),
     alumniOf: seo.alumniOf.map((name) => ({ "@type": "CollegeOrUniversity", name })),
-    knowsLanguage: ["en", "hi"],
+    hasCredential: site.doctor.qualifications.map((q) => ({
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "degree",
+      name: q,
+    })),
+    knowsAbout: [
+      "Cardiac surgery",
+      "Cardiothoracic surgery",
+      "Vascular surgery",
+      "Coronary artery bypass grafting",
+      "Angioplasty",
+      "Heart valve surgery",
+    ],
+    knowsLanguage: site.doctor.languages,
     worksFor: { "@id": CLINIC_ID },
   };
 }
@@ -79,6 +113,7 @@ export function websiteSchema() {
 export function breadcrumbSchema(items: { name: string; url: string }[]) {
   return {
     "@type": "BreadcrumbList",
+    "@id": `${abs(items[items.length - 1].url)}#breadcrumb`,
     itemListElement: items.map((it, i) => ({
       "@type": "ListItem",
       position: i + 1,
@@ -125,6 +160,60 @@ export function treatmentSchema(t: Treatment) {
     procedureType: "Surgical procedure",
     bodyLocation: "Heart, chest and blood vessels",
     provider: { "@id": CLINIC_ID },
+  };
+}
+
+type PageType =
+  | "WebPage"
+  | "ContactPage"
+  | "ProfilePage"
+  | "CollectionPage"
+  | "MedicalWebPage";
+
+export function pageNode(opts: {
+  url: string;
+  title: string;
+  description?: string;
+  type?: PageType;
+  medical?: boolean;
+  mainEntity?: string;
+}) {
+  const u = abs(opts.url);
+  return {
+    "@type": opts.type ?? "WebPage",
+    "@id": `${u}#webpage`,
+    url: u,
+    name: opts.title.split("|")[0].trim(),
+    ...(opts.description ? { description: opts.description } : {}),
+    inLanguage: "en-IN",
+    isPartOf: { "@id": WEBSITE_ID },
+    about: { "@id": CLINIC_ID },
+    breadcrumb: { "@id": `${u}#breadcrumb` },
+    datePublished: publishedDate(opts.url),
+    dateModified: lastmod(opts.url),
+    reviewedBy: { "@id": DOCTOR_ID },
+    ...(opts.medical
+      ? {
+          lastReviewed: lastmod(opts.url),
+          audience: { "@type": "MedicalAudience", audienceType: "Patient" },
+          specialty: seo.medicalSpecialty[0],
+        }
+      : {}),
+    ...(opts.mainEntity ? { mainEntity: { "@id": opts.mainEntity } } : {}),
+  };
+}
+
+export function itemListSchema(url: string, items: { name: string; url: string }[]) {
+  return {
+    "@type": "ItemList",
+    "@id": `${abs(url)}#list`,
+    numberOfItems: items.length,
+    itemListElement: items.map((it, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: it.name,
+      url: abs(it.url),
+    })),
   };
 }
 

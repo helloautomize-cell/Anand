@@ -31,10 +31,27 @@
   "whatsapp": "919111950821",
   "email": "info@anandheartcenter.com",
   "hours": [
-    { "days": ["Mo","Tu","We","Th","Fr","Sa"], "opens": "10:00", "closes": "19:30" }
+    { "days": ["Mo", "Tu", "We", "Th", "Fr", "Sa"], "opens": "10:00", "closes": "19:30" }
   ],
   "closed": ["Su"],
   "timezone": "Asia/Kolkata",
+  "geo": { "lat": 23.2103858, "lng": 77.4191865 },
+  "profiles": {
+    "googleBusiness": "https://maps.app.goo.gl/tNvRcRyR8Bai2jP29",
+    "instagram": "https://www.instagram.com/anandheartcenterbhopal/"
+  },
+  "localWords": {
+    "chest pain": "seene mein dard (Hindi)",
+    "breathlessness": "saans phoolna (Hindi)",
+    "palpitations": "dil ki dhadkan tez hona (Hindi)",
+    "heart attack": "dil ka daura (Hindi)",
+    "swelling": "soojan (Hindi)",
+    "heart surgery": "dil ki surgery (Hindi)"
+  },
+  "privateFacts": {
+    "consultation_fee": "Shared at the time of booking",
+    "surgery_cost": "Depends on the procedure; discussed after the consultation"
+  },
   "walkIns": "Walk-ins are welcome during OPD hours.",
   "testsAtClinic": "ECG, Echo, TMT at the clinic. All tests are done at the clinic.",
   "fees": "Shared at the time of booking",
@@ -47,11 +64,19 @@
     "behaviour": "Lazy: iframe src set when within 300px of the viewport; pointer events off until the visitor taps 'Tap to use the map'."
   },
   "social": { "instagram": "https://www.instagram.com/anandheartcenterbhopal/" },
+  "verification": { "google": "", "bing": "" },
+  "indexNowKey": "ahc-bhopal-indexnow-key-2026",
   "booking": {
     "channel": "whatsapp",
     "number": "919111950821",
     "note": "No email service, no Resend, no form backend. The composer builds a wa.me link with a prefilled message."
   },
-  "palette": { "teal": "#06333D", "red": "#D23133", "pink": "#FF9A9B", "ivory": "#FAF7F2", "sand": "#F2ECE4" },
+  "palette": {
+    "teal": "#06333D",
+    "red": "#D23133",
+    "pink": "#FF9A9B",
+    "ivory": "#FAF7F2",
+    "sand": "#F2ECE4"
+  },
   "fonts": { "sans": "Geist", "mono": "Geist Mono", "serif": "Instrument Serif" }
 }

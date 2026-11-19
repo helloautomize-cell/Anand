@@ -2,7 +2,7 @@
 title: "Minimally invasive heart surgery | Anand Heart Center Bhopal"
 url: /treatments/minimally-invasive-surgery/
 template: treatment
-description: "Minimally invasive heart surgery in Bhopal: smaller cuts, who it suits and what recovery looks like."
+description: "Minimally invasive heart surgery in Bhopal: smaller cuts, who it suits, how it differs from open surgery and what recovery looks like."
 faqs:
   - q: "Is keyhole surgery suitable for everyone?"
     a: "No. It depends on the condition, your anatomy and your overall health. Standard surgery is still the right choice for many people."

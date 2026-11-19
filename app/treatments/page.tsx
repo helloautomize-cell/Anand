@@ -7,9 +7,11 @@ import {
   websiteSchema,
   breadcrumbSchema,
   faqSchema,
+  pageNode,
+  itemListSchema,
   jsonLd,
 } from "@/lib/schema";
-import { loadContent } from "@/lib/content";
+import { loadContent, loadTreatments } from "@/lib/content";
 import { TreatmentsPage } from "@/components/pages/treatments";
 import { TreatmentsFx } from "@/components/fx/treatments";
 
@@ -19,6 +21,7 @@ export function generateMetadata(): Metadata {
 
 export default function Page() {
   const c = loadContent("treatments.md");
+  const items = loadTreatments().map((t) => ({ name: t.name, url: t.url }));
   return (
     <>
       <JsonLd
@@ -26,6 +29,8 @@ export default function Page() {
           clinicSchema(),
           physicianSchema(),
           websiteSchema(),
+          pageNode({ url: "/treatments/", title: c.title, description: c.description, type: "CollectionPage" }),
+          itemListSchema("/treatments/", items),
           breadcrumbSchema([
             { name: "Home", url: "/" },
             { name: "Treatments", url: "/treatments/" },

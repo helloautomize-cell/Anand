@@ -2,7 +2,7 @@
 title: "Terms of use | Anand Heart Center Bhopal"
 url: /terms-of-use/
 template: legal
-description: "Terms for using the Anand Heart Center Bhopal website."
+description: "Terms of use for the Anand Heart Center Bhopal website: what the site offers, how to use it and the limits that apply to its content."
 faqs: []
 ---
 

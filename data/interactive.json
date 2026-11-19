@@ -1,0 +1,667 @@
+{
+  "checklists": {
+    "bypass-surgery": {
+      "mq": [
+        "Coronary artery bypass",
+        "Arterial and vein grafts",
+        "Beating-heart surgery where suitable",
+        "Second opinions welcome",
+        "Explained in Hindi and English"
+      ],
+      "check": [
+        "Chest pain or tightness when walking or climbing stairs",
+        "Breathlessness on effort that is getting worse",
+        "An angiography that shows blockages",
+        "Told that several heart arteries are blocked",
+        "Told that a stent may not be suitable",
+        "Diabetes along with heart artery disease",
+        "Advised bypass and would like a second opinion"
+      ],
+      "res": [
+        [
+          "Tick what<br><em>applies to you.</em>",
+          "Your answers stay on this page. When you are ready, you can send them to the clinic on WhatsApp."
+        ],
+        [
+          "Worth a<br><em>conversation.</em>",
+          "These are good reasons to sit down with a heart surgeon and look at your reports together."
+        ],
+        [
+          "Please bring your<br><em>reports soon.</em>",
+          "Several of these together mean your options deserve a careful review. Book a consultation and bring your angiography."
+        ]
+      ],
+      "namel": "bypass surgery"
+    },
+    "angioplasty": {
+      "mq": [
+        "Coronary angioplasty",
+        "Drug coated stents",
+        "Through the wrist or groin",
+        "Honest comparison with bypass",
+        "Second opinions welcome"
+      ],
+      "check": [
+        "Chest pain or pressure on walking or climbing",
+        "Pain that comes with stress and settles with rest",
+        "A positive TMT or stress test",
+        "Angiography showing a narrowed artery",
+        "Told a stent is needed and want to understand why",
+        "Comparing a stent with bypass surgery"
+      ],
+      "res": [
+        [
+          "Tick what<br><em>applies to you.</em>",
+          "Your answers stay on this page. When you are ready, you can send them to the clinic on WhatsApp."
+        ],
+        [
+          "Worth a<br><em>conversation.</em>",
+          "These are good reasons to sit down with Dr. Yadav and look at your reports together."
+        ],
+        [
+          "Please bring your<br><em>reports soon.</em>",
+          "Several of these together deserve a careful review. Book a consultation and bring your angiography report or CD."
+        ]
+      ],
+      "namel": "angioplasty"
+    },
+    "valve-surgery": {
+      "mq": [
+        "Mitral valve repair",
+        "Aortic valve replacement",
+        "Rheumatic valve disease",
+        "Mechanical and tissue valves",
+        "Explained in Hindi and English"
+      ],
+      "check": [
+        "Breathlessness that is getting worse",
+        "Tiredness or swelling in the feet",
+        "Told you have a heart murmur",
+        "An echo showing a leaking or narrow valve",
+        "History of rheumatic fever",
+        "Advised valve surgery and want a second opinion"
+      ],
+      "res": [
+        [
+          "Tick what<br><em>applies to you.</em>",
+          "Your answers stay on this page. When you are ready, you can send them to the clinic on WhatsApp."
+        ],
+        [
+          "Worth a<br><em>conversation.</em>",
+          "These are good reasons to sit down with Dr. Yadav and look at your reports together."
+        ],
+        [
+          "Please bring your<br><em>reports soon.</em>",
+          "Several of these together deserve a careful review. Book a consultation and bring your latest echo report."
+        ]
+      ],
+      "namel": "heart valve surgery"
+    },
+    "childrens-heart-surgery": {
+      "mq": [
+        "Hole in the heart repair",
+        "ASD and VSD closure",
+        "Congenital heart disease",
+        "Parents involved at every step",
+        "Explained in Hindi and English"
+      ],
+      "check": [
+        "Your child gets tired or sweaty while feeding",
+        "Poor weight gain",
+        "Bluish lips or fingers",
+        "Fast breathing or frequent chest infections",
+        "A doctor heard a heart murmur",
+        "An echo showing a hole or heart defect"
+      ],
+      "res": [
+        [
+          "Tick what<br><em>applies to you.</em>",
+          "Your answers stay on this page. When you are ready, you can send them to the clinic on WhatsApp."
+        ],
+        [
+          "Worth a<br><em>conversation.</em>",
+          "These are good reasons to sit down with Dr. Yadav and look at your reports together."
+        ],
+        [
+          "Please bring your<br><em>reports soon.</em>",
+          "Several of these together deserve a careful review. Book a consultation and bring your child's echo report."
+        ]
+      ],
+      "namel": "children's heart surgery"
+    },
+    "minimally-invasive-surgery": {
+      "mq": [
+        "Smaller incisions",
+        "Between the ribs",
+        "Selected valve surgery",
+        "Selected bypass surgery",
+        "Honest suitability check"
+      ],
+      "check": [
+        "Advised heart surgery and asking about smaller cuts",
+        "Need valve surgery",
+        "Need bypass for one or two arteries",
+        "Concerned about recovery time",
+        "Want to know if you are suitable"
+      ],
+      "res": [
+        [
+          "Tick what<br><em>applies to you.</em>",
+          "Your answers stay on this page. When you are ready, you can send them to the clinic on WhatsApp."
+        ],
+        [
+          "Worth a<br><em>conversation.</em>",
+          "These are good reasons to sit down with Dr. Yadav and look at your reports together."
+        ],
+        [
+          "Please bring your<br><em>reports soon.</em>",
+          "Several of these together deserve a careful review. Book a consultation so Dr. Yadav can check whether this approach suits you."
+        ]
+      ],
+      "namel": "minimally invasive heart surgery"
+    },
+    "vascular-surgery": {
+      "mq": [
+        "Leg artery blockages",
+        "Varicose veins",
+        "Aneurysms",
+        "Dialysis access",
+        "Diabetic foot circulation"
+      ],
+      "check": [
+        "Leg pain when walking that eases with rest",
+        "Wounds on the feet that are slow to heal",
+        "Swollen, twisted veins in the legs",
+        "Cold or pale feet",
+        "Told you have an aneurysm",
+        "Need access for dialysis"
+      ],
+      "res": [
+        [
+          "Tick what<br><em>applies to you.</em>",
+          "Your answers stay on this page. When you are ready, you can send them to the clinic on WhatsApp."
+        ],
+        [
+          "Worth a<br><em>conversation.</em>",
+          "These are good reasons to sit down with Dr. Yadav and look at your reports together."
+        ],
+        [
+          "Please bring your<br><em>reports soon.</em>",
+          "Several of these together deserve a careful review. Book a consultation and bring your Doppler or CT reports."
+        ]
+      ],
+      "namel": "vascular surgery"
+    },
+    "lung-and-chest-surgery": {
+      "mq": [
+        "Lung surgery",
+        "Fluid or pus around the lung",
+        "Collapsed lung",
+        "Chest wall conditions",
+        "Chest injuries"
+      ],
+      "check": [
+        "A lump or shadow on a chest X-ray or CT",
+        "Fluid or pus around the lung",
+        "A collapsed lung",
+        "Coughing blood",
+        "A chest injury",
+        "Advised chest surgery and want a second opinion"
+      ],
+      "res": [
+        [
+          "Tick what<br><em>applies to you.</em>",
+          "Your answers stay on this page. When you are ready, you can send them to the clinic on WhatsApp."
+        ],
+        [
+          "Worth a<br><em>conversation.</em>",
+          "These are good reasons to sit down with Dr. Yadav and look at your reports together."
+        ],
+        [
+          "Please bring your<br><em>reports soon.</em>",
+          "Several of these together deserve a careful review. Book a consultation and bring your CT scan and reports."
+        ]
+      ],
+      "namel": "lung and chest surgery"
+    },
+    "check-ups-second-opinion": {
+      "mq": [
+        "Report review",
+        "Second opinion before surgery",
+        "Symptoms check",
+        "Hindi and English",
+        "Family welcome"
+      ],
+      "check": [
+        "Chest pain, breathlessness or palpitations",
+        "Reports you do not fully understand",
+        "Advised surgery and want a second view",
+        "A family history of heart disease",
+        "Diabetes, high BP or high cholesterol",
+        "Want a clear plan for your heart"
+      ],
+      "res": [
+        [
+          "Tick what<br><em>applies to you.</em>",
+          "Your answers stay on this page. When you are ready, you can send them to the clinic on WhatsApp."
+        ],
+        [
+          "Worth a<br><em>conversation.</em>",
+          "These are good reasons to sit down with Dr. Yadav and look at your reports together."
+        ],
+        [
+          "Please bring your<br><em>reports soon.</em>",
+          "Several of these together deserve a careful review. Book a consultation and bring all your reports."
+        ]
+      ],
+      "namel": "a heart check-up or second opinion"
+    },
+    "follow-up-care": {
+      "mq": [
+        "Wound checks",
+        "Medicine reviews",
+        "Cardiac rehab",
+        "Return to work and travel",
+        "Family guidance"
+      ],
+      "check": [
+        "Recently had heart, lung or vessel surgery",
+        "Questions about your medicines",
+        "A wound that looks red or is leaking",
+        "More breathless than expected",
+        "Unsure when to return to work or drive",
+        "Due for a routine review"
+      ],
+      "res": [
+        [
+          "Tick what<br><em>applies to you.</em>",
+          "Your answers stay on this page. When you are ready, you can send them to the clinic on WhatsApp."
+        ],
+        [
+          "Worth a<br><em>conversation.</em>",
+          "These are good reasons to sit down with Dr. Yadav and look at your reports together."
+        ],
+        [
+          "Please bring your<br><em>reports soon.</em>",
+          "Several of these together deserve a careful review. Book a follow-up visit, and call 108 or 112 if you feel unwell suddenly."
+        ]
+      ],
+      "namel": "follow-up care after heart surgery"
+    }
+  },
+  "treatmentsFinder": {
+    "tr": [
+      {
+        "k": "cabg",
+        "cat": "Heart surgery",
+        "n": "Bypass surgery",
+        "e": "(CABG)",
+        "nm": "Bypass <em>surgery</em>",
+        "f": "For blocked heart arteries, when a stent is not the best option.",
+        "d": "A healthy blood vessel is used to build a new route around the blocked part, so blood reaches the heart muscle again.",
+        "tags": [
+          "Blocked arteries",
+          "Chest pain on effort",
+          "Multiple blockages"
+        ],
+        "j": [
+          "Angiography and tests, then the plan explained to you and your family",
+          "Surgery, followed by close monitoring in the ICU",
+          "Walking, breathing exercises and reviews until you are back to routine"
+        ]
+      },
+      {
+        "k": "angio",
+        "cat": "Arteries",
+        "n": "Angiography and angioplasty",
+        "e": "",
+        "nm": "Angioplasty and <em>stents</em>",
+        "f": "To see inside the heart arteries, and open a narrowing from the inside.",
+        "d": "A thin tube shows exactly where an artery is narrowed. If needed, a balloon opens it and a stent keeps it open.",
+        "tags": [
+          "Blocked arteries",
+          "Chest pain",
+          "Abnormal TMT"
+        ],
+        "j": [
+          "ECG, echo and a clear reason for the test",
+          "A thin tube through the wrist or groin, usually without general anaesthesia",
+          "Medicines, a short stay and lifestyle changes"
+        ]
+      },
+      {
+        "k": "valve",
+        "cat": "Heart surgery",
+        "n": "Valve repair and replacement",
+        "e": "",
+        "nm": "Valve <em>repair</em> and replacement",
+        "f": "For a valve that leaks or has become tight.",
+        "d": "Your own valve is repaired whenever possible. If not, it is replaced with a tissue or mechanical valve, chosen with you.",
+        "tags": [
+          "Leaking valve",
+          "Narrow valve",
+          "Rheumatic heart disease",
+          "Breathlessness"
+        ],
+        "j": [
+          "Echo to see how the valve works, and the choices explained",
+          "Repair or replacement surgery",
+          "Recovery plan and, if needed, blood thinner follow-up"
+        ]
+      },
+      {
+        "k": "child",
+        "cat": "Children",
+        "n": "Children's heart surgery",
+        "e": "",
+        "nm": "Small <em>hearts</em>",
+        "f": "For heart defects children are born with, and those that develop later.",
+        "d": "Holes in the heart and other defects can often be corrected. Parents are walked through every step, in plain words.",
+        "tags": [
+          "Hole in the heart",
+          "Born with a heart defect",
+          "Poor growth or breathlessness"
+        ],
+        "j": [
+          "A gentle consultation with the child and parents",
+          "Surgery planned around the child",
+          "Growth and heart checks as they grow up"
+        ]
+      },
+      {
+        "k": "mini",
+        "cat": "Heart surgery",
+        "n": "Minimally invasive and complex surgery",
+        "e": "",
+        "nm": "Smaller cuts, <em>complex</em> cases",
+        "f": "For selected patients who may benefit from smaller cuts, and for more complex heart conditions.",
+        "d": "Where it suits the patient, surgery through smaller cuts can mean less pain and a faster return home. Complex and repeat surgeries are planned in detail.",
+        "tags": [
+          "Selected valve and bypass cases",
+          "Repeat surgery",
+          "Complex conditions"
+        ],
+        "j": [
+          "Detailed scans and a plan made for you",
+          "Surgery by the approach that suits you best",
+          "A recovery plan matched to the operation"
+        ]
+      },
+      {
+        "k": "vasc",
+        "cat": "Vessels",
+        "n": "Vascular surgery and varicose veins",
+        "e": "",
+        "nm": "Every road the <em>blood</em> travels",
+        "f": "For blocked leg arteries, aneurysms and varicose veins.",
+        "d": "From swollen, aching veins to arteries that cause leg pain when you walk, treatment ranges from stockings and medicines to surgery.",
+        "tags": [
+          "Varicose veins",
+          "Leg pain when walking",
+          "Aneurysm",
+          "Dialysis access"
+        ],
+        "j": [
+          "Doppler scan of the legs",
+          "The right treatment for the vessel, from simple to surgical",
+          "Walking plan and follow-up scans"
+        ]
+      },
+      {
+        "k": "lung",
+        "cat": "Chest",
+        "n": "Lung and chest surgery",
+        "e": "",
+        "nm": "Lungs and <em>chest</em>",
+        "f": "For conditions of the lungs, chest wall and the space around the lungs.",
+        "d": "As a cardiothoracic surgeon, Dr. Yadav also operates on the lungs and chest, often working with chest physicians.",
+        "tags": [
+          "Lung lesions",
+          "Fluid or air around the lung",
+          "Chest injuries"
+        ],
+        "j": [
+          "CT scan and breathing tests",
+          "Thoracic surgery",
+          "Breathing exercises and reviews"
+        ]
+      },
+      {
+        "k": "check",
+        "cat": "Tests and prevention",
+        "n": "Heart check-ups and second opinions",
+        "e": "",
+        "nm": "Start with a <em>check-up</em>",
+        "f": "For symptoms, risk factors like diabetes and BP, or a second opinion before surgery.",
+        "d": "A full consultation, the tests you actually need, and honest advice on whether you need treatment at all.",
+        "tags": [
+          "Chest pain",
+          "Diabetes or BP",
+          "Family history",
+          "Second opinion"
+        ],
+        "j": [
+          "Your story, your reports, your worries",
+          "Examination, ECG and other tests if needed",
+          "A clear plan, or reassurance"
+        ]
+      },
+      {
+        "k": "care",
+        "cat": "Before and after",
+        "n": "Emergency care, ICU and recovery",
+        "e": "",
+        "nm": "Recovery, <em>step by step</em>",
+        "f": "Urgent heart care, monitoring after surgery and rehabilitation.",
+        "d": "Close monitoring after surgery, then a step-by-step plan to get you home and active again. In an emergency, call 108 or 112 first.",
+        "tags": [
+          "After heart surgery",
+          "Cardiac rehabilitation",
+          "Urgent heart care"
+        ],
+        "j": [
+          "A clear plan before you go home",
+          "Reviews in the first weeks",
+          "Back to work, walking and daily life"
+        ]
+      }
+    ],
+    "told": [
+      [
+        "I have blocked heart arteries",
+        [
+          "cabg",
+          "angio"
+        ],
+        "Heart"
+      ],
+      [
+        "I have a leaking or narrow valve",
+        [
+          "valve"
+        ],
+        "Heart"
+      ],
+      [
+        "my child has a hole in the heart",
+        [
+          "child"
+        ],
+        "Children"
+      ],
+      [
+        "I have chest pain and want to know why",
+        [
+          "check",
+          "angio"
+        ],
+        "Not sure"
+      ],
+      [
+        "I have swollen, twisted leg veins",
+        [
+          "vasc"
+        ],
+        "Legs"
+      ],
+      [
+        "my legs hurt when I walk",
+        [
+          "vasc"
+        ],
+        "Legs"
+      ],
+      [
+        "I have a lung or chest problem",
+        [
+          "lung"
+        ],
+        "Chest"
+      ],
+      [
+        "I have been advised surgery and want a second opinion",
+        [
+          "check",
+          "cabg"
+        ],
+        "Opinion"
+      ]
+    ]
+  },
+  "treatmentLinks": {
+    "cabg": "/treatments/bypass-surgery/",
+    "angio": "/treatments/angioplasty/",
+    "valve": "/treatments/valve-surgery/",
+    "child": "/treatments/childrens-heart-surgery/",
+    "mini": "/treatments/minimally-invasive-surgery/",
+    "vasc": "/treatments/vascular-surgery/",
+    "lung": "/treatments/lung-and-chest-surgery/",
+    "check": "/treatments/check-ups-second-opinion/",
+    "care": "/treatments/follow-up-care/"
+  },
+  "symptomsSpots": [
+    {
+      "x": 545,
+      "y": 385,
+      "sys": "heart",
+      "q": "Chest",
+      "h": "Chest pain or pressure",
+      "p1": "Tightness, heaviness or burning in the chest, sometimes spreading to the arm, jaw or back, especially on walking or climbing stairs.",
+      "p2": "This can be a sign of narrowed heart arteries. It needs a proper check, usually with an ECG and other tests.",
+      "u": "<b>Sudden or severe chest pain, with sweating or breathlessness?</b> Call 108 or 112 now."
+    },
+    {
+      "x": 450,
+      "y": 410,
+      "sys": "lungs",
+      "q": "Breathing",
+      "h": "Breathlessness",
+      "p1": "Getting out of breath with less effort than before, needing more pillows at night, or waking up gasping.",
+      "p2": "A weak pump, a leaking or tight valve, or a lung problem can all cause it. Tests help find which.",
+      "u": "<b>Breathless at rest, or lips turning blue?</b> Call 108 or 112 now."
+    },
+    {
+      "x": 612,
+      "y": 505,
+      "sys": "ecg",
+      "q": "Heartbeat",
+      "h": "Racing or uneven heartbeat",
+      "p1": "A thumping, fluttering or skipping feeling in the chest, sometimes with dizziness.",
+      "p2": "Often harmless, but sometimes a rhythm problem. An ECG or a 24 hour Holter can record it.",
+      "u": "<b>Palpitations with fainting or chest pain?</b> Call 108 or 112 now."
+    },
+    {
+      "x": 510,
+      "y": 150,
+      "sys": "head",
+      "q": "Head",
+      "h": "Dizziness or fainting",
+      "p1": "Feeling light-headed on standing or exertion, or passing out without warning.",
+      "p2": "A narrow valve or a rhythm problem can reduce blood flow to the brain. It should always be checked.",
+      "u": "<b>Face drooping, weak arm, slurred speech?</b> These are stroke signs. Call 108 or 112 now."
+    },
+    {
+      "x": 430,
+      "y": 1150,
+      "sys": "art",
+      "q": "Legs",
+      "h": "Leg pain when walking",
+      "p1": "Cramping in the calf or thigh that comes on with walking and eases with rest. Cold feet or slow-healing wounds.",
+      "p2": "This can mean narrowed leg arteries. A Doppler scan helps.",
+      "u": "<b>Sudden cold, pale, painful leg?</b> Call 108 or 112 now."
+    },
+    {
+      "x": 626,
+      "y": 1180,
+      "sys": "vein",
+      "q": "Veins",
+      "h": "Swollen or twisted leg veins",
+      "p1": "Bulging blue veins, heaviness or aching after standing, itching or darkening skin near the ankle.",
+      "p2": "These are varicose veins. Treatments range from stockings to surgery.",
+      "u": "<b>Sudden swelling and pain in one leg?</b> It can be a clot. Seek urgent care."
+    },
+    {
+      "x": 415,
+      "y": 1382,
+      "sys": "ankle",
+      "q": "Ankles",
+      "h": "Swollen ankles",
+      "p1": "Puffiness around the ankles or feet that is worse by evening and leaves a dent when pressed.",
+      "p2": "It can come from the heart, kidneys, veins or medicines. A check-up finds the cause.",
+      "u": "<b>Swelling with breathlessness at night?</b> See a doctor the same day."
+    }
+  ],
+  "visitGroups": [
+    [
+      "Reports",
+      [
+        [
+          "All earlier test reports",
+          "ECG, echo, TMT and blood tests"
+        ],
+        [
+          "Angiography CD or report",
+          "If you have had one"
+        ],
+        [
+          "Discharge summaries",
+          "From any hospital stay"
+        ],
+        [
+          "Letters from other doctors",
+          ""
+        ]
+      ]
+    ],
+    [
+      "Medicines",
+      [
+        [
+          "Your current medicines",
+          "The strips or a written list"
+        ],
+        [
+          "Any allergies",
+          "Written down, if you have them"
+        ]
+      ]
+    ],
+    [
+      "For the day",
+      [
+        [
+          "A photo ID",
+          ""
+        ],
+        [
+          "Your questions",
+          "Write them down so nothing is forgotten"
+        ],
+        [
+          "A family member",
+          "If you would like support"
+        ]
+      ]
+    ]
+  ]
+}

@@ -1,10 +1,242 @@
 import Link from "next/link";
 import { waLink } from "@/lib/whatsapp";
-import { TEL_PRIMARY, MAIL_PRIMARY } from "@/lib/site";
+import { phonesDisplay, TEL_PRIMARY, MAIL_PRIMARY } from "@/lib/site";
+import { ReviewedBy } from "@/components/reviewed";
 export function PrivacyPage() {
   return (
     <>
- <section className="lg-hero" id="lg-hero" data-hdr="l"> <div className="wrap"> <div className="crumb"><Link href="/">Home</Link><i></i><span>Legal</span></div> <h1>Privacy <em>policy.</em></h1> <p>How Anand Heart Center Bhopal handles the personal and health information you share with us through this website, by phone and on WhatsApp.</p> <div className="meta"><span>Last updated 19 November 2026</span><span>Anand Heart Center Bhopal</span><span className="chip">Lawyer review pending</span></div> <div className="lg-tabs"><Link href="/privacy-policy/" className="on">Privacy policy</Link><Link href="/terms-of-use/" className="">Terms of use</Link><Link href="/medical-disclaimer/" className="">Medical disclaimer</Link></div> </div> </section> <div className="wrap lg-body"> <nav className="lg-toc" id="lgtoc"><a href="#who-we-are">Who we are</a><a href="#what-we-collect">What we collect</a><a href="#how-we-use-it">How we use it</a><a href="#health-information">Health information</a><a href="#how-long-we-keep-it">How long we keep it</a><a href="#your-choices">Your choices</a><a href="#cookies">Cookies</a><a href="#contact-us">Contact us</a><div className="bar"><i id="lgbar"></i></div></nav> <article className="lg-art" id="lgart"><section id="who-we-are"><h2>Who we are</h2><p>This website is run by Anand Heart Center Bhopal, the clinic of Dr. Anand Yadav ("we", "us"). We are responsible for the information described in this policy.</p><p>Anand Heart Center Bhopal, 4th Floor, Vindhya Retreat, Plot No. 5, Near Gut Hospital, Janki Nagar, Chuna Bhatti, Bhopal, Madhya Pradesh 462016.<br/>Phone <a href={TEL_PRIMARY}>091119 50821</a> · Email <a href={MAIL_PRIMARY}>info@anandheartcenter.com</a></p></section><section id="what-we-collect"><h2>What we collect</h2><p>This website does not ask you to create an account and does not store the forms you fill in. We receive information only when you choose to contact us:</p><ul><li>Your name, phone number and message when you call, email or send us a WhatsApp message.</li><li>Medical reports, images or details about your health that you choose to share with us.</li><li>Basic technical data such as browser type and pages visited, if analytics is enabled on this site. <span className="chip">Confirm</span></li></ul></section><section id="how-we-use-it"><h2>How we use it</h2><ul><li>To reply to you and arrange or confirm an appointment.</li><li>To review your reports and give you medical advice when you ask for it.</li><li>To keep the clinical records that doctors are required to keep.</li><li>To improve this website, using information that does not identify you.</li></ul><p>We do not sell your information and we do not use it for advertising.</p></section><section id="health-information"><h2>Health information</h2><p>Health information is sensitive. We share it only with people involved in your care, such as the hospital team when you are admitted, laboratories, or another doctor you ask us to send it to, or when the law requires it.</p><p>Messages sent on WhatsApp are handled by WhatsApp under its own terms. If you prefer, you can bring your reports to the clinic in person instead.</p></section><section id="how-long-we-keep-it"><h2>How long we keep it</h2><p>Clinical records are kept for as long as the law and medical council rules require. Messages that are not part of your clinical record are deleted when they are no longer needed. <span className="chip">Confirm</span></p></section><section id="your-choices"><h2>Your choices</h2><ul><li>Ask for a copy of the information we hold about you.</li><li>Ask us to correct information that is wrong.</li><li>Ask us to delete information we are not required to keep.</li><li>Withdraw consent for us to contact you.</li></ul><p>Write to us using the details below. We may need to confirm your identity first.</p></section><section id="cookies"><h2>Cookies</h2><p>This website uses only the storage it needs to remember your text size choice on your own device. If analytics or other cookies are added, this section will be updated. <span className="chip">Confirm</span></p></section><section id="contact-us"><h2>Contact us</h2><p>For any question about your information, or to make a request, contact:</p><p>Anand Heart Center Bhopal, 4th Floor, Vindhya Retreat, Plot No. 5, Near Gut Hospital, Janki Nagar, Chuna Bhatti, Bhopal, Madhya Pradesh 462016.<br/>Phone <a href={TEL_PRIMARY}>091119 50821</a> · Email <a href={MAIL_PRIMARY}>info@anandheartcenter.com</a></p><p>We may update this policy from time to time. The date at the top shows when it last changed.</p></section></article> </div> <section className="wrap" data-hdr="l" id="cta"> <div className="cta" data-rv={true}> <div className="glow"></div> <svg className="e" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0 60h420l14-16 14 16h20l12-50 16 90 12-40h692" fill="none" stroke="#FF9A9B" strokeWidth="2"/></svg> <span className="lab">Questions?</span> <h2>Talk to<br/><em>the clinic.</em></h2> <p>Call or WhatsApp during OPD hours and we will help.</p> <div className="acts"> <a className="btn b-red" data-cur={true} href={waLink("Hello, I would like to book a consultation with Dr. Anand Yadav.")} target="_blank" rel="noopener">Book a consultation<span className="ar"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" strokeWidth="1.6"/></svg><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" strokeWidth="1.6"/></svg></span></a> <a className="btn b-line" href={TEL_PRIMARY}>Call 091119 50821</a> </div> </div> <div className="emc"><svg width="20" height="20" viewBox="0 0 24 24" style={{flex:"none"}}><path d="M12 3l10 18H2z" fill="none" stroke="#D23133" strokeWidth="2"/><path d="M12 10v5M12 17.5v.5" stroke="#D23133" strokeWidth="2" strokeLinecap="round"/></svg><span><b>Medical emergency? Call 108 or 112.</b> Go to the nearest emergency department first.</span></div> </section> 
+      <section className="lg-hero" id="lg-hero" data-hdr="l">
+        {" "}
+        <div className="wrap">
+          {" "}
+          <div className="crumb">
+            <Link href="/">Home</Link>
+            <i></i>
+            <span>Legal</span>
+          </div>{" "}
+          <h1>
+            Privacy <em>policy.</em>
+          </h1>{" "}
+          <p>
+            How Anand Heart Center Bhopal handles the personal and health information you
+            share with us through this website, by phone and on WhatsApp.
+          </p>{" "}
+          <div className="meta">
+            <span>Last updated 19 November 2026</span>
+            <span>Anand Heart Center Bhopal</span>
+            <span className="chip">Lawyer review pending</span>
+          </div>{" "}
+          <div className="lg-tabs">
+            <Link href="/privacy-policy/" className="on">
+              Privacy policy
+            </Link>
+            <Link href="/terms-of-use/" className="">
+              Terms of use
+            </Link>
+            <Link href="/medical-disclaimer/" className="">
+              Medical disclaimer
+            </Link>
+          </div>{" "}
+        </div>{" "}
+      </section>{" "}
+      <div className="wrap lg-body">
+        {" "}
+        <nav className="lg-toc" id="lgtoc">
+          <a href="#who-we-are">Who we are</a>
+          <a href="#what-we-collect">What we collect</a>
+          <a href="#how-we-use-it">How we use it</a>
+          <a href="#health-information">Health information</a>
+          <a href="#how-long-we-keep-it">How long we keep it</a>
+          <a href="#your-choices">Your choices</a>
+          <a href="#cookies">Cookies</a>
+          <a href="#contact-us">Contact us</a>
+          <div className="bar">
+            <i id="lgbar"></i>
+          </div>
+        </nav>{" "}
+        <article className="lg-art" id="lgart">
+          <section id="who-we-are">
+            <h2>Who we are</h2>
+            <p>
+              This website is run by Anand Heart Center Bhopal, the clinic of Dr. Anand
+              Yadav ("we", "us"). We are responsible for the information described in this
+              policy.
+            </p>
+            <p>
+              Anand Heart Center Bhopal, 4th Floor, Vindhya Retreat, Plot No. 5, Near Gut
+              Hospital, Janki Nagar, Chuna Bhatti, Bhopal, Madhya Pradesh 462016.
+              <br />
+              Phone <a href={TEL_PRIMARY}>{phonesDisplay.primary}</a> · Email{" "}
+              <a href={MAIL_PRIMARY}>info@anandheartcenter.com</a>
+            </p>
+          </section>
+          <section id="what-we-collect">
+            <h2>What we collect</h2>
+            <p>
+              This website does not ask you to create an account and does not store the
+              forms you fill in. We receive information only when you choose to contact
+              us:
+            </p>
+            <ul>
+              <li>
+                Your name, phone number and message when you call, email or send us a
+                WhatsApp message.
+              </li>
+              <li>
+                Medical reports, images or details about your health that you choose to
+                share with us.
+              </li>
+              <li>
+                Basic technical data such as browser type and pages visited, if analytics
+                is enabled on this site. <span className="chip">Confirm</span>
+              </li>
+            </ul>
+          </section>
+          <section id="how-we-use-it">
+            <h2>How we use it</h2>
+            <ul>
+              <li>To reply to you and arrange or confirm an appointment.</li>
+              <li>
+                To review your reports and give you medical advice when you ask for it.
+              </li>
+              <li>To keep the clinical records that doctors are required to keep.</li>
+              <li>
+                To improve this website, using information that does not identify you.
+              </li>
+            </ul>
+            <p>We do not sell your information and we do not use it for advertising.</p>
+          </section>
+          <section id="health-information">
+            <h2>Health information</h2>
+            <p>
+              Health information is sensitive. We share it only with people involved in
+              your care, such as the hospital team when you are admitted, laboratories, or
+              another doctor you ask us to send it to, or when the law requires it.
+            </p>
+            <p>
+              Messages sent on WhatsApp are handled by WhatsApp under its own terms. If
+              you prefer, you can bring your reports to the clinic in person instead.
+            </p>
+          </section>
+          <section id="how-long-we-keep-it">
+            <h2>How long we keep it</h2>
+            <p>
+              Clinical records are kept for as long as the law and medical council rules
+              require. Messages that are not part of your clinical record are deleted when
+              they are no longer needed. <span className="chip">Confirm</span>
+            </p>
+          </section>
+          <section id="your-choices">
+            <h2>Your choices</h2>
+            <ul>
+              <li>Ask for a copy of the information we hold about you.</li>
+              <li>Ask us to correct information that is wrong.</li>
+              <li>Ask us to delete information we are not required to keep.</li>
+              <li>Withdraw consent for us to contact you.</li>
+            </ul>
+            <p>
+              Write to us using the details below. We may need to confirm your identity
+              first.
+            </p>
+          </section>
+          <section id="cookies">
+            <h2>Cookies</h2>
+            <p>
+              This website uses only the storage it needs to remember your text size
+              choice on your own device. If analytics or other cookies are added, this
+              section will be updated. <span className="chip">Confirm</span>
+            </p>
+          </section>
+          <section id="contact-us">
+            <h2>Contact us</h2>
+            <p>For any question about your information, or to make a request, contact:</p>
+            <p>
+              Anand Heart Center Bhopal, 4th Floor, Vindhya Retreat, Plot No. 5, Near Gut
+              Hospital, Janki Nagar, Chuna Bhatti, Bhopal, Madhya Pradesh 462016.
+              <br />
+              Phone <a href={TEL_PRIMARY}>{phonesDisplay.primary}</a> · Email{" "}
+              <a href={MAIL_PRIMARY}>info@anandheartcenter.com</a>
+            </p>
+            <p>
+              We may update this policy from time to time. The date at the top shows when
+              it last changed.
+            </p>
+          </section>
+        </article>{" "}
+      </div>{" "}
+      <section className="wrap" data-hdr="l" id="cta">
+        {" "}
+        <div className="cta" data-rv={true}>
+          {" "}
+          <div className="glow"></div>{" "}
+          <svg className="e" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+              d="M0 60h420l14-16 14 16h20l12-50 16 90 12-40h692"
+              fill="none"
+              stroke="#FF9A9B"
+              strokeWidth="2"
+            />
+          </svg>{" "}
+          <span className="lab">Questions?</span>{" "}
+          <h2>
+            Talk to
+            <br />
+            <em>the clinic.</em>
+          </h2>{" "}
+          <p>Call or WhatsApp during OPD hours and we will help.</p>{" "}
+          <div className="acts">
+            {" "}
+            <a
+              className="btn b-red"
+              data-cur={true}
+              href={waLink(
+                "Hello, I would like to book a consultation with Dr. Anand Yadav."
+              )}
+              target="_blank"
+              rel="noopener"
+            >
+              Book a consultation
+              <span className="ar">
+                <svg viewBox="0 0 16 16">
+                  <path
+                    d="M3 8h10M9 4l4 4-4 4"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.6"
+                  />
+                </svg>
+                <svg viewBox="0 0 16 16">
+                  <path
+                    d="M3 8h10M9 4l4 4-4 4"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.6"
+                  />
+                </svg>
+              </span>
+            </a>{" "}
+            <a className="btn b-line" href={TEL_PRIMARY}>
+              Call {phonesDisplay.primary}
+            </a>{" "}
+          </div>{" "}
+        </div>{" "}
+        <div className="emc">
+          <svg width="20" height="20" viewBox="0 0 24 24" style={{ flex: "none" }}>
+            <path d="M12 3l10 18H2z" fill="none" stroke="#D23133" strokeWidth="2" />
+            <path
+              d="M12 10v5M12 17.5v.5"
+              stroke="#D23133"
+              strokeWidth="2"
+              strokeLinecap="round"
+            />
+          </svg>
+          <span>
+            <b>Medical emergency? Call 108 or 112.</b> Go to the nearest emergency
+            department first.
+          </span>
+        </div>{" "}
+      <ReviewedBy url="/privacy-policy/" medical={false} />
+      </section>
     </>
   );
 }

@@ -7,6 +7,8 @@ import {
   websiteSchema,
   breadcrumbSchema,
   faqSchema,
+  pageNode,
+  DOCTOR_ID,
   jsonLd,
 } from "@/lib/schema";
 import { loadContent } from "@/lib/content";
@@ -26,6 +28,7 @@ export default function Page() {
           clinicSchema(),
           physicianSchema(),
           websiteSchema(),
+          pageNode({ url: "/about/", title: c.title, description: c.description, type: "ProfilePage", medical: true, mainEntity: DOCTOR_ID }),
           breadcrumbSchema([
             { name: "Home", url: "/" },
             { name: "About", url: "/about/" },

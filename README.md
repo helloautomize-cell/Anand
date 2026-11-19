@@ -6,8 +6,8 @@ email service.
 
 ## Stack
 
-Next.js 16 (App Router, fully static), React 19, TypeScript, Tailwind CSS 4,
-Playwright. Site facts come from `data/site.json`; page copy and FAQs from
+Next.js 16 (App Router, fully static), React 19, TypeScript, Tailwind CSS 4.
+Site facts come from `data/site.json`; page copy and FAQs from
 `content/*.md`.
 
 ## Commands
@@ -19,7 +19,6 @@ npm run build        # production build (25 static routes)
 npm run start        # serve the production build on :3000
 npm run images       # regenerate public/img from assets/images
 npm run lint         # eslint
-npm test             # Playwright suite (needs the built site running)
 npm run launch-check # launch gate: fails on [CONFIRM] markers / forbidden claims
 npm run seo:check    # per-route SEO basics + JSON-LD + crawl text (needs :3000)
 ```
@@ -37,8 +36,6 @@ assets/images/       master web images + alt-text.json (npm run images source)
 assets/originals/    untouched full-resolution photo originals (not used by the build)
 public/img/          generated AVIF/WebP, logos, og-card
 scripts/             image processing, launch/SEO checks
-tests/               Playwright
-docs/open-items.md   unresolved [CONFIRM] business facts (launch blockers)
 ```
 
 ## Conventions
@@ -49,7 +46,7 @@ docs/open-items.md   unresolved [CONFIRM] business facts (launch blockers)
   `data/site.json`.
 - Unverified facts are `[CONFIRM]` markers: they render as yellow chips in
   development and are hidden in production; `npm run launch-check` fails
-  while blockers listed in `docs/open-items.md` remain.
+  while unresolved `[CONFIRM]` blockers remain.
 - No em/en dashes, no superlatives, rankings, counts, testimonials or
   outcome claims — enforced by `launch-check` + `crawl-text-check`.
 - Analytics (GA4) loads only after cookie consent; set `NEXT_PUBLIC_GA_ID`.
@@ -58,5 +55,5 @@ docs/open-items.md   unresolved [CONFIRM] business facts (launch blockers)
 
 ## Do not launch until
 
-`docs/open-items.md` is resolved: doctor registration number, hospital
+The `[CONFIRM]` items are resolved: doctor registration number, hospital
 affiliation wording, canonical host (www vs apex), and legal review.

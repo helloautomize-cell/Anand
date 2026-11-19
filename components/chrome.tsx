@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { waLink, WA_HOME } from "@/lib/whatsapp";
-import { TEL_PRIMARY } from "@/lib/site";
+import { phonesDisplay, site, TEL_PRIMARY } from "@/lib/site";
 export function UtilBar() {
   return (
     <div className="util">
@@ -13,7 +13,7 @@ export function UtilBar() {
         <span className="r">
           <span className="h">Mon to Sat, 10 am to 7:30 pm</span>
           <a className="t" href={TEL_PRIMARY}>
-            091119 50821
+            {phonesDisplay.primary}
           </a>
           <span className="ts" aria-label="Text size">
             <button id="tsA" className="on" aria-label="Normal text">
@@ -68,8 +68,7 @@ export function Footer() {
           <div>
             <img src="/img/logo-white.png" alt="Anand Heart Center Bhopal" />
             <p>
-              4th Floor, Vindhya Retreat, Plot No. 5, Near Gut Hospital, Janki Nagar,
-              Chuna Bhatti, Bhopal 462016
+              {`${site.address.line1}, ${site.address.line2}, ${site.address.city} ${site.address.postalCode}`}
             </p>
           </div>{" "}
           <div>

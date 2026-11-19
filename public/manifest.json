@@ -1,0 +1,13 @@
+{
+  "name": "Anand Heart Center Bhopal",
+  "short_name": "Anand Heart Center",
+  "description": "Heart, lung and vascular surgery by Dr. Anand Yadav in Bhopal. Book a consultation on WhatsApp.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#FAF7F2",
+  "theme_color": "#06333D",
+  "icons": [
+    { "src": "/icon.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/apple-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

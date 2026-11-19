@@ -31,6 +31,10 @@ const siteSchema = z.object({
   ),
   closed: z.array(z.string()),
   timezone: z.string(),
+  geo: z.object({ lat: z.number(), lng: z.number() }),
+  profiles: z.record(z.string(), z.string()),
+  localWords: z.record(z.string(), z.string()),
+  privateFacts: z.record(z.string(), z.string()),
   walkIns: z.string(),
   testsAtClinic: z.string(),
   fees: z.string(),
@@ -43,6 +47,8 @@ const siteSchema = z.object({
     behaviour: z.string(),
   }),
   social: z.object({ instagram: z.string() }),
+  verification: z.object({ google: z.string(), bing: z.string() }),
+  indexNowKey: z.string(),
   booking: z.object({
     channel: z.string(),
     number: z.string(),
@@ -133,7 +139,7 @@ export const seo = {
   ],
   areasServed: ["Bhopal", "Madhya Pradesh"],
   serviceArea: { city: "Bhopal", region: "Madhya Pradesh", radiusKm: 100 },
-  indexNowKey: "ahc-bhopal-indexnow-key-2026",
+  indexNowKey: site.indexNowKey,
   ogImage: "/img/signboard.webp",
   sameAs: [
     "https://www.instagram.com/anandheartcenterbhopal/",

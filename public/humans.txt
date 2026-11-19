@@ -1,0 +1,14 @@
+/* TEAM */
+Site: Anand Heart Center Bhopal
+Doctor: Dr. Anand Yadav, Cardiothoracic and vascular surgeon
+Location: 4th Floor, Vindhya Retreat, Plot No. 5, Near Gut Hospital,
+Janki Nagar, Chuna Bhatti, Bhopal 462016, India
+Contact: WhatsApp +919111950821
+
+/* SITE */
+Standards: HTML5, CSS, Next.js
+Accessibility: reduced-motion support, 44px touch targets, alt text
+Booking: WhatsApp only. No forms stored, no cookies without consent.
+
+/* THANKS */
+Agency: Automize Media Labs

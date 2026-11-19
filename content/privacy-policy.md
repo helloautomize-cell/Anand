@@ -2,7 +2,7 @@
 title: "Privacy policy | Anand Heart Center Bhopal"
 url: /privacy-policy/
 template: legal
-description: "How Anand Heart Center Bhopal collects, uses and protects your personal and health information."
+description: "Privacy policy of Anand Heart Center Bhopal: what information is collected through this website and WhatsApp, how it is used and how it is protected."
 faqs: []
 ---
 

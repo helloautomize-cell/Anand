@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { waLink, DEFAULT_MESSAGE } from "@/lib/whatsapp";
-import { TEL_PRIMARY } from "@/lib/site";
+import { phonesDisplay, TEL_PRIMARY } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: { absolute: "Page not found | Anand Heart Center Bhopal" },
@@ -24,7 +24,7 @@ export default function NotFound() {
             Back to home
           </Link>
           <a className="btn b-line" href={TEL_PRIMARY}>
-            Call 091119 50821
+            Call {phonesDisplay.primary}
           </a>
           <a
             className="btn b-red"
