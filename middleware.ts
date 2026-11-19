@@ -12,15 +12,12 @@ const GONE = [
   /^\/wp-admin(\/|$)/i,
 ];
 
-export function middleware(req: NextRequest) {
-  const host = req.headers.get("host") ?? "";
+const APEX = new URL(SITE_URL).hostname.replace(/^www\./, "");
 
-  if (
-    host &&
-    host !== CANONICAL_HOST &&
-    !host.startsWith("localhost") &&
-    !host.startsWith("127.0.0.1")
-  ) {
+export function middleware(req: NextRequest) {
+  const host = (req.headers.get("host") ?? "").split(":")[0];
+
+  if (host === APEX || (host.endsWith(`.${APEX}`) && host !== CANONICAL_HOST)) {
     const url = req.nextUrl.clone();
     url.host = CANONICAL_HOST;
     url.protocol = "https";
@@ -34,7 +31,9 @@ export function middleware(req: NextRequest) {
       headers: { "Content-Type": "text/plain; charset=utf-8", "X-Robots-Tag": "noindex" },
     });
   }
-  return NextResponse.next();
+  const res = NextResponse.next();
+  if (host && host !== CANONICAL_HOST) res.headers.set("X-Robots-Tag", "noindex");
+  return res;
 }
 
 export const config = {
