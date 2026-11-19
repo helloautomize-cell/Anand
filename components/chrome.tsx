@@ -16,10 +16,10 @@ export function UtilBar() {
             {phonesDisplay.primary}
           </a>
           <span className="ts" aria-label="Text size">
-            <button id="tsA" className="on" aria-label="Normal text">
+            <button id="tsA" className="on" aria-label="Normal text, A">
               A
             </button>
-            <button id="tsB" aria-label="Larger text">
+            <button id="tsB" aria-label="Larger text, A+">
               A+
             </button>
           </span>
@@ -66,13 +66,13 @@ export function Footer() {
         <div className="fcols">
           {" "}
           <div>
-            <img src="/img/logo-white.png" alt="Anand Heart Center Bhopal" />
+            <img src="/img/logo-white.webp" alt="Anand Heart Center Bhopal" width="170" height="75" />
             <p>
               {`${site.address.line1}, ${site.address.line2}, ${site.address.city} ${site.address.postalCode}`}
             </p>
           </div>{" "}
           <div>
-            <h4>Treatments</h4>
+            <h2 className="fh">Treatments</h2>
             <ul>
               <li>
                 <Link href="/treatments/bypass-surgery/">Bypass surgery</Link>
@@ -98,7 +98,7 @@ export function Footer() {
             </ul>
           </div>{" "}
           <div>
-            <h4>Patients</h4>
+            <h2 className="fh">Patients</h2>
             <ul>
               <li>
                 <Link href="/your-first-visit/">Your first visit</Link>
@@ -118,7 +118,7 @@ export function Footer() {
             </ul>
           </div>{" "}
           <div>
-            <h4>Legal</h4>
+            <h2 className="fh">Legal</h2>
             <ul>
               <li>
                 <Link href="/privacy-policy/">Privacy policy</Link>

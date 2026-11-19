@@ -38,6 +38,7 @@ const fx = () => {
       seen = sessionStorage.getItem("ahc-intro") === "1";
     } catch (e) {}
     const go = () => $("#hero").classList.add("go");
+    const goDelay = window.matchMedia("(max-width: 980px)").matches ? 500 : 1300;
     if (RM || seen) {
       intro?.remove();
       go();
@@ -45,7 +46,7 @@ const fx = () => {
       intro?.addEventListener("animationend", (e) => {
         if (e.animationName === "introOut") intro?.remove();
       });
-      setTimeout(go, 1300);
+      setTimeout(go, goDelay);
       setTimeout(() => intro?.isConnected && intro?.remove(), 3000);
       try {
         sessionStorage.setItem("ahc-intro", "1");
@@ -661,12 +662,15 @@ const fx = () => {
     });
     pop.innerHTML = TOLD.map(
       (o, i) =>
-        `<button role="option" data-i="${i}">${o[0]}<small>${o[2]}</small></button>`
+        `<button role="option" aria-selected="${i === 0}" data-i="${i}">${o[0]}<small>${o[2]}</small></button>`
     ).join("");
     function choose(i, first) {
       const o = TOLD[i];
       pickT.textContent = o[0];
-      $$("#pop button").forEach((b, j) => b.classList.toggle("on", j === i));
+      $$("#pop button").forEach((b, j) => {
+        b.classList.toggle("on", j === i);
+        b.setAttribute("aria-selected", j === i ? "true" : "false");
+      });
       trs.forEach((r, j) => r.classList.toggle("match", o[1].includes(TR[j].k)));
       tlist.classList.add("filt");
       const k = TR.findIndex((t) => t.k === o[1][0]);

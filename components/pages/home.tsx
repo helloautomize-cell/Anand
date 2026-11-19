@@ -2,6 +2,7 @@ import Image from "next/image";
 import { waLink, WA_HOME } from "@/lib/whatsapp";
 import { phonesDisplay, TEL_PRIMARY, TEL_SECONDARY, MAIL_PRIMARY } from "@/lib/site";
 import { ReviewedBy } from "@/components/reviewed";
+import DATA from "@/data/interactive.json";
 export function HomePage() {
   return (
     <>
@@ -1359,7 +1360,20 @@ export function HomePage() {
               </svg>
             </button>
             <span className="muted">. Here is where to start.</span>{" "}
-            <div className="pop" id="pop" role="listbox"></div>{" "}
+            <div className="pop" id="pop" role="listbox" aria-label="What is going on">
+              {DATA.treatmentsFinder.told.map((o, i) => (
+                <button
+                  key={i}
+                  role="option"
+                  aria-selected={i === 0}
+                  className={i === 0 ? "on" : undefined}
+                  data-i={i}
+                >
+                  {o[0]}
+                  <small>{o[2]}</small>
+                </button>
+              ))}
+            </div>{" "}
           </div>{" "}
           <div className="txg">
             {" "}

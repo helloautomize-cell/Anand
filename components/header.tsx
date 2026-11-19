@@ -11,8 +11,8 @@ export function Header() {
         <div className="bar">
           {" "}
           <Link href="/" className="logo" aria-label="Anand Heart Center Bhopal, home">
-            <img className="c" src="/img/logo.png" alt="Anand Heart Center Bhopal" />
-            <img className="w" src="/img/logo-white.png" alt="" />
+            <img className="c" src="/img/logo.webp" alt="Anand Heart Center Bhopal" width="170" height="75" />
+            <img className="w" src="/img/logo-white.webp" alt="" width="170" height="75" />
           </Link>{" "}
           <nav className="nav" aria-label="Main">
             <div className="dd">
@@ -195,6 +195,7 @@ export function Header() {
           <a
             className="btn b-red b-sm"
             data-cur={true}
+            aria-label="Book a consultation on WhatsApp"
             href={waLink(
               "Hello, I would like to book a consultation with Dr. Anand Yadav."
             )}

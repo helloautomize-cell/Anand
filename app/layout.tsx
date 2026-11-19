@@ -71,7 +71,8 @@ export default function RootLayout({
         <Consent />
         <script
           dangerouslySetInnerHTML={{
-            __html: "document.documentElement.classList.add('jsok')",
+            __html:
+              "document.documentElement.classList.add('jsok');try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&sessionStorage.getItem('ahc-intro')!=='1')document.documentElement.classList.add('intro')}catch(e){}",
           }}
         />
       </body>

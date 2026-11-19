@@ -58,8 +58,16 @@ export function Consent() {
     }
     if (saved === "accepted") loadGa();
     else if (!saved) {
-      const t = setTimeout(() => setShow(true), 1200);
-      return () => clearTimeout(t);
+      let t: ReturnType<typeof setTimeout> | undefined;
+      const kick = () => {
+        t = setTimeout(() => setShow(true), 1400);
+      };
+      if (document.readyState === "complete") kick();
+      else window.addEventListener("load", kick, { once: true });
+      return () => {
+        window.removeEventListener("load", kick);
+        clearTimeout(t);
+      };
     }
   }, []);
 
