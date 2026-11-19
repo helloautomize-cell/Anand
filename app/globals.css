@@ -1,0 +1,162 @@
+@import "tailwindcss";
+@import "./design.css";
+
+@theme inline {
+  --color-ivory: #faf7f2;
+  --color-sand: #f2ece4;
+  --color-sand2: #e9e1d6;
+  --color-paper: #fff;
+  --color-ink: #0b2a31;
+  --color-teal: #06333d;
+  --color-teal2: #0e5f6b;
+  --color-tealL: #2b7c88;
+  --color-mist: #dce8ea;
+  --color-red: #d23133;
+  --color-redD: #a8262a;
+  --color-blush: #f7e4df;
+  --color-pink: #ff9a9b;
+  --color-mute: #5e6f73;
+  --font-sans: var(--font-geist-sans), "Geist", system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), "Geist Mono", ui-monospace, monospace;
+  --font-serif: var(--font-instrument), "Instrument Serif", Georgia, serif;
+}
+
+/* app additions */
+
+/* breadcrumb */
+.crumbs {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mute);
+  padding: 18px 0 0;
+}
+.crumbs a {
+  color: var(--teal2);
+}
+.crumbs a:hover {
+  color: var(--red);
+}
+.crumbs span {
+  margin: 0 8px;
+  opacity: 0.5;
+}
+
+/* 404 */
+.nf {
+  min-height: 70dvh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 80px 0;
+}
+.nf h1 {
+  font-size: clamp(4rem, 10vw, 9rem);
+  color: var(--teal);
+}
+.nf h1 em {
+  color: var(--red);
+}
+.nf p {
+  color: var(--mute);
+  max-width: 420px;
+  margin: 18px auto 30px;
+  font-size: 1.06rem;
+}
+.nf .row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* consent banner */
+.cookie {
+  position: fixed;
+  left: 16px;
+  bottom: max(16px, env(safe-area-inset-bottom));
+  z-index: 150;
+  max-width: 380px;
+  background: rgba(250, 247, 242, 0.9);
+  backdrop-filter: blur(18px) saturate(1.3);
+  -webkit-backdrop-filter: blur(18px) saturate(1.3);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 24px 60px -30px rgba(11, 42, 49, 0.4);
+  transform: translateY(140%);
+  transition: transform 0.6s var(--ease);
+}
+.cookie.on {
+  transform: none;
+}
+.cookie p {
+  font-size: 0.85rem;
+  color: var(--mute);
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+.cookie p b {
+  color: var(--ink);
+  font-weight: 500;
+}
+.cookie .row {
+  display: flex;
+  gap: 8px;
+}
+.cookie button {
+  flex: 1;
+  height: 42px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid var(--line);
+  transition: all 0.3s var(--ease);
+}
+.cookie button.ck-ok {
+  background: var(--teal);
+  color: #fff;
+  border-color: var(--teal);
+}
+.cookie button.ck-ok:hover {
+  background: var(--ink);
+}
+.cookie button.ck-no:hover {
+  background: var(--sand2);
+}
+@media (max-width: 720px) {
+  .cookie {
+    left: 10px;
+    right: 10px;
+    bottom: 76px;
+    max-width: none;
+  }
+}
+
+/* reveal without JS stays visible */
+html:not(.jsok) [data-rv],
+html:not(.jsok) .ln > span,
+html:not(.jsok) .rimg,
+html:not(.jsok) .rimg img {
+  opacity: 1 !important;
+  transform: none !important;
+  clip-path: none !important;
+}
+html:not(.jsok) #intro {
+  display: none;
+}
+html:not(.jsok) .cur {
+  display: none !important;
+}
+
+/* composer phone validation flag */
+#ctform input.bad {
+  border-color: var(--red) !important;
+  color: var(--redD);
+}
+
+/* production hides placeholder chips that ask for confirmation */
+html[data-env="prod"] .chip {
+  display: none !important;
+}

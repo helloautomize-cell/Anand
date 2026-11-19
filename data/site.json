@@ -1,0 +1,57 @@
+{
+  "brand": "Anand Heart Center Bhopal",
+  "shortName": "Anand Heart Center",
+  "siteUrl": "https://www.anandheartcenter.com",
+  "agencyCredit": "Automize Media Labs",
+  "doctor": {
+    "name": "Dr. Anand Yadav",
+    "role": "Cardiothoracic and vascular surgeon",
+    "experienceYears": 25,
+    "qualifications": [
+      "MBBS, Gandhi Medical College, Bhopal",
+      "MS General Surgery, Grant Medical College and JJ Hospital, Mumbai",
+      "DNB General Surgery",
+      "MCh CTVS, SMS Medical College, Jaipur",
+      "Fellowship in adult cardiac surgery, South Australia",
+      "FACC"
+    ],
+    "registration": "MPMC MP729 [CONFIRM]",
+    "languages": ["en", "hi"],
+    "photo": "/img/dr-anand-yadav.webp"
+  },
+  "address": {
+    "line1": "4th Floor, Vindhya Retreat, Plot No. 5",
+    "line2": "Near Gut Hospital, Janki Nagar, Chuna Bhatti",
+    "city": "Bhopal",
+    "region": "Madhya Pradesh",
+    "postalCode": "462016",
+    "country": "IN"
+  },
+  "phones": { "primary": "+919111950821", "secondary": "+917898286906" },
+  "whatsapp": "919111950821",
+  "email": "info@anandheartcenter.com",
+  "hours": [
+    { "days": ["Mo","Tu","We","Th","Fr","Sa"], "opens": "10:00", "closes": "19:30" }
+  ],
+  "closed": ["Su"],
+  "timezone": "Asia/Kolkata",
+  "walkIns": "Walk-ins are welcome during OPD hours.",
+  "testsAtClinic": "ECG, Echo, TMT at the clinic. All tests are done at the clinic.",
+  "fees": "Shared at the time of booking",
+  "surgeryCost": "Depends on the procedure; discussed after the consultation",
+  "insurance": "[CONFIRM: insurance and government schemes]",
+  "emergency": "In an emergency, call 108 or 112.",
+  "maps": {
+    "link": "https://maps.app.goo.gl/tNvRcRyR8Bai2jP29",
+    "embed": "https://maps.google.com/maps?q=Anand%20Heart%20Center%2C%20Vindhya%20Retreat%2C%20Janki%20Nagar%2C%20Chuna%20Bhatti%2C%20Bhopal%20462016&z=16&output=embed",
+    "behaviour": "Lazy: iframe src set when within 300px of the viewport; pointer events off until the visitor taps 'Tap to use the map'."
+  },
+  "social": { "instagram": "https://www.instagram.com/anandheartcenterbhopal/" },
+  "booking": {
+    "channel": "whatsapp",
+    "number": "919111950821",
+    "note": "No email service, no Resend, no form backend. The composer builds a wa.me link with a prefilled message."
+  },
+  "palette": { "teal": "#06333D", "red": "#D23133", "pink": "#FF9A9B", "ivory": "#FAF7F2", "sand": "#F2ECE4" },
+  "fonts": { "sans": "Geist", "mono": "Geist Mono", "serif": "Instrument Serif" }
+}

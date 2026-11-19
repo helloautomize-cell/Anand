@@ -1,0 +1,173 @@
+import Link from "next/link";
+import { waLink, WA_HOME } from "@/lib/whatsapp";
+import { TEL_PRIMARY } from "@/lib/site";
+export function UtilBar() {
+  return (
+    <div className="util">
+      {" "}
+      <div className="wrap">
+        {" "}
+        <span className="em">
+          <i></i>Medical emergency? Call <b>108</b> or <b>112</b>
+        </span>{" "}
+        <span className="r">
+          <span className="h">Mon to Sat, 10 am to 7:30 pm</span>
+          <a className="t" href={TEL_PRIMARY}>
+            091119 50821
+          </a>
+          <span className="ts" aria-label="Text size">
+            <button id="tsA" className="on" aria-label="Normal text">
+              A
+            </button>
+            <button id="tsB" aria-label="Larger text">
+              A+
+            </button>
+          </span>
+        </span>{" "}
+      </div>{" "}
+    </div>
+  );
+}
+
+export function Overlays() {
+  return (
+    <>
+      <div id="intro" aria-hidden="true">
+        {" "}
+        <svg viewBox="0 0 200 180">
+          {" "}
+          <path
+            className="h1"
+            d="M100 168C40 124 8 92 8 56 8 28 30 8 56 8c20 0 36 12 44 28 8-16 24-28 44-28 26 0 48 20 48 48 0 36-32 68-92 112Z"
+          />{" "}
+          <path
+            className="h2"
+            d="M100 132C66 106 48 88 48 66c0-16 12-28 27-28 12 0 21 7 25 16 4-9 13-16 25-16 15 0 27 12 27 28 0 22-18 40-52 66Z"
+          />{" "}
+          <path className="x" d="M100 70v34M83 87h34" />{" "}
+        </svg>{" "}
+      </div>{" "}
+      <div id="prog"></div>{" "}
+      <div className="cur" aria-hidden="true">
+        <div className="ring">
+          <b>Book</b>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export function Footer() {
+  return (
+    <footer data-hdr="d">
+      {" "}
+      <div className="wrap">
+        {" "}
+        <div className="fcols">
+          {" "}
+          <div>
+            <img src="/img/logo-white.png" alt="Anand Heart Center Bhopal" />
+            <p>
+              4th Floor, Vindhya Retreat, Plot No. 5, Near Gut Hospital, Janki Nagar,
+              Chuna Bhatti, Bhopal 462016
+            </p>
+          </div>{" "}
+          <div>
+            <h4>Treatments</h4>
+            <ul>
+              <li>
+                <Link href="/treatments/bypass-surgery/">Bypass surgery</Link>
+              </li>
+              <li>
+                <Link href="/treatments/valve-surgery/">Valve surgery</Link>
+              </li>
+              <li>
+                <Link href="/treatments/angioplasty/">Angioplasty</Link>
+              </li>
+              <li>
+                <Link href="/treatments/vascular-surgery/">Vascular surgery</Link>
+              </li>
+              <li>
+                <Link href="/treatments/lung-and-chest-surgery/">Lung and chest</Link>
+              </li>
+              <li>
+                <Link href="/treatments/childrens-heart-surgery/">Children's hearts</Link>
+              </li>
+              <li>
+                <Link href="/treatments/">All treatments</Link>
+              </li>
+            </ul>
+          </div>{" "}
+          <div>
+            <h4>Patients</h4>
+            <ul>
+              <li>
+                <Link href="/your-first-visit/">Your first visit</Link>
+              </li>
+              <li>
+                <Link href="/about/">About Dr. Anand</Link>
+              </li>
+              <li>
+                <Link href="/treatments/check-ups-second-opinion/">Second opinion</Link>
+              </li>
+              <li>
+                <Link href="/treatments/follow-up-care/">After surgery</Link>
+              </li>
+              <li>
+                <Link href="/contact/">Contact and visit</Link>
+              </li>
+            </ul>
+          </div>{" "}
+          <div>
+            <h4>Legal</h4>
+            <ul>
+              <li>
+                <Link href="/privacy-policy/">Privacy policy</Link>
+              </li>
+              <li>
+                <Link href="/terms-of-use/">Terms of use</Link>
+              </li>
+              <li>
+                <Link href="/medical-disclaimer/">Medical disclaimer</Link>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/anandheartcenterbhopal"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>{" "}
+        </div>{" "}
+        <div className="fbot">
+          <span>
+            © 2026 Anand Heart Center Bhopal. Information on this site is general and not
+            a substitute for medical advice.
+          </span>
+          <span>Medical emergency? Call 108 or 112</span>
+        </div>{" "}
+      </div>{" "}
+    </footer>
+  );
+}
+
+export function MobileBar() {
+  return (
+    <div className="mbar" id="mbar">
+      <a href={TEL_PRIMARY}>Call</a>
+      <a href={WA_HOME} target="_blank" rel="noopener">
+        WhatsApp
+      </a>
+      <a
+        href={waLink("Hello, I would like to book a consultation with Dr. Anand Yadav.")}
+        target="_blank"
+        rel="noopener"
+      >
+        Book a visit
+      </a>
+    </div>
+  );
+}

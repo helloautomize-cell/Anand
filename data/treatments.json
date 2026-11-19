@@ -1,0 +1,267 @@
+[
+  {
+    "slug": "bypass-surgery",
+    "url": "/treatments/bypass-surgery/",
+    "name": "Bypass surgery",
+    "title": "Bypass surgery (CABG) | Anand Heart Center Bhopal",
+    "description": "Bypass surgery (CABG) in Bhopal: when it is advised, how to prepare, what happens on the day and how recovery goes. Explained by Dr. Anand Yadav.",
+    "faqs": [
+      {
+        "q": "Is bypass better than a stent?",
+        "a": "Neither is better for everyone. Stents suit some blockages, and bypass suits others, often when several arteries are involved or the pattern is complex. Dr. Yadav explains both, and why one may suit you, before you decide."
+      },
+      {
+        "q": "Will I be awake during the operation?",
+        "a": "No. Bypass surgery is done under general anaesthesia, so you are fully asleep and feel nothing during the operation."
+      },
+      {
+        "q": "How long do the grafts last?",
+        "a": "It varies from person to person. Taking your medicines, not smoking, and keeping sugar, blood pressure and cholesterol in control all help protect the grafts."
+      },
+      {
+        "q": "How long will I be in hospital?",
+        "a": "It depends on your recovery and any other health conditions. You will get a clear estimate at the consultation, along with a plan for the first weeks at home."
+      },
+      {
+        "q": "What is beating-heart bypass?",
+        "a": "Some bypass operations can be done while the heart keeps beating, without the heart-lung machine. Whether it suits you depends on your arteries and your heart, and it will be discussed with you."
+      },
+      {
+        "q": "Is insurance accepted?",
+        "a": "Many insurance plans cover heart surgery, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]"
+      }
+    ]
+  },
+  {
+    "slug": "angioplasty",
+    "url": "/treatments/angioplasty/",
+    "name": "Angioplasty and stents",
+    "title": "Angioplasty and stents | Anand Heart Center Bhopal",
+    "description": "Angioplasty and stents in Bhopal: how a stent works, when bypass may suit you better, and what to expect before and after.",
+    "faqs": [
+      {
+        "q": "Stent or bypass, which is right for me?",
+        "a": "It depends on how many arteries are narrowed, where, and your other health conditions. Dr. Yadav is a heart surgeon who explains both options plainly, so you can decide with the full picture."
+      },
+      {
+        "q": "Will I be awake?",
+        "a": "Yes, usually. A local anaesthetic numbs the wrist or groin and you may be given something to relax."
+      },
+      {
+        "q": "Can the artery narrow again?",
+        "a": "It can happen in some people. Taking your medicines and controlling risk factors lowers the chance, and follow-up visits help catch it early."
+      },
+      {
+        "q": "How soon can I go home?",
+        "a": "Often within a short stay, depending on how the procedure went and your overall health. You will get clear instructions before discharge."
+      },
+      {
+        "q": "Is insurance accepted?",
+        "a": "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]"
+      }
+    ]
+  },
+  {
+    "slug": "valve-surgery",
+    "url": "/treatments/valve-surgery/",
+    "name": "Valve repair and replacement",
+    "title": "Heart valve surgery | Anand Heart Center Bhopal",
+    "description": "Heart valve repair and replacement in Bhopal: signs of a valve problem, the tests, the surgery and recovery, explained plainly.",
+    "faqs": [
+      {
+        "q": "Repair or replacement, which is better?",
+        "a": "Where a valve can be repaired well, repair is often preferred, but it is not always possible. The choice depends on the valve and how it is damaged, and it is explained before surgery."
+      },
+      {
+        "q": "Mechanical or tissue valve?",
+        "a": "Mechanical valves are durable but need lifelong blood thinners. Tissue valves usually do not need them long term but may wear out over time. Age, lifestyle and plans for pregnancy all matter."
+      },
+      {
+        "q": "What is rheumatic heart disease?",
+        "a": "It is valve damage left behind by rheumatic fever in childhood. It is still common in India and often affects the mitral valve."
+      },
+      {
+        "q": "How long is the hospital stay?",
+        "a": "It varies with your recovery and other conditions. You will get an estimate at the consultation."
+      },
+      {
+        "q": "Is insurance accepted?",
+        "a": "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]"
+      }
+    ]
+  },
+  {
+    "slug": "childrens-heart-surgery",
+    "url": "/treatments/childrens-heart-surgery/",
+    "name": "Children's heart surgery",
+    "title": "Children's heart surgery | Anand Heart Center Bhopal",
+    "description": "Children's heart surgery in Bhopal: congenital heart conditions, what parents can expect and how Dr. Anand Yadav guides the family.",
+    "faqs": [
+      {
+        "q": "Does every hole in the heart need surgery?",
+        "a": "No. Some small holes close on their own. Others need a repair. Dr. Yadav will explain which applies to your child and why."
+      },
+      {
+        "q": "Is my child too young for surgery?",
+        "a": "Heart surgery can be done at any age, including in newborns, when it is needed. The right timing depends on the condition."
+      },
+      {
+        "q": "Can parents stay with the child?",
+        "a": "Parents are kept informed throughout and can be with their child as much as the hospital allows. [CONFIRM]"
+      },
+      {
+        "q": "Will my child live a normal life?",
+        "a": "Many children go on to live active lives after repair. Follow-up as they grow is important."
+      },
+      {
+        "q": "Is insurance accepted?",
+        "a": "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]"
+      }
+    ]
+  },
+  {
+    "slug": "minimally-invasive-surgery",
+    "url": "/treatments/minimally-invasive-surgery/",
+    "name": "Minimally invasive surgery",
+    "title": "Minimally invasive heart surgery | Anand Heart Center Bhopal",
+    "description": "Minimally invasive heart surgery in Bhopal: smaller cuts, who it suits and what recovery looks like.",
+    "faqs": [
+      {
+        "q": "Is keyhole surgery suitable for everyone?",
+        "a": "No. It depends on the condition, your anatomy and your overall health. Standard surgery is still the right choice for many people."
+      },
+      {
+        "q": "Is it safer than standard surgery?",
+        "a": "Not automatically. Both have benefits and risks. The aim is to choose the approach that is right for you."
+      },
+      {
+        "q": "Will the scar be smaller?",
+        "a": "Usually the cut is smaller and placed at the side of the chest. Where exactly depends on the operation."
+      },
+      {
+        "q": "Is recovery faster?",
+        "a": "Some people return to activity sooner, but this varies. You will get guidance based on your own recovery."
+      },
+      {
+        "q": "Is insurance accepted?",
+        "a": "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]"
+      }
+    ]
+  },
+  {
+    "slug": "vascular-surgery",
+    "url": "/treatments/vascular-surgery/",
+    "name": "Vascular surgery",
+    "title": "Vascular surgery | Anand Heart Center Bhopal",
+    "description": "Vascular surgery in Bhopal for blocked leg arteries, aneurysms and varicose veins. Signs to watch and treatment options.",
+    "faqs": [
+      {
+        "q": "Does leg pain on walking always need surgery?",
+        "a": "No. Many people improve with medicines, stopping smoking and a walking plan. Surgery or a procedure is advised when these are not enough."
+      },
+      {
+        "q": "Are varicose veins dangerous?",
+        "a": "Often they cause aching and swelling. Sometimes they lead to skin changes or ulcers, which need treatment."
+      },
+      {
+        "q": "What is an aneurysm?",
+        "a": "It is a weak, bulging part of an artery. Small ones are watched with scans, larger ones may need repair."
+      },
+      {
+        "q": "Why does diabetes matter for my feet?",
+        "a": "Diabetes can affect both the blood supply and feeling in the feet, so small wounds need early attention."
+      },
+      {
+        "q": "Is insurance accepted?",
+        "a": "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]"
+      }
+    ]
+  },
+  {
+    "slug": "lung-and-chest-surgery",
+    "url": "/treatments/lung-and-chest-surgery/",
+    "name": "Lung and chest surgery",
+    "title": "Lung and chest surgery | Anand Heart Center Bhopal",
+    "description": "Lung and chest surgery in Bhopal: lung lesions, fluid or air around the lung and chest injuries. Tests, surgery and recovery.",
+    "faqs": [
+      {
+        "q": "Will I be able to breathe normally after lung surgery?",
+        "a": "Most people adapt well, but it depends on how much lung is involved and your lung function before surgery. This is tested and explained first."
+      },
+      {
+        "q": "What is a chest drain?",
+        "a": "A soft tube that lets air or fluid out of the chest so the lung can expand. It is removed once it is no longer needed."
+      },
+      {
+        "q": "Is every lung shadow cancer?",
+        "a": "No. Shadows have many causes, including infection. Tests help find the cause before any decision."
+      },
+      {
+        "q": "How long is the hospital stay?",
+        "a": "It depends on the operation and your recovery. You will get an estimate at the consultation."
+      },
+      {
+        "q": "Is insurance accepted?",
+        "a": "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]"
+      }
+    ]
+  },
+  {
+    "slug": "check-ups-second-opinion",
+    "url": "/treatments/check-ups-second-opinion/",
+    "name": "Check-ups and second opinions",
+    "title": "Check-ups and second opinion | Anand Heart Center Bhopal",
+    "description": "Heart check-ups and second opinions in Bhopal. ECG, echo and TMT at the clinic, and a clear review of reports you already have.",
+    "faqs": [
+      {
+        "q": "Is a second opinion rude to my current doctor?",
+        "a": "No. A second opinion is a normal and sensible step before a big decision."
+      },
+      {
+        "q": "Will I be pushed into surgery?",
+        "a": "No. Surgery is advised only when it is the right option, and you can take time to decide."
+      },
+      {
+        "q": "Can my reports be reviewed on WhatsApp?",
+        "a": "You can share them on WhatsApp, and the clinic will tell you how the review works. [CONFIRM]"
+      },
+      {
+        "q": "Do I need a referral?",
+        "a": "No. You can book directly by phone or WhatsApp."
+      },
+      {
+        "q": "Is insurance accepted?",
+        "a": "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]"
+      }
+    ]
+  },
+  {
+    "slug": "follow-up-care",
+    "url": "/treatments/follow-up-care/",
+    "name": "Follow-up care",
+    "title": "Follow-up care | Anand Heart Center Bhopal",
+    "description": "Follow-up care after heart surgery in Bhopal: wound checks, medicines, activity and when to call. Ongoing care with Dr. Anand Yadav.",
+    "faqs": [
+      {
+        "q": "When is my first follow-up?",
+        "a": "Usually soon after discharge. The exact date will be written on your discharge summary. [CONFIRM]"
+      },
+      {
+        "q": "When can I drive again?",
+        "a": "It depends on the surgery and your recovery. Dr. Yadav will tell you at your follow-up."
+      },
+      {
+        "q": "When can I go back to work?",
+        "a": "It depends on the kind of work you do and how you are healing. You will get guidance for your situation."
+      },
+      {
+        "q": "What if I feel unwell at night?",
+        "a": "For chest pain, severe breathlessness or fainting, call 108 or 112 straight away and go to the nearest emergency department."
+      },
+      {
+        "q": "Is insurance accepted?",
+        "a": "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]"
+      }
+    ]
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "url": "/",
+    "template": "home",
+    "description": "Anand Heart Center Bhopal: heart, lung and vascular surgery by Dr. Anand Yadav, cardiothoracic surgeon with 25 years of experience. Book on WhatsApp."
+  },
+  {
+    "url": "/about/",
+    "template": "about",
+    "description": "Meet Dr. Anand Yadav, cardiothoracic and vascular surgeon in Bhopal. Training, fellowships and how he explains every option to you and your family."
+  },
+  {
+    "url": "/treatments/",
+    "template": "treatments",
+    "description": "Heart, valve, children's heart, vascular and chest surgery in Bhopal, plus check-ups and second opinions. Find the right treatment and book a consultation."
+  },
+  {
+    "url": "/treatments/bypass-surgery/",
+    "template": "treatment",
+    "description": "Bypass surgery (CABG) in Bhopal: when it is advised, how to prepare, what happens on the day and how recovery goes. Explained by Dr. Anand Yadav."
+  },
+  {
+    "url": "/treatments/angioplasty/",
+    "template": "treatment",
+    "description": "Angioplasty and stents in Bhopal: how a stent works, when bypass may suit you better, and what to expect before and after."
+  },
+  {
+    "url": "/treatments/valve-surgery/",
+    "template": "treatment",
+    "description": "Heart valve repair and replacement in Bhopal: signs of a valve problem, the tests, the surgery and recovery, explained plainly."
+  },
+  {
+    "url": "/treatments/childrens-heart-surgery/",
+    "template": "treatment",
+    "description": "Children's heart surgery in Bhopal: congenital heart conditions, what parents can expect and how Dr. Anand Yadav guides the family."
+  },
+  {
+    "url": "/treatments/minimally-invasive-surgery/",
+    "template": "treatment",
+    "description": "Minimally invasive heart surgery in Bhopal: smaller cuts, who it suits and what recovery looks like."
+  },
+  {
+    "url": "/treatments/vascular-surgery/",
+    "template": "treatment",
+    "description": "Vascular surgery in Bhopal for blocked leg arteries, aneurysms and varicose veins. Signs to watch and treatment options."
+  },
+  {
+    "url": "/treatments/lung-and-chest-surgery/",
+    "template": "treatment",
+    "description": "Lung and chest surgery in Bhopal: lung lesions, fluid or air around the lung and chest injuries. Tests, surgery and recovery."
+  },
+  {
+    "url": "/treatments/check-ups-second-opinion/",
+    "template": "treatment",
+    "description": "Heart check-ups and second opinions in Bhopal. ECG, echo and TMT at the clinic, and a clear review of reports you already have."
+  },
+  {
+    "url": "/treatments/follow-up-care/",
+    "template": "treatment",
+    "description": "Follow-up care after heart surgery in Bhopal: wound checks, medicines, activity and when to call. Ongoing care with Dr. Anand Yadav."
+  },
+  {
+    "url": "/symptoms/",
+    "template": "symptoms",
+    "description": "Heart symptoms to take seriously: chest pain, breathlessness, swelling and more. What each can mean and when to see a heart surgeon in Bhopal."
+  },
+  {
+    "url": "/your-first-visit/",
+    "template": "visit",
+    "description": "Your first visit to Anand Heart Center Bhopal: what to bring, what happens in the consultation and how the plan is explained."
+  },
+  {
+    "url": "/contact/",
+    "template": "contact",
+    "description": "Contact Anand Heart Center Bhopal. Address, OPD hours, map, phone and WhatsApp booking. Walk-ins welcome during OPD hours."
+  },
+  {
+    "url": "/privacy-policy/",
+    "template": "legal",
+    "description": "How Anand Heart Center Bhopal collects, uses and protects your personal and health information."
+  },
+  {
+    "url": "/terms-of-use/",
+    "template": "legal",
+    "description": "Terms for using the Anand Heart Center Bhopal website."
+  },
+  {
+    "url": "/medical-disclaimer/",
+    "template": "legal",
+    "description": "This website gives general information and is not medical advice. In an emergency call 108 or 112."
+  }
+]
