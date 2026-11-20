@@ -46,6 +46,7 @@ export function track(name: string, params?: Record<string, unknown>) {
 
 export function Consent() {
   const [show, setShow] = useState(false);
+  const [on, setOn] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -58,18 +59,34 @@ export function Consent() {
     }
     if (saved === "accepted") loadGa();
     else if (!saved) {
+      const EVENTS = ["scroll", "pointerdown", "keydown", "touchstart"] as const;
       let t: ReturnType<typeof setTimeout> | undefined;
-      const kick = () => {
-        t = setTimeout(() => setShow(true), 1400);
-      };
-      if (document.readyState === "complete") kick();
-      else window.addEventListener("load", kick, { once: true });
-      return () => {
-        window.removeEventListener("load", kick);
+      const off = () => {
+        EVENTS.forEach((e) => window.removeEventListener(e, reveal));
+        window.removeEventListener("load", arm);
         clearTimeout(t);
       };
+      function reveal() {
+        off();
+        setShow(true);
+      }
+      function arm() {
+        t = setTimeout(reveal, 10000);
+      }
+      EVENTS.forEach((e) =>
+        window.addEventListener(e, reveal, { once: true, passive: true })
+      );
+      if (document.readyState === "complete") arm();
+      else window.addEventListener("load", arm, { once: true });
+      return off;
     }
   }, []);
+
+  useEffect(() => {
+    if (!show) return;
+    const id = requestAnimationFrame(() => setOn(true));
+    return () => cancelAnimationFrame(id);
+  }, [show]);
 
   const choose = (ok: boolean) => {
     try {
@@ -85,7 +102,7 @@ export function Consent() {
   if (!show) return null;
   return (
     <div
-      className={`cookie${show ? " on" : ""}`}
+      className={`cookie${on ? " on" : ""}`}
       ref={ref}
       role="dialog"
       aria-label="Cookie consent"
