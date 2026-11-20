@@ -100,6 +100,7 @@ export function HomePage() {
                 width={981}
                 height={1226}
                 preload
+                fetchPriority="high"
                 sizes="(max-width: 900px) 90vw, 560px"
               />
             </div>{" "}

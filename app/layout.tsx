@@ -8,6 +8,9 @@ import { UtilBar, Overlays, Footer, MobileBar } from "@/components/chrome";
 import { NavFx } from "@/components/nav-fx";
 import { Consent } from "@/components/consent";
 import { SITE_URL, isIndexable, site } from "@/lib/site";
+import { validateSite } from "@/lib/site-schema";
+
+validateSite();
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -18,6 +21,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-geist-mono",
   display: "swap",
+  preload: false,
 });
 const instrument = Instrument_Serif({
   subsets: ["latin"],
