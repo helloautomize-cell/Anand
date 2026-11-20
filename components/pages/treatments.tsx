@@ -759,6 +759,8 @@ export function TreatmentsPage() {
               <img
                 src="/img/consult-room.webp"
                 alt="Consultation room"
+                width={1400}
+                height={788}
                 loading="lazy"
                 draggable="false"
               />
@@ -827,6 +829,8 @@ export function TreatmentsPage() {
               <img
                 src="/img/waiting-hall.webp"
                 alt="Waiting area at the clinic"
+                width={1400}
+                height={788}
                 loading="lazy"
                 draggable="false"
               />

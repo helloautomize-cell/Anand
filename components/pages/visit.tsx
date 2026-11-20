@@ -68,11 +68,32 @@ export function VisitPage() {
           <div className="fv-ph fv-fade" style={{ "--d": ".15s" }}>
             {" "}
             <div className="a">
-              <img
-                src="/img/reception-desk.webp"
-                alt="Reception desk at Anand Heart Center"
+              <link
+                rel="preload"
+                as="image"
+                href="/img/reception-desk-640.avif"
+                imageSrcSet="/img/reception-desk-480.avif 480w, /img/reception-desk-640.avif 640w, /img/reception-desk-960.avif 960w"
+                imageSizes="(max-width: 980px) 420px, 520px"
+                type="image/avif"
                 fetchPriority="high"
               />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcSet="/img/reception-desk-480.avif 480w, /img/reception-desk-640.avif 640w, /img/reception-desk-960.avif 960w"
+                  sizes="(max-width: 980px) 420px, 520px"
+                />
+                <img
+                  src="/img/reception-desk-640.webp"
+                  srcSet="/img/reception-desk-480.webp 480w, /img/reception-desk-640.webp 640w, /img/reception-desk-960.webp 960w"
+                  sizes="(max-width: 980px) 420px, 520px"
+                  alt="Reception desk at Anand Heart Center"
+                  width={1000}
+                  height={1333}
+                  fetchPriority="high"
+                  decoding="async"
+                />
+              </picture>
             </div>{" "}
             <div className="fv-gl g1">
               <div>
@@ -1082,6 +1103,8 @@ export function VisitPage() {
               <img
                 src="/img/clinic-door.webp"
                 alt="Entrance of Anand Heart Center"
+                width={1000}
+                height={1333}
                 loading="lazy"
               />
               <div className="tagc">

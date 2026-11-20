@@ -3,9 +3,18 @@
   "version": "1.0.0",
   "private": true,
   "description": "Anand Heart Center Bhopal website",
+  "browserslist": [
+    "chrome >= 95",
+    "edge >= 95",
+    "firefox >= 95",
+    "safari >= 15.5",
+    "ios_saf >= 15.5",
+    "android >= 95"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "node scripts/inline-css.mjs",
     "start": "next start",
     "lint": "eslint .",
     "format": "prettier --write .",

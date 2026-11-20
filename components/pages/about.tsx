@@ -73,12 +73,33 @@ export function AboutPage() {
             <div className="ab-por" id="abpor">
               {" "}
               <div className="ab-arch">
-                <img
-                  src="/img/dr-anand-yadav.webp"
-                  alt="Dr. Anand Yadav, cardiothoracic and vascular surgeon"
-                  id="abimg"
+                <link
+                  rel="preload"
+                  as="image"
+                  href="/img/dr-anand-yadav-640.avif"
+                  imageSrcSet="/img/dr-anand-yadav-480.avif 480w, /img/dr-anand-yadav-640.avif 640w, /img/dr-anand-yadav-960.avif 960w"
+                  imageSizes="(max-width: 980px) 420px, 500px"
+                  type="image/avif"
                   fetchPriority="high"
                 />
+                <picture>
+                  <source
+                    type="image/avif"
+                    srcSet="/img/dr-anand-yadav-480.avif 480w, /img/dr-anand-yadav-640.avif 640w, /img/dr-anand-yadav-960.avif 960w"
+                    sizes="(max-width: 980px) 420px, 500px"
+                  />
+                  <img
+                    src="/img/dr-anand-yadav-640.webp"
+                    srcSet="/img/dr-anand-yadav-480.webp 480w, /img/dr-anand-yadav-640.webp 640w, /img/dr-anand-yadav-960.webp 960w"
+                    sizes="(max-width: 980px) 420px, 500px"
+                    alt="Dr. Anand Yadav, cardiothoracic and vascular surgeon"
+                    id="abimg"
+                    width={981}
+                    height={1226}
+                    fetchPriority="high"
+                    decoding="async"
+                  />
+                </picture>
               </div>{" "}
               <svg
                 className="ab-outline"
@@ -163,7 +184,7 @@ export function AboutPage() {
               surgery. Sometimes it is *not.*
             </p>{" "}
             <div className="ab-wsig" id="abwsig">
-              <img src="/img/dr-anand-yadav.webp" alt="" loading="lazy" decoding="async" />
+              <img src="/img/dr-anand-yadav.webp" alt="" width={981} height={1226} loading="lazy" decoding="async" />
               <span>Dr. Anand Yadav, in my own words</span>
             </div>{" "}
           </div>{" "}
@@ -594,6 +615,8 @@ export function AboutPage() {
               <img
                 src="/img/consult-room.webp"
                 alt="Consultation room at Anand Heart Center"
+                width={1400}
+                height={788}
                 loading="lazy"
               />{" "}
               <span className="badge" id="abopen">

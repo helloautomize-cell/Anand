@@ -23,13 +23,14 @@ const fx = () => {
     try {
       if (localStorage.getItem("ahc-ts") === "1") setTs(true);
     } catch (e) {}
+    let layoutPathFn = () => {};
     $("#tsA").onclick = () => {
       setTs(false);
-      setTimeout(layoutPath, 80);
+      setTimeout(() => layoutPathFn(), 80);
     };
     $("#tsB").onclick = () => {
       setTs(true);
-      setTimeout(layoutPath, 80);
+      setTimeout(() => layoutPathFn(), 80);
     };
 
     const intro = $("#intro");
@@ -58,6 +59,12 @@ const fx = () => {
       } catch (e) {}
     }
 
+    /* Everything below is below-the-fold / animation setup - run it in idle
+       time so it cannot block FCP/LCP or starve the first paint. */
+    if ("requestIdleCallback" in window)
+      requestIdleCallback(initBelowFold, { timeout: 1500 });
+    else requestAnimationFrame(() => requestAnimationFrame(initBelowFold));
+    function initBelowFold() {
     const ist = new Date(Date.now() + (330 + new Date().getTimezoneOffset()) * 60000);
     const dow = ist.getDay(),
       mins = ist.getHours() * 60 + ist.getMinutes();
@@ -136,8 +143,9 @@ const fx = () => {
       hpl = $("#hpl"),
       hpr = $("#hpr"),
       stitch = $("#stitch");
-    const sl = stitch.getTotalLength();
-    stitch.style.strokeDasharray = sl;
+    const sl = 1;
+    stitch.setAttribute("pathLength", "1");
+    stitch.style.strokeDasharray = 1;
 
     const pSec = $("#path"),
       track = $("#track"),
@@ -186,10 +194,13 @@ const fx = () => {
         scrollTo({ top: top + x * (pSec.offsetHeight - H) + 2, behavior: "smooth" });
       })
     );
+    /* pathLength=1 normalizes dash math: --l becomes 1 for every shape and no
+       per-element getTotalLength() layout reads are needed. */
     stops.forEach((s) =>
       s.querySelectorAll(".ill *").forEach((el) => {
         try {
-          el.style.setProperty("--l", Math.ceil(el.getTotalLength() + 2));
+          el.setAttribute("pathLength", "1");
+          el.style.setProperty("--l", 1);
         } catch (e) {}
       })
     );
@@ -227,7 +238,12 @@ const fx = () => {
       (es) =>
         es.forEach((e) => {
           if (e.isIntersecting) {
-            e.target.classList.add("in");
+            /* [data-rv] elements already revealed by CSS (mobile hero) get no
+               .in - adding it just re-repaints the LCP element. */
+            if (!e.target.hasAttribute("data-rv") || e.target.style.opacity !== "")
+              e.target.classList.add("in");
+            else if (getComputedStyle(e.target).opacity !== "1")
+              e.target.classList.add("in");
             rio.unobserve(e.target);
           }
         }),
@@ -973,7 +989,22 @@ const fx = () => {
     let lastY = scrollY,
       vel = 0,
       lastHdrY = 0,
-      hs = -1;
+      hs = -1,
+      lastBeats = "";
+    /* Sections currently in (or near) the viewport. rAF work for a section
+       only runs while it is visible - off-screen loops stay idle. */
+    const vis = new Set();
+    const vio = new IntersectionObserver(
+      (es) =>
+        es.forEach((e) => {
+          if (e.isIntersecting) vis.add(e.target);
+          else vis.delete(e.target);
+        }),
+      { rootMargin: "160px 0px" }
+    );
+    [hp, mSec, hSec, pSec, why, wb, $("#flow"), strip, beatsEl].forEach(
+      (el) => el && vio.observe(el)
+    );
     function mix(a, b, t) {
       const h = (c) => [1, 3, 5].map((i) => parseInt(c.slice(i, i + 2), 16));
       const A = h(a),
@@ -984,34 +1015,41 @@ const fx = () => {
     function frame(t) {
       const y = scrollY,
         docH = document.documentElement.scrollHeight - H;
+      const scrolled = y !== lastY;
       vel += (y - lastY - vel) * 0.1;
       lastY = y;
       prog.style.transform = `scaleX(${clamp(y / docH)})`;
-      let mode = "l";
-      for (const s of hdrSecs) {
-        const r = s.getBoundingClientRect();
-        if (r.top <= 50 && r.bottom > 50) {
-          mode = s.dataset.hdr;
-          break;
+      /* layout reads below only matter when scroll position changed */
+      if (scrolled) {
+        let mode = "l";
+        for (const s of hdrSecs) {
+          const r = s.getBoundingClientRect();
+          if (r.top <= 50 && r.bottom > 50) {
+            mode = s.dataset.hdr;
+            break;
+          }
         }
+        hdr.classList.toggle("dk", mode === "d" && y > 30);
+        if (Math.abs(y - lastHdrY) > 10) {
+          hdr.classList.toggle("hide", y > lastHdrY && y > 700);
+          lastHdrY = y;
+        }
+        mbar.classList.toggle("on", y > H * 0.7);
       }
       hdr.classList.toggle("float", y > 30);
-      hdr.classList.toggle("dk", mode === "d" && y > 30);
-      if (Math.abs(y - lastHdrY) > 10) {
-        hdr.classList.toggle("hide", y > lastHdrY && y > 700);
-        lastHdrY = y;
-      }
-      mbar.classList.toggle("on", y > H * 0.7);
 
-      if (!RM) {
-        if (y < H * 1.3)
+      if (!RM && vis.has(hp)) {
+        if (y < H * 1.3 && y > 0)
           por.style.transform = `translateY(${y * 0.12}px) scale(${1 + y * 0.00015})`;
+        else if (por.style.transform) por.style.transform = "";
         hx += (thx - hx) * 0.08;
         hy += (thy - hy) * 0.08;
         tags.forEach((el) => {
           const k = +el.dataset.px;
           el.style.transform = `translate(${hx * k}px,${hy * k - Math.min(y, H) * k * 0.01}px)`;
         });
+      }
+      if (!RM && vis.has(strip)) {
         eR.style.strokeDashoffset = -(((t || 0) * 0.18) % (EL + 120)) + 120;
         sx -= 0.45 + Math.abs(vel) * 0.2;
         const half = strip.scrollWidth / 2;
@@ -1019,9 +1057,9 @@ const fx = () => {
         strip.style.transform = `translate3d(${sx}px,0,0)`;
       }
 
-      drawMinutes(t || 0);
+      if (vis.has(mSec)) drawMinutes(t || 0);
 
-      if (!RM) {
+      if (!RM && vis.has(hSec)) {
         const p = prg(hSec);
         const s = Math.min(5, Math.floor(p * 6));
         if (s !== hs) {
@@ -1041,13 +1079,17 @@ const fx = () => {
         ty2 += (tY - ty2) * 0.06;
         tilt.style.transform = `rotateY(${tx2 * 10}deg) rotateX(${-ty2 * 8}deg)`;
       }
-      if (beatsEl) {
-        beatsEl.textContent = Math.floor(
+      if (beatsEl && vis.has(beatsEl)) {
+        const v = Math.floor(
           (((performance.now() - T0) / 1000) * 72) / 60
         ).toLocaleString("en-IN");
+        if (v !== lastBeats) {
+          lastBeats = v;
+          beatsEl.textContent = v;
+        }
       }
 
-      {
+      if (vis.has(wb)) {
         const r = wb.getBoundingClientRect();
         const p = RM ? 1 : clamp((H * 0.85 - r.top) / (H * 0.55));
         const n = Math.floor(p * wbs.length);
@@ -1059,7 +1101,7 @@ const fx = () => {
           flowEls.forEach((e, i) => e.classList.toggle("on", fp > i * 0.33));
         }
       }
-      if (!RM) {
+      if (!RM && vis.has(why)) {
         const r = why.getBoundingClientRect();
         const p = clamp((H * 0.95 - r.top) / (H * 0.55));
         const n = Math.floor(clamp(p / 0.7) * ws.length);
@@ -1080,7 +1122,7 @@ const fx = () => {
         why.classList.toggle("beating", p > 0.92);
       }
 
-      if (!RM && jMax) {
+      if (!RM && jMax && vis.has(pSec)) {
         const p = prg(pSec);
         jsm += (p - jsm) * 0.14;
         const xs = stops._x,
@@ -1126,9 +1168,11 @@ const fx = () => {
       resize.t = setTimeout(resize, 120);
     });
     layoutPath();
+    layoutPathFn = layoutPath;
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(layoutPath);
     addEventListener("load", layoutPath);
     requestAnimationFrame(frame);
+    }
   })();
 };
 

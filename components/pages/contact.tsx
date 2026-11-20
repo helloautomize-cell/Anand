@@ -79,11 +79,32 @@ export function ContactPage() {
           <div className="ct-ph ct-fade" style={{ "--d": ".15s" }}>
             {" "}
             <div className="arch">
-              <img
-                src="/img/clinic-door.webp"
-                alt="Glass entrance door of Anand Heart Center with the red heart logo"
+              <link
+                rel="preload"
+                as="image"
+                href="/img/clinic-door-640.avif"
+                imageSrcSet="/img/clinic-door-480.avif 480w, /img/clinic-door-640.avif 640w, /img/clinic-door-960.avif 960w"
+                imageSizes="(max-width: 620px) 320px, (max-width: 980px) 420px, 500px"
+                type="image/avif"
                 fetchPriority="high"
               />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcSet="/img/clinic-door-480.avif 480w, /img/clinic-door-640.avif 640w, /img/clinic-door-960.avif 960w"
+                  sizes="(max-width: 620px) 320px, (max-width: 980px) 420px, 500px"
+                />
+                <img
+                  src="/img/clinic-door-640.webp"
+                  srcSet="/img/clinic-door-480.webp 480w, /img/clinic-door-640.webp 640w, /img/clinic-door-960.webp 960w"
+                  sizes="(max-width: 620px) 320px, (max-width: 980px) 420px, 500px"
+                  alt="Glass entrance door of Anand Heart Center with the red heart logo"
+                  width={1000}
+                  height={1333}
+                  fetchPriority="high"
+                  decoding="async"
+                />
+              </picture>
             </div>{" "}
             <div className="ct-gl g1">
               <div>
@@ -330,6 +351,8 @@ export function ContactPage() {
               <img
                 src="/img/reception-desk.webp"
                 alt="Reception desk at Anand Heart Center"
+                width={1000}
+                height={1333}
                 loading="lazy"
               />
             </div>
@@ -347,6 +370,8 @@ export function ContactPage() {
               <img
                 src="/img/waiting-hall.webp"
                 alt="Calm waiting area at the clinic"
+                width={1400}
+                height={788}
                 loading="lazy"
               />
             </div>
@@ -361,7 +386,7 @@ export function ContactPage() {
           </div>{" "}
           <div className="ct-wc">
             <div className="im">
-              <img src="/img/consult-room.webp" alt="Consultation room" loading="lazy" />
+              <img src="/img/consult-room.webp" alt="Consultation room" width={1400} height={788} loading="lazy" />
             </div>
             <div className="tx">
               <span className="k">Consult</span>

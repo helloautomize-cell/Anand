@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { waLink, WA_HOME } from "@/lib/whatsapp";
 import { phonesDisplay, TEL_PRIMARY, TEL_SECONDARY, MAIL_PRIMARY } from "@/lib/site";
 import { ReviewedBy } from "@/components/reviewed";
@@ -94,15 +93,32 @@ export function HomePage() {
               <i style={{ width: "800px", height: "800px" }}></i>
             </div>{" "}
             <div className="por" id="por">
-              <Image
-                src="/img/dr-anand-yadav.webp"
-                alt="Dr. Anand Yadav, cardiothoracic and vascular surgeon"
-                width={981}
-                height={1226}
-                preload
+              <link
+                rel="preload"
+                as="image"
+                href="/img/dr-anand-yadav-640.avif"
+                imageSrcSet="/img/dr-anand-yadav-480.avif 480w, /img/dr-anand-yadav-640.avif 640w, /img/dr-anand-yadav-960.avif 960w"
+                imageSizes="(max-width: 900px) 90vw, 560px"
+                type="image/avif"
                 fetchPriority="high"
-                sizes="(max-width: 900px) 90vw, 560px"
               />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcSet="/img/dr-anand-yadav-480.avif 480w, /img/dr-anand-yadav-640.avif 640w, /img/dr-anand-yadav-960.avif 960w"
+                  sizes="(max-width: 900px) 90vw, 560px"
+                />
+                <img
+                  src="/img/dr-anand-yadav-640.webp"
+                  srcSet="/img/dr-anand-yadav-480.webp 480w, /img/dr-anand-yadav-640.webp 640w, /img/dr-anand-yadav-960.webp 960w"
+                  sizes="(max-width: 900px) 90vw, 560px"
+                  alt="Dr. Anand Yadav, cardiothoracic and vascular surgeon"
+                  width={981}
+                  height={1226}
+                  fetchPriority="high"
+                  decoding="async"
+                />
+              </picture>
             </div>{" "}
             <div className="shade"></div>{" "}
             <div className="tagc t1" data-px="14">
@@ -1614,6 +1630,8 @@ export function HomePage() {
               <img
                 src="/img/waiting-hall.webp"
                 alt="Waiting hall at Anand Heart Center"
+                width={1400}
+                height={788}
                 loading="lazy"
               />
               <div className="cap">
@@ -1642,7 +1660,7 @@ export function HomePage() {
               </div>
             </div>{" "}
             <div className="cb ph c-d rimg" data-rv={true}>
-              <img src="/img/consult-room.webp" alt="Consultation room" loading="lazy" />
+              <img src="/img/consult-room.webp" alt="Consultation room" width={1400} height={788} loading="lazy" />
               <div className="cap">
                 <span>Consultation room</span>
               </div>
@@ -1676,6 +1694,8 @@ export function HomePage() {
               <img
                 src="/img/waiting-garden.webp"
                 alt="Waiting area with plants"
+                width={1000}
+                height={1333}
                 loading="lazy"
               />
               <div className="cap">
@@ -1737,7 +1757,7 @@ export function HomePage() {
               </a>
             </div>{" "}
             <div className="cb ph c-h rimg" data-rv={true}>
-              <img src="/img/reception-desk.webp" alt="Reception desk" loading="lazy" />
+              <img src="/img/reception-desk.webp" alt="Reception desk" width={1000} height={1333} loading="lazy" />
               <div className="cap">
                 <span>Reception</span>
               </div>
@@ -1750,7 +1770,7 @@ export function HomePage() {
         <div className="wrap dgrid">
           {" "}
           <div className="dpor" data-rv={true}>
-            <img src="/img/dr-anand-yadav.webp" alt="Dr. Anand Yadav" loading="lazy" decoding="async" />
+            <img src="/img/dr-anand-yadav.webp" alt="Dr. Anand Yadav" width={981} height={1226} loading="lazy" decoding="async" />
             <div className="sig">
               <div>
                 <b>Dr. Anand Yadav</b>
@@ -2099,6 +2119,8 @@ export function HomePage() {
                   <img
                     src="/img/signboard.webp"
                     alt="Anand Heart Center signboard"
+                    width={1400}
+                    height={1053}
                     loading="lazy"
                   />
                 </div>
@@ -2531,6 +2553,8 @@ export function HomePage() {
               <img
                 src="/img/clinic-door.webp"
                 alt="Entrance of Anand Heart Center"
+                width={1000}
+                height={1333}
                 loading="lazy"
               />
               <div className="tagc">
