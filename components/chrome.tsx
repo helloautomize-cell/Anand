@@ -49,7 +49,7 @@ export function Overlays() {
       </div>{" "}
       <div id="prog"></div>{" "}
       <div className="cur" aria-hidden="true">
-        <div className="ring">
+        <div className="hring">
           <b>Book</b>
         </div>
       </div>

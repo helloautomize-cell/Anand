@@ -43,7 +43,7 @@ const fx = () => {
           : "Closed now, opens 10 am";
     const fine = matchMedia("(pointer:fine)").matches,
       curEl = $(".cur"),
-      ring = $(".cur .ring");
+      ring = $(".cur .hring");
     let mxp = -100,
       myp = -100,
       rx = -100,
@@ -52,33 +52,29 @@ const fx = () => {
     {
       const SYM = DATA.symptomsSpots;
       const bmap = $("#bmap"),
-        ns = "http://www.w3.org/2000/svg",
         slist = $("#slist"),
         symc = $("#symc"),
         sxEl = $("#sx"),
         shots = $("#shots"),
         sfocus = $("#sfocus"),
         SDUR = 6000;
-      slist.querySelectorAll(":scope > button").forEach((b) => b.remove());
-      shots.innerHTML = "";
+      // SSR renders the same nodes in the same order — reuse them instead of
+      // remove()+recreate, which breaks React-owned DOM on navigation.
+      const sbtns = slist.querySelectorAll(":scope > button"),
+        sgs = shots.children;
       SYM.forEach((s, i) => {
-        const g = document.createElementNS(ns, "g");
-        g.setAttribute("class", "hot");
-        g.innerHTML = `<circle class="p" cx="${s.x}" cy="${s.y}" r="17"/><circle class="c" cx="${s.x}" cy="${s.y}" r="13"/><circle cx="${s.x}" cy="${s.y}" r="52" fill="transparent"/>`;
+        const g = sgs[i],
+          b = sbtns[i];
+        if (!g || !b) return;
         g.onclick = () => {
           stopAuto();
           pick(i);
         };
-        shots.appendChild(g);
-        s.g = g;
-        const b = document.createElement("button");
-        b.type = "button";
-        b.innerHTML = `<span>${s.h}</span><small>${s.q}</small><i></i>`;
         b.onclick = () => {
           stopAuto();
           pick(i);
         };
-        slist.appendChild(b);
+        s.g = g;
         s.b = b;
         s.sg = bmap.querySelector(".sys-" + s.sys);
       });

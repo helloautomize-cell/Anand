@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "./design.css";
 
 @theme inline {
   --color-ivory: #faf7f2;
@@ -22,26 +21,6 @@
 }
 
 /* app additions */
-
-/* breadcrumb */
-.crumbs {
-  font-family: var(--mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--mute);
-  padding: 18px 0 0;
-}
-.crumbs a {
-  color: var(--teal2);
-}
-.crumbs a:hover {
-  color: var(--red);
-}
-.crumbs span {
-  margin: 0 8px;
-  opacity: 0.5;
-}
 
 /* 404 */
 .nf {

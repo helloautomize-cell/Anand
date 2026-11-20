@@ -33,21 +33,26 @@ const fx = () => {
     };
 
     const intro = $("#intro");
+    // #intro is React-rendered chrome: hide it, never remove() the node or
+    // React's commit crashes on insertBefore/removeChild.
+    const killIntro = () => {
+      if (intro) intro.style.display = "none";
+    };
     let seen = false;
     try {
       seen = sessionStorage.getItem("ahc-intro") === "1";
     } catch (e) {}
     const go = () => $("#hero").classList.add("go");
-    const goDelay = window.matchMedia("(max-width: 980px)").matches ? 500 : 1300;
-    if (RM || seen) {
-      intro?.remove();
+    const mobile = window.matchMedia("(max-width: 980px)").matches;
+    if (RM || seen || mobile) {
+      killIntro();
       go();
     } else {
       intro?.addEventListener("animationend", (e) => {
-        if (e.animationName === "introOut") intro?.remove();
+        if (e.animationName === "introOut") killIntro();
       });
-      setTimeout(go, goDelay);
-      setTimeout(() => intro?.isConnected && intro?.remove(), 3000);
+      setTimeout(go, 1300);
+      setTimeout(killIntro, 3000);
       try {
         sessionStorage.setItem("ahc-intro", "1");
       } catch (e) {}
@@ -408,7 +413,7 @@ const fx = () => {
 
     const fine = matchMedia("(pointer:fine)").matches,
       curEl = $(".cur"),
-      ring = $(".cur .ring");
+      ring = $(".cur .hring");
     let mxp = -100,
       myp = -100,
       rx = -100,
@@ -660,10 +665,6 @@ const fx = () => {
       const o = trs.findIndex((r) => r.classList.contains("open"));
       if (o >= 0) showT(o);
     });
-    pop.innerHTML = TOLD.map(
-      (o, i) =>
-        `<button role="option" aria-selected="${i === 0}" data-i="${i}">${o[0]}<small>${o[2]}</small></button>`
-    ).join("");
     function choose(i, first) {
       const o = TOLD[i];
       pickT.textContent = o[0];
@@ -1051,9 +1052,12 @@ const fx = () => {
         const p = RM ? 1 : clamp((H * 0.85 - r.top) / (H * 0.55));
         const n = Math.floor(p * wbs.length);
         wbs.forEach((w, i) => w.classList.toggle("on", i < n));
-        const fr = $("#flow").getBoundingClientRect();
-        const fp = RM ? 1 : clamp((H * 0.95 - fr.top) / (H * 0.4));
-        flowEls.forEach((e, i) => e.classList.toggle("on", fp > i * 0.33));
+        const flow = $("#flow");
+        if (flow) {
+          const fr = flow.getBoundingClientRect();
+          const fp = RM ? 1 : clamp((H * 0.95 - fr.top) / (H * 0.4));
+          flowEls.forEach((e, i) => e.classList.toggle("on", fp > i * 0.33));
+        }
       }
       if (!RM) {
         const r = why.getBoundingClientRect();

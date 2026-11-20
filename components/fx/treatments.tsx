@@ -2,7 +2,7 @@
 "use client";
 import { useFx } from "@/lib/fx";
 import DATA from "@/data/interactive.json";
-import { WA_PREFIX } from "@/lib/whatsapp";
+
 
 const fx = () => {
   (() => {
@@ -43,15 +43,13 @@ const fx = () => {
           : "Closed now, opens 10 am";
     const fine = matchMedia("(pointer:fine)").matches,
       curEl = $(".cur"),
-      ring = $(".cur .ring");
+      ring = $(".cur .hring");
     let mxp = -100,
       myp = -100,
       rx = -100,
       ry = -100;
-    const WA = WA_PREFIX;
     {
       const TR = DATA.treatmentsFinder.tr;
-      const TL = DATA.treatmentLinks;
       const TOLD = DATA.treatmentsFinder.told;
       const tlist = $("#tlist"),
         tpanel = $("#tpanel"),
@@ -60,10 +58,8 @@ const fx = () => {
         pop = $("#pop"),
         pickT = $("#pickT");
 
-      tlist.innerHTML = TR.map(
-        (t, i) =>
-          `<div class="tr" data-i="${i}"><button class="th" aria-expanded="false"><span class="tn">${t.n} ${t.e ? `<em>${t.e}</em>` : ""}</span><span class="tg"><i class="m"></i>${t.cat}</span><i class="pl"></i></button><div class="tb"><div class="tbi"><div><div><p>${t.d}</p><div class="tags">${t.tags.map((x) => `<span>${x}</span>`).join("")}</div></div><div class="side2"><small>Often for</small><b>${t.f}</b><a class="btn b-red b-sm" data-cur target="_blank" rel="noopener" href="${WA + encodeURIComponent("Hello, I would like to ask Dr. Anand Yadav about " + t.n.toLowerCase() + ".")}">Ask about this<span class="ar"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a><a href="${TL[t.k]}" style="display:inline-block;margin-top:14px;font-size:.88rem;font-weight:500;text-decoration:underline;text-underline-offset:4px">Read the full guide</a></div></div></div></div></div>`
-      ).join("");
+      // SSR renders the same .tr rows — reuse them instead of innerHTML=
+      // which detaches React-owned children and breaks commit on navigation.
       const trs = $$("#tlist .tr");
       let shown = -1;
       function showT(i) {
@@ -103,10 +99,6 @@ const fx = () => {
         const o = trs.findIndex((r) => r.classList.contains("open"));
         if (o >= 0) showT(o);
       });
-      pop.innerHTML = TOLD.map(
-        (o, i) =>
-          `<button role="option" data-i="${i}">${o[0]}<small>${o[2]}</small></button>`
-      ).join("");
       function choose(i, first) {
         const o = TOLD[i];
         pickT.textContent = o[0];

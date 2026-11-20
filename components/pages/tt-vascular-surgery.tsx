@@ -75,7 +75,7 @@ export function TreatmentVascularSurgeryPage() {
           <div className="tt-art tt-fade" style={{ "--d": ".15s" }}>
             {" "}
             <div className="disc"></div>{" "}
-            <svg className="ring" viewBox="0 0 100 100">
+            <svg className="hring" viewBox="0 0 100 100">
               <g className="rot">
                 <circle
                   cx="50"

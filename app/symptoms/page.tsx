@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import "@/styles/shared.css";
+import "@/styles/symptoms.css";
 import { pageMeta } from "@/lib/meta";
 import { JsonLd } from "@/components/json-ld";
 import {

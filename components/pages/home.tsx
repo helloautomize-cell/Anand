@@ -2337,7 +2337,7 @@ export function HomePage() {
                 </g>{" "}
                 <g className="sys sys-heart" data-sys="heart">
                   <circle cx="545" cy="385" r="120" className="hh gl" />
-                  <circle cx="545" cy="385" r="76" className="ring" pathLength="1" />
+                  <circle cx="545" cy="385" r="76" className="hring" pathLength="1" />
                 </g>{" "}
                 <g className="sys sys-ecg" data-sys="ecg">
                   <path

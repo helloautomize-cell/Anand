@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "@/styles/treatment.css";
 import type { ComponentType } from "react";
 import { notFound } from "next/navigation";
 import { pageMeta } from "@/lib/meta";

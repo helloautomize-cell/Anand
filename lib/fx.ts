@@ -8,6 +8,11 @@ import { useEffect } from "react";
  * - setInterval/setTimeout ids are collected and cleared
  * - requestAnimationFrame callbacks stop after unmount
  * - IntersectionObserver/MutationObserver/ResizeObserver are disconnected
+ *
+ * The global patches are active while the page script runs AND while any
+ * tracked callback fires, so work scheduled inside callbacks (the rAF loop
+ * re-arming itself, nested timeouts, listeners added later) is tracked too
+ * and dies on unmount.
  */
 export function runFx(fn: () => void): () => void {
   const ac = new AbortController();
@@ -23,93 +28,111 @@ export function runFx(fn: () => void): () => void {
 
   const proto = EventTarget.prototype;
   const origAdd = proto.addEventListener;
-
-  proto.addEventListener = function (
-    this: EventTarget,
-    type: string,
-    listener: EventListenerOrEventListenerObject | null,
-    options?: AddEventListenerOptions | boolean
-  ) {
-    if (typeof options === "object" && options !== null && !options.signal) {
-      options = { ...options, signal };
-    } else if (options === undefined) {
-      options = { signal };
-    }
-    return origAdd.call(this, type, listener, options);
-  };
-
   const origSi = w.setInterval as typeof setInterval;
   const origCi = w.clearInterval as typeof clearInterval;
   const origSt = w.setTimeout as typeof setTimeout;
   const origCt = w.clearTimeout as typeof clearTimeout;
   const origRaf = w.requestAnimationFrame as typeof requestAnimationFrame;
   const origCaf = w.cancelAnimationFrame as typeof cancelAnimationFrame;
+  const OrigIO = w.IntersectionObserver;
+  const OrigMO = w.MutationObserver;
+  const OrigRO = w.ResizeObserver;
 
-  w.setInterval = function (cb: TimerHandler, ms?: number, ...args: unknown[]) {
-    const id = origSi(cb, ms, ...args) as unknown as ReturnType<typeof setInterval>;
+  function patchedAdd(
+    this: EventTarget,
+    type: string,
+    listener: EventListenerOrEventListenerObject | null,
+    options?: AddEventListenerOptions | boolean
+  ) {
+    if (options === undefined || options === null) {
+      options = { signal };
+    } else if (typeof options === "boolean") {
+      options = { capture: options, signal };
+    } else if (typeof options === "object" && !options.signal) {
+      options = { ...options, signal };
+    }
+    return origAdd.call(this, type, listener, options);
+  }
+
+  function patchedSi(cb: TimerHandler, ms?: number, ...args: unknown[]) {
+    const id = origSi(
+      (...a: unknown[]) => {
+        if (!dead && typeof cb === "function")
+          withPatch(() => (cb as (...x: unknown[]) => void)(...a));
+      },
+      ms,
+      ...args
+    ) as unknown as ReturnType<typeof setInterval>;
     intervals.add(id);
     return id;
-  } as unknown as typeof setInterval;
-  w.clearInterval = function (id?: ReturnType<typeof setInterval>) {
+  }
+  function patchedCi(id?: ReturnType<typeof setInterval>) {
     if (id !== undefined) intervals.delete(id);
     return origCi(id);
-  } as unknown as typeof clearInterval;
+  }
 
-  w.setTimeout = function (cb: TimerHandler, ms?: number, ...args: unknown[]) {
+  function patchedSt(cb: TimerHandler, ms?: number, ...args: unknown[]) {
     const id = origSt(
       (...a: unknown[]) => {
         timeouts.delete(id);
-        if (!dead) {
-          if (typeof cb === "function") (cb as (...x: unknown[]) => void)(...a);
-        }
+        if (!dead && typeof cb === "function")
+          withPatch(() => (cb as (...x: unknown[]) => void)(...a));
       },
       ms,
       ...args
     ) as TimerId;
     timeouts.add(id);
     return id;
-  } as unknown as typeof setTimeout;
-  w.clearTimeout = function (id?: TimerId) {
+  }
+  function patchedCt(id?: TimerId) {
     if (id !== undefined) timeouts.delete(id);
     return origCt(id);
-  } as unknown as typeof clearTimeout;
+  }
 
-  w.requestAnimationFrame = function (cb: FrameRequestCallback) {
+  function patchedRaf(cb: FrameRequestCallback) {
     const id = origRaf((t) => {
       rafIds.delete(id);
-      if (!dead) cb(t);
+      if (!dead) withPatch(() => cb(t));
     });
     rafIds.add(id);
     return id;
-  } as typeof requestAnimationFrame;
-  w.cancelAnimationFrame = function (id: number) {
+  }
+  function patchedCaf(id: number) {
     rafIds.delete(id);
     return origCaf(id);
-  } as typeof cancelAnimationFrame;
+  }
 
   function wrapObserver<T extends { disconnect(): void }>(
     Ctor: new (cb: unknown, opts?: unknown) => T
   ) {
     return function (this: unknown, cb: unknown, opts?: unknown) {
-      const inst = new Ctor(cb, opts);
+      const inst = new Ctor(
+        (...a: unknown[]) => {
+          if (!dead) withPatch(() => (cb as (...x: unknown[]) => void)(...a));
+        },
+        opts
+      );
       observers.add(inst);
       return inst;
     };
   }
-  const OrigIO = w.IntersectionObserver;
-  const OrigMO = w.MutationObserver;
-  const OrigRO = w.ResizeObserver;
-  if (OrigIO) w.IntersectionObserver = wrapObserver(OrigIO as never);
-  if (OrigMO) w.MutationObserver = wrapObserver(OrigMO as never);
-  if (OrigRO) w.ResizeObserver = wrapObserver(OrigRO as never);
+  const WrappedIO = OrigIO ? wrapObserver(OrigIO as never) : undefined;
+  const WrappedMO = OrigMO ? wrapObserver(OrigMO as never) : undefined;
+  const WrappedRO = OrigRO ? wrapObserver(OrigRO as never) : undefined;
 
-  try {
-    // Match classic-script semantics: a throwing page script stops itself but
-    // must not tear down the React tree.
-    fn();
-  } catch (e) {
-    console.error("[fx] page script error", e);
-  } finally {
+  function install() {
+    proto.addEventListener = patchedAdd;
+    w.setInterval = patchedSi;
+    w.clearInterval = patchedCi;
+    w.setTimeout = patchedSt;
+    w.clearTimeout = patchedCt;
+    w.requestAnimationFrame = patchedRaf;
+    w.cancelAnimationFrame = patchedCaf;
+    if (WrappedIO) w.IntersectionObserver = WrappedIO as never;
+    if (WrappedMO) w.MutationObserver = WrappedMO as never;
+    if (WrappedRO) w.ResizeObserver = WrappedRO as never;
+  }
+  function restore() {
     proto.addEventListener = origAdd;
     w.setInterval = origSi;
     w.clearInterval = origCi;
@@ -121,12 +144,29 @@ export function runFx(fn: () => void): () => void {
     if (OrigMO) w.MutationObserver = OrigMO;
     if (OrigRO) w.ResizeObserver = OrigRO;
   }
+  function withPatch<T>(cb: () => T): T {
+    install();
+    try {
+      return cb();
+    } finally {
+      restore();
+    }
+  }
+
+  try {
+    // Match classic-script semantics: a throwing page script stops itself but
+    // must not tear down the React tree.
+    withPatch(() => fn());
+  } catch (e) {
+    console.error("[fx] page script error", e);
+  }
 
   return () => {
     dead = true;
     ac.abort();
     intervals.forEach((id) => origCi(id));
     timeouts.forEach((id) => origCt(id));
+    rafIds.forEach((id) => origCaf(id));
     observers.forEach((o) => o.disconnect());
   };
 }

@@ -336,7 +336,7 @@ const fx = () => {
 
     const fine = matchMedia("(pointer:fine)").matches,
       curEl = $(".cur"),
-      ring = $(".cur .ring");
+      ring = $(".cur .hring");
     let mxp = -100,
       myp = -100,
       rx = -100,

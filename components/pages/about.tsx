@@ -742,7 +742,7 @@ export function AboutPage() {
                 <circle className="ring2" cx="300" cy="300" r="150" />
                 <circle cx="300" cy="150" r="3" fill="#D23133" />
               </g>{" "}
-              <circle className="ring" cx="300" cy="300" r="230" />{" "}
+              <circle className="hring" cx="300" cy="300" r="230" />{" "}
               <circle
                 className="arc"
                 id="abarc"

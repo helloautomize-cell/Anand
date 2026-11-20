@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
 import "./globals.css";
+import "@/styles/core.css";
 import { Header } from "@/components/header";
 import { MobileMenu } from "@/components/mobile-menu";
 import { UtilBar, Overlays, Footer, MobileBar } from "@/components/chrome";
@@ -58,6 +59,7 @@ export default function RootLayout({
       lang="en-IN"
       className={`${geistSans.variable} ${geistMono.variable} ${instrument.variable}`}
       data-env={isIndexable ? "prod" : "dev"}
+      suppressHydrationWarning
     >
       <body>
         <Overlays />

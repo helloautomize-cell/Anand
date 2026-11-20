@@ -14,7 +14,7 @@ const GONE = [
 
 const APEX = new URL(SITE_URL).hostname.replace(/^www\./, "");
 
-export function middleware(req: NextRequest) {
+export function proxy(req: NextRequest) {
   const host = (req.headers.get("host") ?? "").split(":")[0];
 
   if (host === APEX || (host.endsWith(`.${APEX}`) && host !== CANONICAL_HOST)) {
