@@ -77,6 +77,7 @@ export function AboutPage() {
                   src="/img/dr-anand-yadav.webp"
                   alt="Dr. Anand Yadav, cardiothoracic and vascular surgeon"
                   id="abimg"
+                  fetchPriority="high"
                 />
               </div>{" "}
               <svg
@@ -162,7 +163,7 @@ export function AboutPage() {
               surgery. Sometimes it is *not.*
             </p>{" "}
             <div className="ab-wsig" id="abwsig">
-              <img src="/img/dr-anand-yadav.webp" alt="" />
+              <img src="/img/dr-anand-yadav.webp" alt="" loading="lazy" decoding="async" />
               <span>Dr. Anand Yadav, in my own words</span>
             </div>{" "}
           </div>{" "}

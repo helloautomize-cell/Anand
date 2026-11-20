@@ -36,7 +36,7 @@ for (const f of files) {
   if (f === "logo.png" || f === "logo-white.png") {
     fs.copyFileSync(src, path.join(OUT, f));
     await sharp(src)
-      .webp({ quality: 92 })
+      .webp({ quality: 80 })
       .toFile(path.join(OUT, f.replace(/\.png$/, ".webp")));
     continue;
   }

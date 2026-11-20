@@ -99,7 +99,7 @@ export function HomePage() {
                 alt="Dr. Anand Yadav, cardiothoracic and vascular surgeon"
                 width={981}
                 height={1226}
-                priority
+                preload
                 sizes="(max-width: 900px) 90vw, 560px"
               />
             </div>{" "}
@@ -1749,7 +1749,7 @@ export function HomePage() {
         <div className="wrap dgrid">
           {" "}
           <div className="dpor" data-rv={true}>
-            <img src="/img/dr-anand-yadav.webp" alt="Dr. Anand Yadav" />
+            <img src="/img/dr-anand-yadav.webp" alt="Dr. Anand Yadav" loading="lazy" decoding="async" />
             <div className="sig">
               <div>
                 <b>Dr. Anand Yadav</b>

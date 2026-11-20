@@ -82,6 +82,7 @@ export function ContactPage() {
               <img
                 src="/img/clinic-door.webp"
                 alt="Glass entrance door of Anand Heart Center with the red heart logo"
+                fetchPriority="high"
               />
             </div>{" "}
             <div className="ct-gl g1">

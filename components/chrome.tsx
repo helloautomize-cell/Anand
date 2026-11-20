@@ -66,7 +66,7 @@ export function Footer() {
         <div className="fcols">
           {" "}
           <div>
-            <img src="/img/logo-white.webp" alt="Anand Heart Center Bhopal" width="170" height="75" />
+            <img src="/img/logo-white.webp" alt="Anand Heart Center Bhopal" width="170" height="75" loading="lazy" decoding="async" />
             <p>
               {`${site.address.line1}, ${site.address.line2}, ${site.address.city} ${site.address.postalCode}`}
             </p>

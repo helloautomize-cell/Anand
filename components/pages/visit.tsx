@@ -71,6 +71,7 @@ export function VisitPage() {
               <img
                 src="/img/reception-desk.webp"
                 alt="Reception desk at Anand Heart Center"
+                fetchPriority="high"
               />
             </div>{" "}
             <div className="fv-gl g1">

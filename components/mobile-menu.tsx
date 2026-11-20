@@ -8,7 +8,7 @@ export function MobileMenu() {
     <div className="mm" id="mm" aria-label="Menu">
       <div className="mm-top">
         <Link href="/">
-          <img src="/img/logo-white.png" alt="Anand Heart Center Bhopal" />
+          <img src="/img/logo-white.webp" alt="Anand Heart Center Bhopal" width="170" height="75" loading="lazy" decoding="async" />
         </Link>
         <button className="mm-x" type="button" aria-label="Close menu">
           &times;

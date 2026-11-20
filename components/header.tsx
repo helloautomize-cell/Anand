@@ -12,7 +12,7 @@ export function Header() {
           {" "}
           <Link href="/" className="logo" aria-label="Anand Heart Center Bhopal, home">
             <img className="c" src="/img/logo.webp" alt="Anand Heart Center Bhopal" width="170" height="75" />
-            <img className="w" src="/img/logo-white.webp" alt="" width="170" height="75" />
+            <img className="w" src="/img/logo-white.webp" alt="" width="170" height="75" fetchPriority="low" decoding="async" />
           </Link>{" "}
           <nav className="nav" aria-label="Main">
             <div className="dd">
