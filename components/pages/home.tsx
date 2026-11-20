@@ -176,7 +176,7 @@ export function HomePage() {
             <div className="side" data-rv={true}>
               {" "}
               <p>
-                Dr. Yadav is a heart surgeon, yet he set up a dedicated consultation
+                I am a heart surgeon, yet I set up a dedicated consultation
                 clinic, so that patients from every background can sit down, be heard and
                 get clear advice before anything else.
               </p>{" "}
@@ -252,20 +252,20 @@ export function HomePage() {
                   <h3>
                     <span className="ln">
                       <span>
-                        He <em>listens</em> first.
+                        I <em>listen</em> first.
                       </span>
                     </span>
                   </h3>
                   <p>
                     What do you feel? Since when? What worries you most? Your words become
-                    his notes. Family members are welcome to sit in.
+                    my notes. Family members are welcome to sit in.
                   </p>
                 </div>{" "}
                 <div className="at">
                   <h3>
                     <span className="ln">
                       <span>
-                        He <em>looks</em> closely.
+                        I <em>look</em> closely.
                       </span>
                     </span>
                   </h3>
@@ -393,7 +393,7 @@ export function HomePage() {
                       opacity=".6"
                     />{" "}
                     <text className="mono" x="466" y="82" fill="#5E6F73">
-                      Dr. Yadav's notes
+                      My notes
                     </text>{" "}
                     <text className="mono" x="744" y="82" fill="#D23133" textAnchor="end">
                       Today
@@ -1237,7 +1237,7 @@ export function HomePage() {
                 </h3>
                 <p>
                   Heart and lungs share the chest and work as one. As a cardiothoracic
-                  surgeon, Dr. Yadav also treats conditions of the lungs and chest wall.
+                  surgeon, I also treat conditions of the lungs and chest wall.
                 </p>
                 <div className="svcs">
                   <a href="#treatments">Lung and chest surgery</a>
@@ -1773,7 +1773,7 @@ export function HomePage() {
             </h2>{" "}
             <p className="lead" data-rv={true}>
               A cardiothoracic and vascular surgeon with 25 years of experience, trained
-              in Bhopal, Mumbai, Jaipur and Australia. He has helped set up new heart
+              in Bhopal, Mumbai, Jaipur and Australia. I have helped set up new heart
               surgery units in six hospitals across Bhopal and Punjab, and teaches surgery
               at LN Medical College.
             </p>{" "}
@@ -1811,7 +1811,7 @@ export function HomePage() {
               </div>{" "}
               <div>
                 <b>6</b>
-                <span>hospitals where he set up new heart surgery units</span>
+                <span>hospitals where I set up new heart surgery units</span>
               </div>{" "}
               <div>
                 <b>5</b>
@@ -1906,8 +1906,8 @@ export function HomePage() {
               </svg>{" "}
               <div>
                 <p id="words">
-                  As a boy, he lost someone dear to his family to rheumatic heart disease.
-                  It is the reason he chose to spend his life mending hearts.
+                  As a boy, I lost someone dear to my family to rheumatic heart disease.
+                  It is the reason I chose to spend my life mending hearts.
                 </p>
                 <small>Why heart surgery</small>
               </div>{" "}
@@ -1937,7 +1937,7 @@ export function HomePage() {
           <div className="wrap phead">
             {" "}
             <div>
-              <span className="lab">His path</span>
+              <span className="lab">My path</span>
               <h2 style={{ marginTop: "16px" }}>
                 Twenty-five years of <em>mending</em> <br />
                 hearts.
@@ -1987,7 +1987,7 @@ export function HomePage() {
                 <div className="yr">1996</div>
                 <div className="pl">Bhopal</div>
                 <h3>MBBS, Gandhi Medical College</h3>
-                <p>Barkatullah University. Where the doctor in him began.</p>
+                <p>Barkatullah University. Where the doctor in me began.</p>
               </div>
             </div>{" "}
             <div className="stop">
@@ -2038,7 +2038,7 @@ export function HomePage() {
                 <div className="yr">BMHRC</div>
                 <div className="pl">Bhopal</div>
                 <h3>Consultant, Bhopal Memorial Hospital and Research Centre</h3>
-                <p>Years of operating and caring for patients in his own city.</p>
+                <p>Years of operating and caring for patients in my own city.</p>
               </div>
             </div>{" "}
             <div className="stop">
@@ -2069,8 +2069,8 @@ export function HomePage() {
                 </svg>
                 <div className="yr">2013</div>
                 <div className="pl">Back to Bhopal</div>
-                <h3>He came home</h3>
-                <p>Private practice in the city where his story began.</p>
+                <h3>I came home</h3>
+                <p>Private practice in the city where my story began.</p>
               </div>
             </div>{" "}
             <div className="stop">
@@ -2086,7 +2086,7 @@ export function HomePage() {
                 <div className="pl">Bhopal and Punjab</div>
                 <h3>New heart surgery units in six hospitals</h3>
                 <p>
-                  Including Max Hospitals, Punjab, where he was a consultant, and
+                  Including Max Hospitals, Punjab, where I was a consultant, and
                   hospitals across Bhopal.
                 </p>
               </div>

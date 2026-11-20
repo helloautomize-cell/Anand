@@ -2,7 +2,6 @@
 
 Canonical: /symptoms/
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # What is your body telling you?
 Chest pain, breathlessness, a racing heart or leg pain on walking can all start in the heart or blood vessels. Find what you feel, learn what it may mean, and know when to act fast.

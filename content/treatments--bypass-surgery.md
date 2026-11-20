@@ -5,7 +5,7 @@ template: treatment
 description: "Bypass surgery (CABG) in Bhopal: when it is advised, how to prepare, what happens on the day and how recovery goes. Explained by Dr. Anand Yadav."
 faqs:
   - q: "Is bypass better than a stent?"
-    a: "Neither is better for everyone. Stents suit some blockages, and bypass suits others, often when several arteries are involved or the pattern is complex. Dr. Yadav explains both, and why one may suit you, before you decide."
+    a: "Neither is better for everyone. Stents suit some blockages, and bypass suits others, often when several arteries are involved or the pattern is complex. I explain both, and why one may suit you, before you decide."
   - q: "Will I be awake during the operation?"
     a: "No. Bypass surgery is done under general anaesthesia, so you are fully asleep and feel nothing during the operation."
   - q: "How long do the grafts last?"
@@ -15,10 +15,9 @@ faqs:
   - q: "What is beating-heart bypass?"
     a: "Some bypass operations can be done while the heart keeps beating, without the heart-lung machine. Whether it suits you depends on your arteries and your heart, and it will be discussed with you."
   - q: "Is insurance accepted?"
-    a: "Many insurance plans cover heart surgery, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]"
+    a: "Many insurance plans cover heart surgery, subject to the terms of your policy. Please call the clinic to check your plan."
 ---
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # Bypass surgery.
 A new route for blood around blocked heart arteries, made with a healthy blood vessel from your own body. Here is what it involves, in plain words, so you can decide with your family.
@@ -31,7 +30,7 @@ A quick way to see if this is worth discussing with Dr. Yadav. It is not a diagn
 ### Getting ready
 - Tests: angiography, echo, ECG, chest X-ray and blood tests, if not done already.
 - Medicines: you will be told which to continue and which to stop, and when.
-- Family meeting: Dr. Yadav explains the plan, the alternatives and the risks before you agree.
+- Family meeting: I explain the plan, the alternatives and the risks before you agree.
 - Admission: usually a day or so before, at the hospital where the surgery is planned.
 
 ### The operation
@@ -75,7 +74,7 @@ What to bring, who looks after you, and the questions worth asking.
 - Follow-up visits and rehab
 
 ### Already advised bypass?
-A second opinion is a sensible step. Send your angiography and reports, and Dr. Yadav will review them.
+A second opinion is a sensible step. Send your angiography and reports, and I will review them.
 
 ## What people ask us.
 Answers to common questions about bypass surgery. Ask us anything else on WhatsApp.
@@ -100,7 +99,7 @@ Bring your angiography and your questions. You will leave knowing your options, 
 ## FAQs
 
 **Is bypass better than a stent?**
-Neither is better for everyone. Stents suit some blockages, and bypass suits others, often when several arteries are involved or the pattern is complex. Dr. Yadav explains both, and why one may suit you, before you decide.
+Neither is better for everyone. Stents suit some blockages, and bypass suits others, often when several arteries are involved or the pattern is complex. I explain both, and why one may suit you, before you decide.
 
 **Will I be awake during the operation?**
 No. Bypass surgery is done under general anaesthesia, so you are fully asleep and feel nothing during the operation.
@@ -115,4 +114,4 @@ It depends on your recovery and any other health conditions. You will get a clea
 Some bypass operations can be done while the heart keeps beating, without the heart-lung machine. Whether it suits you depends on your arteries and your heart, and it will be discussed with you.
 
 **Is insurance accepted?**
-Many insurance plans cover heart surgery, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]
+Many insurance plans cover heart surgery, subject to the terms of your policy. Please call the clinic to check your plan.

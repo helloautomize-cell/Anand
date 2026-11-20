@@ -19,7 +19,7 @@ npm run build        # production build (25 static routes)
 npm run start        # serve the production build on :3000
 npm run images       # regenerate public/img from assets/images
 npm run lint         # eslint
-npm run launch-check # launch gate: fails on [CONFIRM] markers / forbidden claims
+npm run launch-check # launch gate: forbidden claims
 npm run seo:check    # per-route SEO basics + JSON-LD + crawl text (needs :3000)
 ```
 

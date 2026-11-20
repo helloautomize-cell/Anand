@@ -11,6 +11,7 @@ const BOTS = [
   "Applebot-Extended",
   "DuckDuckBot",
   "YandexBot",
+  "DuckAssistBot",
   "GPTBot",
   "OAI-SearchBot",
   "ChatGPT-User",
@@ -21,6 +22,7 @@ const BOTS = [
   "PerplexityBot",
   "Perplexity-User",
   "Meta-ExternalAgent",
+  "Meta-ExternalFetcher",
   "Amazonbot",
   "CCBot",
   "cohere-ai",
@@ -28,6 +30,10 @@ const BOTS = [
   "YouBot",
   "Diffbot",
   "Bytespider",
+  "facebookexternalhit",
+  "WhatsApp",
+  "LinkedInBot",
+  "Twitterbot",
 ];
 
 export function GET() {
@@ -37,12 +43,14 @@ export function GET() {
     });
   }
   const lines = [
-    `# ${site.agencyCredit}`,
+    `# ${site.brand}, ${site.doctor.name}`,
+    `# Powered by ${site.agencyCredit} - https://www.automizemedialabs.com/`,
+    "",
     "User-agent: *",
     "Allow: /",
     "Disallow: /api/",
     "",
-    ...BOTS.map((b) => `User-agent: ${b}\nAllow: /`),
+    ...BOTS.map((b) => `User-agent: ${b}\nAllow: /\nDisallow: /api/\n`),
     "",
     `Sitemap: ${SITE_URL}/sitemap.xml`,
     `# LLM guide: ${SITE_URL}/llms.txt`,

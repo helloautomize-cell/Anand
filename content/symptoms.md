@@ -16,7 +16,6 @@ faqs:
     a: "All earlier reports, your medicines, and a short note of your symptoms: when they started, how long they last, and what brings them on."
 ---
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # What is your body telling you?
 Chest pain, breathlessness, a racing heart or leg pain on walking can all start in the heart or blood vessels. Find what you feel, learn what it may mean, and know when to act fast.
@@ -94,7 +93,7 @@ Medicines protect the stent or grafts. Never stop them without asking your docto
 Send a message on WhatsApp during clinic hours. In an emergency call 108 or 112.
 
 ## Worried about a symptom?
-Bring your reports and a note of what you feel. Dr. Yadav will help you understand what it means.
+Bring your reports and a note of what you feel. I will help you understand what it means.
 
 ## FAQs
 

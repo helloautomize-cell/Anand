@@ -5,18 +5,17 @@ template: treatment
 description: "Children's heart surgery in Bhopal: congenital heart conditions, what parents can expect and how Dr. Anand Yadav guides the family."
 faqs:
   - q: "Does every hole in the heart need surgery?"
-    a: "No. Some small holes close on their own. Others need a repair. Dr. Yadav will explain which applies to your child and why."
+    a: "No. Some small holes close on their own. Others need a repair. I will explain which applies to your child and why."
   - q: "Is my child too young for surgery?"
     a: "Heart surgery can be done at any age, including in newborns, when it is needed. The right timing depends on the condition."
   - q: "Can parents stay with the child?"
-    a: "Parents are kept informed throughout and can be with their child as much as the hospital allows. [CONFIRM]"
+    a: "Parents are kept informed throughout and can be with their child as much as the hospital allows."
   - q: "Will my child live a normal life?"
     a: "Many children go on to live active lives after repair. Follow-up as they grow is important."
   - q: "Is insurance accepted?"
-    a: "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]"
+    a: "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan."
 ---
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # Children's heart surgery.
 Some children are born with a hole in the heart or a problem in how the heart formed. Many of these can be treated. Here is what parents can expect, step by step.
@@ -71,7 +70,7 @@ What to bring, who looks after you, and the questions worth asking.
 - Normal school and play, as advised
 
 ### Worried about your child?
-Send the echo report on WhatsApp and Dr. Yadav will review it with you.
+Send the echo report on WhatsApp and I will review it with you.
 
 ## What people ask us.
 Answers to common questions about children's heart surgery. Ask us anything else on WhatsApp.
@@ -96,16 +95,16 @@ Bring the echo and your questions. You will leave understanding the condition an
 ## FAQs
 
 **Does every hole in the heart need surgery?**
-No. Some small holes close on their own. Others need a repair. Dr. Yadav will explain which applies to your child and why.
+No. Some small holes close on their own. Others need a repair. I will explain which applies to your child and why.
 
 **Is my child too young for surgery?**
 Heart surgery can be done at any age, including in newborns, when it is needed. The right timing depends on the condition.
 
 **Can parents stay with the child?**
-Parents are kept informed throughout and can be with their child as much as the hospital allows. [CONFIRM]
+Parents are kept informed throughout and can be with their child as much as the hospital allows.
 
 **Will my child live a normal life?**
 Many children go on to live active lives after repair. Follow-up as they grow is important.
 
 **Is insurance accepted?**
-Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]
+Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan.

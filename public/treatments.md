@@ -2,7 +2,6 @@
 
 Canonical: /treatments/
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # Care for the heart, lungs and vessels.
 Dr. Anand Yadav treats the full range of heart, lung and blood vessel conditions, from tests and medicines to surgery. Start with what you feel, or explore by area.
@@ -56,7 +55,7 @@ Walking, breathing exercises and medicines, with clear guidance on what is norma
 Review visits at the clinic and reports on WhatsApp, so you are never left wondering what comes next.
 
 ## Surgery is one option, not the only one.
-Dr. Yadav explains every option that fits you, including not operating, and helps you choose with your family.
+Dr. Yadav explains every option that fits you, including not operating, and help you choose with your family.
 
 ## Before you decide.
 Answers to what patients and families ask most about treatment. Ask us anything else on WhatsApp.
@@ -73,10 +72,10 @@ Not always. Many heart and vessel conditions are first treated with medicines, l
 Yes. Bring your reports, angiography CD and prescriptions. Dr. Yadav will go through them with you and explain what he would advise and why.
 
 **Where does the surgery take place?**
-Consultations are at Anand Heart Center. Procedures and surgery take place at the hospital where Dr. Yadav operates, which will be discussed with you. [CONFIRM: hospital wording]
+Consultations are at Anand Heart Center. Procedures and surgery take place at the hospital where Dr. Yadav operates, which will be discussed with you.
 
 **How long will I stay in hospital?**
 It depends on the procedure and how you recover. You will be told what to expect for your own treatment before you decide.
 
 **Is my insurance accepted?**
-Many insurance and government schemes are accepted at the hospital. Please share your policy details with the clinic and we will check for you. [CONFIRM: schemes]
+Many insurance and government schemes are accepted at the hospital. Please share your policy details with the clinic and we will check for you.

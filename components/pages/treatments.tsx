@@ -33,7 +33,7 @@ export function TreatmentsPage() {
               </span>
             </h1>{" "}
             <p className="lead tp-fade" style={{ "--d": ".45s" }}>
-              Dr. Anand Yadav treats the full range of heart, lung and blood vessel
+              I treat the full range of heart, lung and blood vessel
               conditions, from tests and medicines to surgery. Start with what you feel,
               or explore by area.
             </p>{" "}
@@ -767,7 +767,7 @@ export function TreatmentsPage() {
             <div className="tx2">
               <h3>An unhurried conversation</h3>
               <p>
-                Dr. Yadav goes through your story, your old reports and your medicines,
+                I go through your story, your old reports and your medicines,
                 and examines you.
               </p>
             </div>
@@ -949,7 +949,7 @@ export function TreatmentsPage() {
                 </div>
               </div>{" "}
               <p className="tp-onote">
-                Dr. Yadav explains every option that fits you, including not operating,
+                I explain every option that fits you, including not operating,
                 and helps you choose with your family.
               </p>
             </div>{" "}
@@ -995,8 +995,8 @@ export function TreatmentsPage() {
                 Can I get a second opinion on surgery advised elsewhere?<i></i>
               </summary>
               <div className="a">
-                Yes. Bring your reports, angiography CD and prescriptions. Dr. Yadav will
-                go through them with you and explain what he would advise and why.
+                Yes. Bring your reports, angiography CD and prescriptions. I will
+                go through them with you and explain what I would advise and why.
               </div>
             </details>{" "}
             <details>
@@ -1005,7 +1005,7 @@ export function TreatmentsPage() {
               </summary>
               <div className="a">
                 Consultations are at Anand Heart Center. Procedures and surgery take place
-                at the hospital where Dr. Yadav operates, which will be discussed with
+                at the hospital where I operate, which will be discussed with
                 you. <span className="chip">Confirm hospital wording</span>
               </div>
             </details>{" "}

@@ -320,7 +320,7 @@ export function TreatmentBypassSurgeryPage() {
                   </li>
                   <li>
                     <span>
-                      <b>Family meeting:</b> Dr. Yadav explains the plan, the alternatives
+                      <b>Family meeting:</b> I explain the plan, the alternatives
                       and the risks before you agree.
                     </span>
                   </li>
@@ -523,7 +523,7 @@ export function TreatmentBypassSurgeryPage() {
                 <h3>Already advised bypass?</h3>
                 <p>
                   A second opinion is a sensible step. Send your angiography and reports,
-                  and Dr. Yadav will review them.
+                  and I will review them.
                 </p>
               </div>
               <span className="lk">
@@ -572,7 +572,7 @@ export function TreatmentBypassSurgeryPage() {
               <div className="a">
                 Neither is better for everyone. Stents suit some blockages, and bypass
                 suits others, often when several arteries are involved or the pattern is
-                complex. Dr. Yadav explains both, and why one may suit you, before you
+                complex. I explain both, and why one may suit you, before you
                 decide.
               </div>
             </details>

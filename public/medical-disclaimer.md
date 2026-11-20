@@ -2,7 +2,6 @@
 
 Canonical: /medical-disclaimer/
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # Medical disclaimer.
 Please read this before relying on anything on this website for decisions about your health.
@@ -23,7 +22,7 @@ No surgery or procedure has a guaranteed result. Benefits and risks are explaine
 If you have sudden chest pain, severe breathlessness, fainting or signs of a stroke, do not use this website or wait for an appointment. Call 108 or 112 and go to the nearest emergency department straight away.
 
 ## Regulatory information
-Dr. Anand Yadav is registered with the Madhya Pradesh Medical Council. Registration number MP729. [CONFIRM]
+Dr. Anand Yadav is registered with the Madhya Pradesh Medical Council. Registration number MP729.
 This website follows the National Medical Commission guidelines on professional conduct, and does not publish patient testimonials, rankings or outcome claims.
 
 ## Contact us

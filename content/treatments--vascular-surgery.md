@@ -13,10 +13,9 @@ faqs:
   - q: "Why does diabetes matter for my feet?"
     a: "Diabetes can affect both the blood supply and feeling in the feet, so small wounds need early attention."
   - q: "Is insurance accepted?"
-    a: "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]"
+    a: "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan."
 ---
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # Vascular surgery.
 Blocked arteries in the legs, swollen veins, weak bulging arteries called aneurysms and other vessel problems. Here is how they are treated, from medicines to surgery.
@@ -72,7 +71,7 @@ What to bring, who looks after you, and the questions worth asking.
 - Control sugar and BP
 
 ### Already advised vascular surgery?
-A second opinion is a sensible step. Send your reports and Dr. Yadav will review them.
+A second opinion is a sensible step. Send your reports and I will review them.
 
 ## What people ask us.
 Answers to common questions about vascular surgery. Ask us anything else on WhatsApp.
@@ -109,4 +108,4 @@ It is a weak, bulging part of an artery. Small ones are watched with scans, larg
 Diabetes can affect both the blood supply and feeling in the feet, so small wounds need early attention.
 
 **Is insurance accepted?**
-Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]
+Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan.

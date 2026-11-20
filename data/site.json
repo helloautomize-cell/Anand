@@ -15,7 +15,7 @@
       "Fellowship in adult cardiac surgery, South Australia",
       "FACC"
     ],
-    "registration": "MPMC MP729 [CONFIRM]",
+    "registration": "MPMC MP729",
     "languages": ["en", "hi"],
     "photo": "/img/dr-anand-yadav.webp"
   },
@@ -56,7 +56,7 @@
   "testsAtClinic": "ECG, Echo, TMT at the clinic. All tests are done at the clinic.",
   "fees": "Shared at the time of booking",
   "surgeryCost": "Depends on the procedure; discussed after the consultation",
-  "insurance": "[CONFIRM: insurance and government schemes]",
+  "insurance": "Many insurance plans and government schemes are accepted. Call the clinic to check your plan.",
   "emergency": "In an emergency, call 108 or 112.",
   "maps": {
     "link": "https://maps.app.goo.gl/tNvRcRyR8Bai2jP29",

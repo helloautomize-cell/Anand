@@ -147,6 +147,12 @@ export function Footer() {
             a substitute for medical advice.
           </span>
           <span>Medical emergency? Call 108 or 112</span>
+          <span>
+            Powered by{" "}
+            <a href="https://www.automizemedialabs.com/" target="_blank" rel="noopener nofollow">
+              Automize Media Labs
+            </a>
+          </span>
         </div>{" "}
       </div>{" "}
     </footer>

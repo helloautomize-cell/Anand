@@ -13,10 +13,9 @@ faqs:
   - q: "How long is the hospital stay?"
     a: "It varies with your recovery and other conditions. You will get an estimate at the consultation."
   - q: "Is insurance accepted?"
-    a: "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]"
+    a: "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan."
 ---
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # Valve repair and replacement.
 When a heart valve leaks or becomes narrow, the heart has to work harder. Valve surgery repairs your own valve where possible, or replaces it with a new one.
@@ -72,7 +71,7 @@ What to bring, who looks after you, and the questions worth asking.
 - Regular echo follow-up
 
 ### Already advised valve surgery?
-A second opinion is a sensible step. Send your reports and Dr. Yadav will review them.
+A second opinion is a sensible step. Send your reports and I will review them.
 
 ## What people ask us.
 Answers to common questions about heart valve surgery. Ask us anything else on WhatsApp.
@@ -92,7 +91,7 @@ A careful look at your reports.
 Recovery, rehab and regular reviews.
 
 ## Questions about your valve?
-Bring your echo report. Dr. Yadav will explain what is happening with the valve and what can be done.
+Bring your echo report. I will explain what is happening with the valve and what can be done.
 
 ## FAQs
 
@@ -109,4 +108,4 @@ It is valve damage left behind by rheumatic fever in childhood. It is still comm
 It varies with your recovery and other conditions. You will get an estimate at the consultation.
 
 **Is insurance accepted?**
-Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]
+Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan.

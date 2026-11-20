@@ -778,7 +778,7 @@ export function SymptomsPage() {
             <em>a symptom?</em>
           </h2>{" "}
           <p>
-            Bring your reports and a note of what you feel. Dr. Yadav will help you
+            Bring your reports and a note of what you feel. I will help you
             understand what it means.
           </p>{" "}
           <div className="acts">

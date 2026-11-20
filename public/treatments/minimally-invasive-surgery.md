@@ -2,7 +2,6 @@
 
 Canonical: /treatments/minimally-invasive-surgery/
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # Minimally invasive surgery.
 For suitable patients, some heart operations can be done through a smaller cut between the ribs instead of opening the breastbone. Here is when it is an option and when it is not.
@@ -93,4 +92,4 @@ Usually the cut is smaller and placed at the side of the chest. Where exactly de
 Some people return to activity sooner, but this varies. You will get guidance based on your own recovery.
 
 **Is insurance accepted?**
-Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]
+Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan.

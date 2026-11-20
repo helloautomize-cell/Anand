@@ -2,7 +2,6 @@
 
 Canonical: /treatments/childrens-heart-surgery/
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # Children's heart surgery.
 Some children are born with a hole in the heart or a problem in how the heart formed. Many of these can be treated. Here is what parents can expect, step by step.
@@ -88,10 +87,10 @@ No. Some small holes close on their own. Others need a repair. Dr. Yadav will ex
 Heart surgery can be done at any age, including in newborns, when it is needed. The right timing depends on the condition.
 
 **Can parents stay with the child?**
-Parents are kept informed throughout and can be with their child as much as the hospital allows. [CONFIRM]
+Parents are kept informed throughout and can be with their child as much as the hospital allows.
 
 **Will my child live a normal life?**
 Many children go on to live active lives after repair. Follow-up as they grow is important.
 
 **Is insurance accepted?**
-Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]
+Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan.

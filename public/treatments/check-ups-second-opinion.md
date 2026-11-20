@@ -2,7 +2,6 @@
 
 Canonical: /treatments/check-ups-second-opinion/
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # Check-ups and second opinions.
 Not every visit leads to surgery. Many people come to understand their reports, check their symptoms, or hear a second view before a big decision. Every visit starts with listening.
@@ -85,10 +84,10 @@ No. A second opinion is a normal and sensible step before a big decision.
 No. Surgery is advised only when it is the right option, and you can take time to decide.
 
 **Can my reports be reviewed on WhatsApp?**
-You can share them on WhatsApp, and the clinic will tell you how the review works. [CONFIRM]
+You can share them on WhatsApp, and the clinic will tell you how the review works.
 
 **Do I need a referral?**
 No. You can book directly by phone or WhatsApp.
 
 **Is insurance accepted?**
-Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]
+Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan.

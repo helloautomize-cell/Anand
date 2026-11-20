@@ -492,7 +492,7 @@ export function TreatmentChildrensHeartSurgeryPage() {
                 </div>
                 <h3>Worried about your child?</h3>
                 <p>
-                  Send the echo report on WhatsApp and Dr. Yadav will review it with you.
+                  Send the echo report on WhatsApp and I will review it with you.
                 </p>
               </div>
               <span className="lk">

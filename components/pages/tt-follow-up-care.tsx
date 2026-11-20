@@ -533,7 +533,7 @@ export function TreatmentFollowUpCarePage() {
                 When can I drive again?<i></i>
               </summary>
               <div className="a">
-                It depends on the surgery and your recovery. Dr. Yadav will tell you at
+                It depends on the surgery and your recovery. I will tell you at
                 your follow-up.
               </div>
             </details>

@@ -5,7 +5,7 @@ template: treatment
 description: "Angioplasty and stents in Bhopal: how a stent works, when bypass may suit you better, and what to expect before and after."
 faqs:
   - q: "Stent or bypass, which is right for me?"
-    a: "It depends on how many arteries are narrowed, where, and your other health conditions. Dr. Yadav is a heart surgeon who explains both options plainly, so you can decide with the full picture."
+    a: "It depends on how many arteries are narrowed, where, and your other health conditions. I am a heart surgeon who explains both options plainly, so you can decide with the full picture."
   - q: "Will I be awake?"
     a: "Yes, usually. A local anaesthetic numbs the wrist or groin and you may be given something to relax."
   - q: "Can the artery narrow again?"
@@ -13,10 +13,9 @@ faqs:
   - q: "How soon can I go home?"
     a: "Often within a short stay, depending on how the procedure went and your overall health. You will get clear instructions before discharge."
   - q: "Is insurance accepted?"
-    a: "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]"
+    a: "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan."
 ---
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # Angioplasty and stents.
 A narrowed heart artery is opened from the inside through a thin tube, often with a small mesh called a stent. Here is how it works, and when bypass may suit you better.
@@ -72,7 +71,7 @@ What to bring, who looks after you, and the questions worth asking.
 - Carry your stent card
 
 ### Already advised a stent?
-A second opinion is a sensible step. Send your reports and Dr. Yadav will review them.
+A second opinion is a sensible step. Send your reports and I will review them.
 
 ## What people ask us.
 Answers to common questions about angioplasty. Ask us anything else on WhatsApp.
@@ -92,12 +91,12 @@ Recovery, rehab and regular reviews.
 When a heart valve leaks or narrows.
 
 ## Stent or bypass?
-Bring your angiography and your questions. Dr. Yadav will explain both options so you can decide calmly.
+Bring your angiography and your questions. I will explain both options so you can decide calmly.
 
 ## FAQs
 
 **Stent or bypass, which is right for me?**
-It depends on how many arteries are narrowed, where, and your other health conditions. Dr. Yadav is a heart surgeon who explains both options plainly, so you can decide with the full picture.
+It depends on how many arteries are narrowed, where, and your other health conditions. I am a heart surgeon who explains both options plainly, so you can decide with the full picture.
 
 **Will I be awake?**
 Yes, usually. A local anaesthetic numbs the wrist or groin and you may be given something to relax.
@@ -109,4 +108,4 @@ It can happen in some people. Taking your medicines and controlling risk factors
 Often within a short stay, depending on how the procedure went and your overall health. You will get clear instructions before discharge.
 
 **Is insurance accepted?**
-Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]
+Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan.

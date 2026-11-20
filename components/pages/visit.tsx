@@ -28,7 +28,7 @@ export function VisitPage() {
             </h1>{" "}
             <p className="lead fv-fade" style={{ "--d": ".3s" }}>
               Knowing what happens takes away half the worry. Here is what to bring, what
-              Dr. Yadav will do, and how you leave with a clear plan.
+              I will do, and how you leave with a clear plan.
             </p>{" "}
             <div className="fv-acts fv-fade" style={{ "--d": ".45s" }}>
               <a className="btn b-line" href="#fv-bring">
@@ -133,20 +133,20 @@ export function VisitPage() {
                   <h3>
                     <span className="ln">
                       <span>
-                        He <em>listens</em> first.
+                        I <em>listen</em> first.
                       </span>
                     </span>
                   </h3>
                   <p>
                     What do you feel? Since when? What worries you most? Your words become
-                    his notes. Family members are welcome to sit in.
+                    my notes. Family members are welcome to sit in.
                   </p>
                 </div>{" "}
                 <div className="at">
                   <h3>
                     <span className="ln">
                       <span>
-                        He <em>looks</em> closely.
+                        I <em>look</em> closely.
                       </span>
                     </span>
                   </h3>
@@ -274,7 +274,7 @@ export function VisitPage() {
                       opacity=".6"
                     />{" "}
                     <text className="mono" x="466" y="82" fill="#5E6F73">
-                      Dr. Yadav's notes
+                      My notes
                     </text>{" "}
                     <text className="mono" x="744" y="82" fill="#D23133" textAnchor="end">
                       Today
@@ -834,7 +834,7 @@ export function VisitPage() {
               </div>
               <h3>Explained in your language</h3>
               <p>
-                Dr. Yadav explains your condition and options in Hindi or English, without
+                I explain your condition and options in Hindi or English, without
                 jargon. Ask as many questions as you need.
               </p>
               <div className="lang">

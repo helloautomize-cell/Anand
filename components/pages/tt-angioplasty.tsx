@@ -551,7 +551,7 @@ export function TreatmentAngioplastyPage() {
               </summary>
               <div className="a">
                 It depends on how many arteries are narrowed, where, and your other health
-                conditions. Dr. Yadav is a heart surgeon who explains both options
+                conditions. I am a heart surgeon who explains both options
                 plainly, so you can decide with the full picture.
               </div>
             </details>
@@ -736,7 +736,7 @@ export function TreatmentAngioplastyPage() {
             <em>bypass?</em>
           </h2>{" "}
           <p>
-            Bring your angiography and your questions. Dr. Yadav will explain both options
+            Bring your angiography and your questions. I will explain both options
             so you can decide calmly.
           </p>{" "}
           <div className="acts">

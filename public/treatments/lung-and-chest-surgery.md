@@ -2,7 +2,6 @@
 
 Canonical: /treatments/lung-and-chest-surgery/
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # Lung and chest surgery.
 Operations on the lungs, the lining around them, the chest wall and the space between the lungs. Here is what to expect, from the first scan to recovery.
@@ -94,4 +93,4 @@ No. Shadows have many causes, including infection. Tests help find the cause bef
 It depends on the operation and your recovery. You will get an estimate at the consultation.
 
 **Is insurance accepted?**
-Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]
+Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan.

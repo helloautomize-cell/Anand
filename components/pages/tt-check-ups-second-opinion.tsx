@@ -320,7 +320,7 @@ export function TreatmentCheckUpsSecondOpinionPage() {
                 <h3>Listening first</h3>
                 <ul>
                   <li>
-                    <span>Dr. Yadav listens to your story and examines you.</span>
+                    <span>I listen to your story and examine you.</span>
                   </li>
                   <li>
                     <span>Your reports are reviewed together, in plain words.</span>

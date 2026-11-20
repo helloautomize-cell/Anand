@@ -2,7 +2,6 @@
 
 Canonical: /treatments/angioplasty/
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # Angioplasty and stents.
 A narrowed heart artery is opened from the inside through a thin tube, often with a small mesh called a stent. Here is how it works, and when bypass may suit you better.
@@ -95,4 +94,4 @@ It can happen in some people. Taking your medicines and controlling risk factors
 Often within a short stay, depending on how the procedure went and your overall health. You will get clear instructions before discharge.
 
 **Is insurance accepted?**
-Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]
+Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan.

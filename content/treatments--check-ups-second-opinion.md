@@ -9,14 +9,13 @@ faqs:
   - q: "Will I be pushed into surgery?"
     a: "No. Surgery is advised only when it is the right option, and you can take time to decide."
   - q: "Can my reports be reviewed on WhatsApp?"
-    a: "You can share them on WhatsApp, and the clinic will tell you how the review works. [CONFIRM]"
+    a: "You can share them on WhatsApp, and the clinic will tell you how the review works."
   - q: "Do I need a referral?"
     a: "No. You can book directly by phone or WhatsApp."
   - q: "Is insurance accepted?"
-    a: "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]"
+    a: "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan."
 ---
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # Check-ups and second opinions.
 Not every visit leads to surgery. Many people come to understand their reports, check their symptoms, or hear a second view before a big decision. Every visit starts with listening.
@@ -32,7 +31,7 @@ A quick way to see if this is worth discussing with Dr. Yadav. It is not a diagn
 - Questions: write them down, and bring a family member if you like.
 
 ### Listening first
-- Dr. Yadav listens to your story and examines you.
+- I listen to your story and examine you.
 - Your reports are reviewed together, in plain words.
 - Any further tests are explained, with the reason for each.
 
@@ -99,10 +98,10 @@ No. A second opinion is a normal and sensible step before a big decision.
 No. Surgery is advised only when it is the right option, and you can take time to decide.
 
 **Can my reports be reviewed on WhatsApp?**
-You can share them on WhatsApp, and the clinic will tell you how the review works. [CONFIRM]
+You can share them on WhatsApp, and the clinic will tell you how the review works.
 
 **Do I need a referral?**
 No. You can book directly by phone or WhatsApp.
 
 **Is insurance accepted?**
-Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]
+Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan.

@@ -8,7 +8,7 @@
     "faqs": [
       {
         "q": "Is bypass better than a stent?",
-        "a": "Neither is better for everyone. Stents suit some blockages, and bypass suits others, often when several arteries are involved or the pattern is complex. Dr. Yadav explains both, and why one may suit you, before you decide."
+        "a": "Neither is better for everyone. Stents suit some blockages, and bypass suits others, often when several arteries are involved or the pattern is complex. I explain both, and why one may suit you, before you decide."
       },
       {
         "q": "Will I be awake during the operation?",
@@ -28,7 +28,7 @@
       },
       {
         "q": "Is insurance accepted?",
-        "a": "Many insurance plans cover heart surgery, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]"
+        "a": "Many insurance plans cover heart surgery, subject to the terms of your policy. Please call the clinic to check your plan."
       }
     ]
   },
@@ -41,7 +41,7 @@
     "faqs": [
       {
         "q": "Stent or bypass, which is right for me?",
-        "a": "It depends on how many arteries are narrowed, where, and your other health conditions. Dr. Yadav is a heart surgeon who explains both options plainly, so you can decide with the full picture."
+        "a": "It depends on how many arteries are narrowed, where, and your other health conditions. I am a heart surgeon who explains both options plainly, so you can decide with the full picture."
       },
       {
         "q": "Will I be awake?",
@@ -57,7 +57,7 @@
       },
       {
         "q": "Is insurance accepted?",
-        "a": "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]"
+        "a": "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan."
       }
     ]
   },
@@ -86,7 +86,7 @@
       },
       {
         "q": "Is insurance accepted?",
-        "a": "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]"
+        "a": "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan."
       }
     ]
   },
@@ -95,11 +95,11 @@
     "url": "/treatments/childrens-heart-surgery/",
     "name": "Children's heart surgery",
     "title": "Children's heart surgery | Anand Heart Center Bhopal",
-    "description": "Children's heart surgery in Bhopal: congenital heart conditions, what parents can expect and how Dr. Anand Yadav guides the family.",
+    "description": "Children's heart surgery in Bhopal: congenital heart conditions, what parents can expect and how Dr. Yadav guides the family.",
     "faqs": [
       {
         "q": "Does every hole in the heart need surgery?",
-        "a": "No. Some small holes close on their own. Others need a repair. Dr. Yadav will explain which applies to your child and why."
+        "a": "No. Some small holes close on their own. Others need a repair. I will explain which applies to your child and why."
       },
       {
         "q": "Is my child too young for surgery?",
@@ -107,7 +107,7 @@
       },
       {
         "q": "Can parents stay with the child?",
-        "a": "Parents are kept informed throughout and can be with their child as much as the hospital allows. [CONFIRM]"
+        "a": "Parents are kept informed throughout and can be with their child as much as the hospital allows."
       },
       {
         "q": "Will my child live a normal life?",
@@ -115,7 +115,7 @@
       },
       {
         "q": "Is insurance accepted?",
-        "a": "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]"
+        "a": "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan."
       }
     ]
   },
@@ -144,7 +144,7 @@
       },
       {
         "q": "Is insurance accepted?",
-        "a": "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]"
+        "a": "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan."
       }
     ]
   },
@@ -173,7 +173,7 @@
       },
       {
         "q": "Is insurance accepted?",
-        "a": "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]"
+        "a": "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan."
       }
     ]
   },
@@ -202,7 +202,7 @@
       },
       {
         "q": "Is insurance accepted?",
-        "a": "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]"
+        "a": "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan."
       }
     ]
   },
@@ -223,7 +223,7 @@
       },
       {
         "q": "Can my reports be reviewed on WhatsApp?",
-        "a": "You can share them on WhatsApp, and the clinic will tell you how the review works. [CONFIRM]"
+        "a": "You can share them on WhatsApp, and the clinic will tell you how the review works."
       },
       {
         "q": "Do I need a referral?",
@@ -231,7 +231,7 @@
       },
       {
         "q": "Is insurance accepted?",
-        "a": "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]"
+        "a": "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan."
       }
     ]
   },
@@ -244,11 +244,11 @@
     "faqs": [
       {
         "q": "When is my first follow-up?",
-        "a": "Usually soon after discharge. The exact date will be written on your discharge summary. [CONFIRM]"
+        "a": "Usually soon after discharge. The exact date will be written on your discharge summary."
       },
       {
         "q": "When can I drive again?",
-        "a": "It depends on the surgery and your recovery. Dr. Yadav will tell you at your follow-up."
+        "a": "It depends on the surgery and your recovery. I will tell you at your follow-up."
       },
       {
         "q": "When can I go back to work?",
@@ -260,7 +260,7 @@
       },
       {
         "q": "Is insurance accepted?",
-        "a": "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]"
+        "a": "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan."
       }
     ]
   }

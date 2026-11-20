@@ -5,7 +5,7 @@ template: contact
 description: "Contact Anand Heart Center Bhopal. Address, OPD hours, map, phone and WhatsApp booking. Walk-ins welcome during OPD hours."
 faqs:
   - q: "Do I need a referral to see Dr. Yadav?"
-    a: "No. You can book directly by phone or WhatsApp. If another doctor has written a letter or notes, please bring them. [CONFIRM]"
+    a: "No. You can book directly by phone or WhatsApp. If another doctor has written a letter or notes, please bring them."
   - q: "What should I bring to my first visit?"
     a: "All earlier reports: ECG, echo, TMT, blood tests, angiography CD or report, discharge summaries, and a list of the medicines you take now."
   - q: "Does every heart problem need surgery?"
@@ -13,12 +13,11 @@ faqs:
   - q: "Can a family member come with me?"
     a: "Yes. Many decisions about the heart are family decisions, and we are happy to explain everything to them too."
   - q: "Is insurance or Ayushman Bharat accepted?"
-    a: "Please call the clinic to check your plan before your visit. [CONFIRM: schemes]"
+    a: "Please call the clinic to check your plan before your visit."
   - q: "What if it is an emergency?"
     a: "For sudden chest pain, severe breathlessness, fainting or signs of a stroke, call 108 or 112 straight away and go to the nearest emergency department. Do not wait for a clinic appointment."
 ---
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # Come and see us.
 One clinic, one address, and a team that answers the phone. Call, send a WhatsApp message or walk in during OPD hours, and bring your reports.
@@ -66,7 +65,7 @@ Call or WhatsApp during OPD hours. Bring your reports and a family member if you
 ## FAQs
 
 **Do I need a referral to see Dr. Yadav?**
-No. You can book directly by phone or WhatsApp. If another doctor has written a letter or notes, please bring them. [CONFIRM]
+No. You can book directly by phone or WhatsApp. If another doctor has written a letter or notes, please bring them.
 
 **What should I bring to my first visit?**
 All earlier reports: ECG, echo, TMT, blood tests, angiography CD or report, discharge summaries, and a list of the medicines you take now.
@@ -78,7 +77,7 @@ No. Many heart and vessel problems are managed with medicines and lifestyle chan
 Yes. Many decisions about the heart are family decisions, and we are happy to explain everything to them too.
 
 **Is insurance or Ayushman Bharat accepted?**
-Please call the clinic to check your plan before your visit. [CONFIRM: schemes]
+Please call the clinic to check your plan before your visit.
 
 **What if it is an emergency?**
 For sudden chest pain, severe breathlessness, fainting or signs of a stroke, call 108 or 112 straight away and go to the nearest emergency department. Do not wait for a clinic appointment.

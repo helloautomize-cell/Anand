@@ -2,7 +2,6 @@
 
 Canonical: /
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # Heart care, carefully explained.
 Heart, lung and vascular surgery in Janki Nagar, Bhopal, with Dr. Anand Yadav , MCh (CTVS), FACC, and 25 years of experience. An honest opinion on what your heart needs, in plain words, before any decision is made.
@@ -60,7 +59,7 @@ Every choice explained side by side.
 - Hindi or English, whichever you prefer
 
 ### 4th floor, Vindhya Retreat
-Plot No. 5, near Gut Hospital, Janki Nagar, Chuna Bhatti, Bhopal 462016. Lift and parking [CONFIRM]
+Plot No. 5, near Gut Hospital, Janki Nagar, Chuna Bhatti, Bhopal 462016. Lift and parking
 
 ## Dr. Anand Yadav.
 A cardiothoracic and vascular surgeon with 25 years of experience, trained in Bhopal, Mumbai, Jaipur and Australia. He has helped set up new heart surgery units in six hospitals across Bhopal and Punjab, and teaches surgery at LN Medical College.
@@ -105,7 +104,7 @@ Alongside surgery at JK Hospital and teaching at LN Medical College, Bhopal.
 Four simple steps, with the clinic in touch at each one.
 
 ### Book
-Call or WhatsApp 091119 50821, and we confirm your time. [CONFIRM: how fast]
+Call or WhatsApp 091119 50821, and we confirm your time.
 
 ### Visit
 Bring old reports and your medicines. The first consultation is unhurried, so plan some time.
@@ -135,7 +134,7 @@ Tell us what you feel. We will find a time for you to sit down with Dr. Yadav.
 ## FAQs
 
 **Do I need a referral to see Dr. Yadav?**
-No. You can book directly by phone or WhatsApp. If another doctor has written a letter or notes, please bring them. [CONFIRM]
+No. You can book directly by phone or WhatsApp. If another doctor has written a letter or notes, please bring them.
 
 **What should I bring to my first visit?**
 All earlier reports: ECG, echo, TMT, blood tests, angiography CD or report, discharge summaries, and a list of the medicines you take now.
@@ -147,7 +146,7 @@ No. Many heart and vessel problems are managed with medicines and lifestyle chan
 Yes. Many decisions about the heart are family decisions, and we are happy to explain everything to them too.
 
 **Is insurance or Ayushman Bharat accepted?**
-Please call the clinic to check your plan before your visit. [CONFIRM: schemes]
+Please call the clinic to check your plan before your visit.
 
 **What if it is an emergency?**
 For sudden chest pain, severe breathlessness, fainting or signs of a stroke, call 108 or 112 straight away and go to the nearest emergency department. Do not wait for a clinic appointment.

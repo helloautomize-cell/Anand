@@ -13,10 +13,9 @@ faqs:
   - q: "Is recovery faster?"
     a: "Some people return to activity sooner, but this varies. You will get guidance based on your own recovery."
   - q: "Is insurance accepted?"
-    a: "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]"
+    a: "Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan."
 ---
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # Minimally invasive surgery.
 For suitable patients, some heart operations can be done through a smaller cut between the ribs instead of opening the breastbone. Here is when it is an option and when it is not.
@@ -72,7 +71,7 @@ What to bring, who looks after you, and the questions worth asking.
 - Keep follow-up visits
 
 ### Already advised heart surgery?
-A second opinion is a sensible step. Send your reports and Dr. Yadav will review them.
+A second opinion is a sensible step. Send your reports and I will review them.
 
 ## What people ask us.
 Answers to common questions about minimally invasive heart surgery. Ask us anything else on WhatsApp.
@@ -90,7 +89,7 @@ A careful look at your reports.
 
 ### Follow-up care
 Recovery, rehab and regular reviews.
-Bring your reports. Dr. Yadav will tell you honestly whether a smaller cut is an option.
+Bring your reports. I will tell you honestly whether a smaller cut is an option.
 
 ## FAQs
 
@@ -107,4 +106,4 @@ Usually the cut is smaller and placed at the side of the chest. Where exactly de
 Some people return to activity sooner, but this varies. You will get guidance based on your own recovery.
 
 **Is insurance accepted?**
-Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]
+Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan.

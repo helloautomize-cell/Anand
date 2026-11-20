@@ -68,6 +68,8 @@ ${profiles}
 
 ## Markdown mirrors
 ${mdMirrors}
+
+Website powered by ${site.agencyCredit} (https://www.automizemedialabs.com/)
 `;
   return new Response(body, {
     headers: { "Content-Type": "text/plain; charset=utf-8" },

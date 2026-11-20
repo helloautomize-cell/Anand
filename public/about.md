@@ -2,7 +2,6 @@
 
 Canonical: /about/
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # A heart surgeon who came home.
 Dr. Anand Yadav , MCh CTVS, FACC, is a cardiothoracic and vascular surgeon with 25 years of experience. He trained in Bhopal, Mumbai, Jaipur and Australia, and today sees patients at Anand Heart Center in Bhopal, his home city.

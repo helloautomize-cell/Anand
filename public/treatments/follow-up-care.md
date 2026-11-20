@@ -2,7 +2,6 @@
 
 Canonical: /treatments/follow-up-care/
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # Follow-up care.
 Surgery is one day. Recovery is weeks and months. Regular follow-up helps you heal well, adjust medicines, and get back to the life you want.
@@ -82,7 +81,7 @@ Bring your discharge summary and medicines. We will review your recovery togethe
 ## FAQs
 
 **When is my first follow-up?**
-Usually soon after discharge. The exact date will be written on your discharge summary. [CONFIRM]
+Usually soon after discharge. The exact date will be written on your discharge summary.
 
 **When can I drive again?**
 It depends on the surgery and your recovery. Dr. Yadav will tell you at your follow-up.
@@ -94,4 +93,4 @@ It depends on the kind of work you do and how you are healing. You will get guid
 For chest pain, severe breathlessness or fainting, call 108 or 112 straight away and go to the nearest emergency department.
 
 **Is insurance accepted?**
-Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]
+Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan.

@@ -2,7 +2,6 @@
 
 Canonical: /treatments/vascular-surgery/
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # Vascular surgery.
 Blocked arteries in the legs, swollen veins, weak bulging arteries called aneurysms and other vessel problems. Here is how they are treated, from medicines to surgery.
@@ -95,4 +94,4 @@ It is a weak, bulging part of an artery. Small ones are watched with scans, larg
 Diabetes can affect both the blood supply and feeling in the feet, so small wounds need early attention.
 
 **Is insurance accepted?**
-Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]
+Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan.

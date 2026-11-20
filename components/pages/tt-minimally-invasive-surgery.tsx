@@ -718,7 +718,7 @@ export function TreatmentMinimallyInvasiveSurgeryPage() {
             <em>for you?</em>
           </h2>{" "}
           <p>
-            Bring your reports. Dr. Yadav will tell you honestly whether a smaller cut is
+            Bring your reports. I will tell you honestly whether a smaller cut is
             an option.
           </p>{" "}
           <div className="acts">

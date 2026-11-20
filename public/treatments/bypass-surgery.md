@@ -2,7 +2,6 @@
 
 Canonical: /treatments/bypass-surgery/
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # Bypass surgery.
 A new route for blood around blocked heart arteries, made with a healthy blood vessel from your own body. Here is what it involves, in plain words, so you can decide with your family.
@@ -99,4 +98,4 @@ It depends on your recovery and any other health conditions. You will get a clea
 Some bypass operations can be done while the heart keeps beating, without the heart-lung machine. Whether it suits you depends on your arteries and your heart, and it will be discussed with you.
 
 **Is insurance accepted?**
-Many insurance plans cover heart surgery, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]
+Many insurance plans cover heart surgery, subject to the terms of your policy. Please call the clinic to check your plan.

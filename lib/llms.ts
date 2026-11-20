@@ -6,7 +6,7 @@ const CONFIRM = /\[CONFIRM(?::[^\]]*)?\]/g;
 const reg = site.doctor.registration.replace(CONFIRM, "").trim();
 export const REG_CONFIRMED = !/\[CONFIRM/.test(site.doctor.registration) && reg.length > 0;
 
-export const REVIEWER_LINE = `Medically reviewed by ${site.doctor.name}, ${site.doctor.qualifications[3]}, ${site.brand}, ${site.address.city}.`;
+export const REVIEWER_LINE = `Written and medically reviewed by ${site.doctor.name}, ${site.doctor.qualifications[3]}, ${site.brand}, ${site.address.city}.`;
 
 export function factsParagraph(): string {
   return `${site.doctor.name}, ${site.doctor.role} in ${site.address.city} with ${site.doctor.experienceYears} years of experience. OPD: ${hoursDisplay}, Sunday closed. Booking is on WhatsApp only: https://wa.me/${site.whatsapp}. Phone ${site.phones.primary}. ${site.emergency}`;

@@ -2,7 +2,6 @@
 
 Canonical: /treatments/valve-surgery/
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # Valve repair and replacement.
 When a heart valve leaks or becomes narrow, the heart has to work harder. Valve surgery repairs your own valve where possible, or replaces it with a new one.
@@ -95,4 +94,4 @@ It is valve damage left behind by rheumatic fever in childhood. It is still comm
 It varies with your recovery and other conditions. You will get an estimate at the consultation.
 
 **Is insurance accepted?**
-Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan. [CONFIRM]
+Many insurance plans cover these treatments, subject to the terms of your policy. Please call the clinic to check your plan.

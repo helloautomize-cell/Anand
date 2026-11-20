@@ -2,7 +2,6 @@
 
 Canonical: /your-first-visit/
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # Your first visit, step by step.
 Knowing what happens takes away half the worry. Here is what to bring, what Dr. Yadav will do, and how you leave with a clear plan.
@@ -38,7 +37,7 @@ Vindhya Retreat, near Gut Hospital. Look for the red heart on the glass door.
 Arrive 10 to 15 minutes before your time to register and settle in.
 
 ### Fees and payment
-Please ask the clinic about consultation fees and payment options when you book. [CONFIRM]
+Please ask the clinic about consultation fees and payment options when you book.
 
 ### Medicines on the day
 Take your usual medicines unless you have been told otherwise. Do not stop blood thinners on your own. If a test needs fasting, the clinic will tell you when you book.
@@ -50,7 +49,7 @@ Call 091119 50821 and we will do our best to fit you in.
 Four simple steps, with the clinic in touch at each one.
 
 ### Book
-Call or WhatsApp 091119 50821, and we confirm your time. [CONFIRM: how fast]
+Call or WhatsApp 091119 50821, and we confirm your time.
 
 ### Visit
 Bring old reports and your medicines. The first consultation is unhurried, so plan some time.
@@ -77,7 +76,7 @@ Call or WhatsApp during OPD hours. Bring your reports, and we will take it from 
 ## FAQs
 
 **Do I need a referral to see Dr. Yadav?**
-No. You can book directly by phone or WhatsApp. If another doctor has written a letter or notes, please bring them. [CONFIRM]
+No. You can book directly by phone or WhatsApp. If another doctor has written a letter or notes, please bring them.
 
 **What should I bring to my first visit?**
 All earlier reports: ECG, echo, TMT, blood tests, angiography CD or report, discharge summaries, and a list of the medicines you take now.
@@ -89,7 +88,7 @@ No. Many heart and vessel problems are managed with medicines and lifestyle chan
 Yes. Many decisions about the heart are family decisions, and we are happy to explain everything to them too.
 
 **Is insurance or Ayushman Bharat accepted?**
-Please call the clinic to check your plan before your visit. [CONFIRM: schemes]
+Please call the clinic to check your plan before your visit.
 
 **What if it is an emergency?**
 For sudden chest pain, severe breathlessness, fainting or signs of a stroke, call 108 or 112 straight away and go to the nearest emergency department. Do not wait for a clinic appointment.

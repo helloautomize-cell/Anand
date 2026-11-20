@@ -6,17 +6,16 @@ description: "Meet Dr. Anand Yadav, cardiothoracic and vascular surgeon in Bhopa
 faqs: []
 ---
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # A heart surgeon who came home.
-Dr. Anand Yadav , MCh CTVS, FACC, is a cardiothoracic and vascular surgeon with 25 years of experience. He trained in Bhopal, Mumbai, Jaipur and Australia, and today sees patients at Anand Heart Center in Bhopal, his home city.
+I am Dr. Anand Yadav, MCh CTVS, FACC, a cardiothoracic and vascular surgeon with 25 years of experience. I trained in Bhopal, Mumbai, Jaipur and Australia, and today I see patients at Anand Heart Center in Bhopal, my home city.
 The hardest part for most patients is not the surgery. It is knowing *who* to see, and *what* they really need. Anand Heart Center was opened for that conversation: an honest opinion, based on your needs. Sometimes that is surgery. Sometimes it is *not.*
 
 ## The making of a heart surgeon.
-From medical school in Bhopal to heart surgery training in Jaipur and Australia. Every step brought him closer to the patients he sees today.
+From medical school in Bhopal to heart surgery training in Jaipur and Australia. Every step brought me closer to the patients I see today.
 
 ### MBBS
-Medical school at Gandhi Medical College, Bhopal. Where the doctor in him began.
+Medical school at Gandhi Medical College, Bhopal. Where the doctor in me began.
 
 ### MS and DNB, General Surgery
 Surgical training at Grant Medical College and the J.J. Group of Hospitals, then the DNB. The steady hands of a surgeon.
@@ -25,7 +24,7 @@ Surgical training at Grant Medical College and the J.J. Group of Hospitals, then
 Super-specialist training to operate on the heart, lungs and blood vessels themselves.
 
 ### Consultant, BMHRC
-Years of operating and caring for patients at Bhopal Memorial Hospital and Research Centre, in his own city.
+Years of operating and caring for patients at Bhopal Memorial Hospital and Research Centre, in my own city.
 
 ### Fellowship in adult cardiac surgery
 Advanced adult heart surgery, learnt alongside surgical teams abroad.
@@ -33,16 +32,16 @@ Advanced adult heart surgery, learnt alongside surgical teams abroad.
 ### Consultant, Max Hospitals
 Heart surgery at Max Hospitals, Punjab, including setting up a new heart surgery unit there.
 
-### He came home
-Back to Bhopal for good: surgery at the city's hospitals, teaching, and later a clinic of his own.
+### I came home
+Back to Bhopal for good: surgery at the city's hospitals, teaching, and later a clinic of my own.
 
 ## Every qualification, in full.
 Degrees, training and memberships, exactly as they are. You can verify a doctor's registration with the state medical council.
 
 ## New heart units in six hospitals.
-Across Bhopal and Punjab, Dr. Yadav helped set up new heart surgery units and performed the first surgeries of their kind there, including at Max Hospitals, Punjab , where he was a consultant.
+Across Bhopal and Punjab, I helped set up new heart surgery units and performed the first surgeries of their kind there, including at Max Hospitals, Punjab , where I was a consultant.
 
-## Where you will find him.
+## Where you will find me.
 Consultations happen at the clinic. Surgery, teaching and visiting work happen at the hospitals below.
 
 ### Anand Heart Center

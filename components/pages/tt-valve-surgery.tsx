@@ -733,7 +733,7 @@ export function TreatmentValveSurgeryPage() {
             <em>your valve?</em>
           </h2>{" "}
           <p>
-            Bring your echo report. Dr. Yadav will explain what is happening with the
+            Bring your echo report. I will explain what is happening with the
             valve and what can be done.
           </p>{" "}
           <div className="acts">

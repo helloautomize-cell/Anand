@@ -2,7 +2,6 @@
 
 Canonical: /terms-of-use/
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # Terms of use.
 The terms that apply when you use this website. Please read them along with our medical disclaimer and privacy policy.
@@ -29,7 +28,7 @@ Links to other websites, such as maps or WhatsApp, are provided for convenience.
 We work to keep this website accurate and up to date, but we cannot promise it is always complete or free of errors. To the extent the law allows, we are not liable for loss arising from reliance on the general information on this website.
 
 ## Governing law
-These terms are governed by the laws of India. Courts in Bhopal, Madhya Pradesh have jurisdiction. [CONFIRM]
+These terms are governed by the laws of India. Courts in Bhopal, Madhya Pradesh have jurisdiction.
 
 ## Contact us
 Anand Heart Center Bhopal, 4th Floor, Vindhya Retreat, Plot No. 5, Near Gut Hospital, Janki Nagar, Chuna Bhatti, Bhopal, Madhya Pradesh 462016. Phone 091119 50821 · Email info@anandheartcenter.com

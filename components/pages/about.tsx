@@ -29,10 +29,10 @@ export function AboutPage() {
                 </span>
               </h1>{" "}
               <p className="lead ab-fade" style={{ "--d": ".5s" }}>
-                <b>Dr. Anand Yadav</b>, MCh CTVS, FACC, is a cardiothoracic and vascular
-                surgeon with 25 years of experience. He trained in Bhopal, Mumbai, Jaipur
-                and Australia, and today sees patients at Anand Heart Center in Bhopal,
-                his home city.
+                I am <b>Dr. Anand Yadav</b>, MCh CTVS, FACC, a cardiothoracic and vascular
+                surgeon with 25 years of experience. I trained in Bhopal, Mumbai, Jaipur
+                and Australia, and today I see patients at Anand Heart Center in Bhopal,
+                my home city.
               </p>{" "}
               <div className="ab-acts ab-fade" style={{ "--d": ".7s" }}>
                 {" "}
@@ -66,7 +66,7 @@ export function AboutPage() {
                   </span>
                 </a>{" "}
                 <a className="btn b-line" href="#ab-train">
-                  Read his story
+                  Read my story
                 </a>{" "}
               </div>{" "}
             </div>{" "}
@@ -154,7 +154,7 @@ export function AboutPage() {
           </div>{" "}
           <div className="ab-wbox">
             {" "}
-            <span className="lab">Why he opened the clinic</span>{" "}
+            <span className="lab">Why I opened the clinic</span>{" "}
             <p id="abw">
               The hardest part for most patients is not the surgery. It is knowing *who*
               to see, and *what* they really need. Anand Heart Center was opened for that
@@ -163,7 +163,7 @@ export function AboutPage() {
             </p>{" "}
             <div className="ab-wsig" id="abwsig">
               <img src="/img/dr-anand-yadav.webp" alt="" />
-              <span>Dr. Anand Yadav, in his own words, edited for the site</span>
+              <span>Dr. Anand Yadav, in my own words</span>
             </div>{" "}
           </div>{" "}
         </div>{" "}
@@ -175,7 +175,7 @@ export function AboutPage() {
           <div className="ab-thead">
             {" "}
             <div>
-              <span className="lab">His training</span>
+              <span className="lab">My training</span>
               <h2 style={{ marginTop: "18px" }}>
                 <span className="ln">
                   <span>The making of a</span>
@@ -189,7 +189,7 @@ export function AboutPage() {
             </div>{" "}
             <p className="sub" data-rv={true}>
               From medical school in Bhopal to heart surgery training in Jaipur and
-              Australia. Every step brought him closer to the patients he sees today.
+              Australia. Every step brought me closer to the patients I see today.
             </p>{" "}
           </div>{" "}
           <div className="ab-tg">
@@ -199,7 +199,7 @@ export function AboutPage() {
               <div className="ab-tcard">
                 {" "}
                 <div className="ab-tdot">
-                  <span>His path</span>
+                  <span>My path</span>
                   <b id="abtk">Bhopal</b>
                 </div>{" "}
                 <div className="ab-till" id="abtill">
@@ -285,7 +285,7 @@ export function AboutPage() {
                 <h3>MBBS</h3>
                 <p>
                   Medical school at Gandhi Medical College, Bhopal. Where the doctor in
-                  him began.
+                  me began.
                 </p>
                 <span className="inst">Gandhi Medical College, Bhopal</span>
               </div>
@@ -334,7 +334,7 @@ export function AboutPage() {
                 <h3>Consultant, BMHRC</h3>
                 <p>
                   Years of operating and caring for patients at Bhopal Memorial Hospital
-                  and Research Centre, in his own city.
+                  and Research Centre, in my own city.
                 </p>
                 <span className="inst">Bhopal Memorial Hospital and Research Centre</span>
               </div>
@@ -381,10 +381,10 @@ export function AboutPage() {
                   />
                 </svg>
                 <span className="k">2013 · Bhopal</span>
-                <h3>He came home</h3>
+                <h3>I came home</h3>
                 <p>
                   Back to Bhopal for good: surgery at the city's hospitals, teaching, and
-                  later a clinic of his own.
+                  later a clinic of my own.
                 </p>
                 <span className="inst">Anand Heart Center, Bhopal</span>
               </div>
@@ -538,9 +538,9 @@ export function AboutPage() {
               </h2>
             </div>{" "}
             <p data-rv={true}>
-              Across Bhopal and Punjab, Dr. Yadav helped set up new heart surgery units
+              Across Bhopal and Punjab, I helped set up new heart surgery units
               and performed the first surgeries of their kind there, including at{" "}
-              <b>Max Hospitals, Punjab</b>, where he was a consultant.
+              <b>Max Hospitals, Punjab</b>, where I was a consultant.
             </p>{" "}
           </div>{" "}
           <div className="ab-uviz" id="abuviz">
@@ -576,7 +576,7 @@ export function AboutPage() {
                 </span>
                 <span className="ln">
                   <span>
-                    <em>find him.</em>
+                    <em>find me.</em>
                   </span>
                 </span>
               </h2>
@@ -716,7 +716,7 @@ export function AboutPage() {
           {" "}
           <div>
             {" "}
-            <span className="lab">What he treats</span>{" "}
+            <span className="lab">What I treat</span>{" "}
             <h2 style={{ marginTop: "18px" }}>
               <span className="ln">
                 <span>The full range of</span>
@@ -773,7 +773,7 @@ export function AboutPage() {
           <div className="ab-shead">
             {" "}
             <div>
-              <span className="lab">How he works</span>
+              <span className="lab">How I work</span>
               <h2 style={{ marginTop: "18px" }}>
                 <span className="ln">
                   <span>Four things you</span>
@@ -862,7 +862,7 @@ export function AboutPage() {
               strokeWidth="2"
             />
           </svg>{" "}
-          <span className="lab">Meet him</span>{" "}
+          <span className="lab">Meet me</span>{" "}
           <h2>
             Sit down with
             <br />

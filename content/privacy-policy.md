@@ -6,7 +6,6 @@ description: "Privacy policy of Anand Heart Center Bhopal: what information is c
 faqs: []
 ---
 
-> Text extracted from the approved design. The HTML in `design/` wins for layout and motion; this file wins for words. Interactive widget labels live in the HTML.
 
 # Privacy policy.
 How Anand Heart Center Bhopal handles the personal and health information you share with us through this website, by phone and on WhatsApp.
@@ -19,7 +18,7 @@ Anand Heart Center Bhopal, 4th Floor, Vindhya Retreat, Plot No. 5, Near Gut Hosp
 This website does not ask you to create an account and does not store the forms you fill in. We receive information only when you choose to contact us:
 - Your name, phone number and message when you call, email or send us a WhatsApp message.
 - Medical reports, images or details about your health that you choose to share with us.
-- Basic technical data such as browser type and pages visited, if analytics is enabled on this site. [CONFIRM]
+- Basic technical data such as browser type and pages visited, if analytics is enabled on this site.
 
 ## How we use it
 - To reply to you and arrange or confirm an appointment.
@@ -33,7 +32,7 @@ Health information is sensitive. We share it only with people involved in your c
 Messages sent on WhatsApp are handled by WhatsApp under its own terms. If you prefer, you can bring your reports to the clinic in person instead.
 
 ## How long we keep it
-Clinical records are kept for as long as the law and medical council rules require. Messages that are not part of your clinical record are deleted when they are no longer needed. [CONFIRM]
+Clinical records are kept for as long as the law and medical council rules require. Messages that are not part of your clinical record are deleted when they are no longer needed.
 
 ## Your choices
 - Ask for a copy of the information we hold about you.
@@ -43,7 +42,7 @@ Clinical records are kept for as long as the law and medical council rules requi
 Write to us using the details below. We may need to confirm your identity first.
 
 ## Cookies
-This website uses only the storage it needs to remember your text size choice on your own device. If analytics or other cookies are added, this section will be updated. [CONFIRM]
+This website uses only the storage it needs to remember your text size choice on your own device. If analytics or other cookies are added, this section will be updated.
 
 ## Contact us
 For any question about your information, or to make a request, contact:
