@@ -4,6 +4,9 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   poweredByHeader: false,
   productionBrowserSourceMaps: false,
+  experimental: {
+    inlineCss: true,
+  },
   images: {
     formats: ["image/avif", "image/webp"],
   },
